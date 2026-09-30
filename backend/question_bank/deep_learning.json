@@ -1,0 +1,894 @@
+[
+  {
+    "id": "dee_0001",
+    "question": "Trong mạng nơ-ron, lớp Batch Normalization thường được đặt ở vị trí nào?",
+    "option_a": "Trước lớp tuyến tính hoặc lớp tích chập",
+    "option_b": "Sau lớp tuyến tính hoặc lớp tích chập và trước hàm kích hoạt ReLU",
+    "option_c": "Sau lớp Dropout",
+    "option_d": "Sau lớp đầu ra Softmax",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Core Concepts",
+    "difficulty": "easy",
+    "tags": [
+      "batch-normalization",
+      "neural-network",
+      "relu",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0002",
+    "question": "Vai trò chính của hàm kích hoạt ReLU trong mạng nơ-ron là gì?",
+    "option_a": "Đưa tính phi tuyến vào mô hình",
+    "option_b": "Chuẩn hóa dữ liệu về khoảng [0,1]",
+    "option_c": "Tính trực tiếp hàm mất mát",
+    "option_d": "Giảm số lượng mẫu huấn luyện",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Activation Functions",
+    "difficulty": "easy",
+    "tags": [
+      "relu",
+      "activation-function",
+      "nonlinearity"
+    ]
+  },
+  {
+    "id": "dee_0003",
+    "question": "Một hạn chế phổ biến của hàm sigmoid khi sử dụng trong các mạng rất sâu là gì?",
+    "option_a": "Đầu ra không bị giới hạn",
+    "option_b": "Không thể tính đạo hàm",
+    "option_c": "Có thể gây hiện tượng vanishing gradient khi đầu vào nằm trong vùng bão hòa",
+    "option_d": "Chỉ hoạt động với dữ liệu ảnh",
+    "correct_answer": "C",
+    "category": "Deep Learning",
+    "subcategory": "Activation Functions",
+    "difficulty": "medium",
+    "tags": [
+      "sigmoid",
+      "vanishing-gradient",
+      "activation-function",
+      "saturation"
+    ]
+  },
+  {
+    "id": "dee_0004",
+    "question": "Trong bài toán phân loại nhiều lớp mà mỗi mẫu chỉ thuộc đúng một lớp, Softmax thường được sử dụng để làm gì?",
+    "option_a": "Chuyển logits thành phân phối xác suất trên các lớp",
+    "option_b": "Khởi tạo trọng số mạng",
+    "option_c": "Tăng số lượng lớp ẩn",
+    "option_d": "Thay thế quá trình backpropagation",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Activation Functions",
+    "difficulty": "easy",
+    "tags": [
+      "softmax",
+      "multiclass-classification",
+      "logits",
+      "probability"
+    ]
+  },
+  {
+    "id": "dee_0005",
+    "question": "Khi sử dụng nn.BCEWithLogitsLoss trong PyTorch cho bài toán phân loại nhị phân, đầu ra của lớp cuối nên là gì?",
+    "option_a": "Giá trị logits chưa qua sigmoid",
+    "option_b": "Xác suất đã qua sigmoid bắt buộc",
+    "option_c": "Chỉ số lớp sau argmax",
+    "option_d": "Vector one-hot sau softmax",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Loss Functions",
+    "difficulty": "medium",
+    "tags": [
+      "bce-with-logits",
+      "binary-classification",
+      "pytorch",
+      "logits"
+    ]
+  },
+  {
+    "id": "dee_0006",
+    "question": "Khi sử dụng nn.CrossEntropyLoss trong PyTorch cho bài toán phân loại nhiều lớp, đầu vào dự đoán nên là gì?",
+    "option_a": "Logits thô từ lớp cuối",
+    "option_b": "Xác suất sau Softmax",
+    "option_c": "Giá trị sau argmax",
+    "option_d": "Nhãn ground truth",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Loss Functions",
+    "difficulty": "medium",
+    "tags": [
+      "cross-entropy",
+      "pytorch",
+      "logits",
+      "multiclass-classification"
+    ]
+  },
+  {
+    "id": "dee_0007",
+    "question": "Một nơ-ron có hai đầu vào x1=2, x2=3, trọng số w1=4, w2=-1 và bias b=2. Nếu không áp dụng hàm kích hoạt, đầu ra của nơ-ron là bao nhiêu?",
+    "option_a": "5",
+    "option_b": "7",
+    "option_c": "9",
+    "option_d": "11",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Neural Networks",
+    "difficulty": "easy",
+    "tags": [
+      "neuron",
+      "weighted-sum",
+      "bias",
+      "forward-pass"
+    ]
+  },
+  {
+    "id": "dee_0008",
+    "question": "Trong Gradient Descent, các tham số của mô hình thường được cập nhật theo hướng nào?",
+    "option_a": "Cùng hướng với gradient",
+    "option_b": "Ngược hướng với gradient",
+    "option_c": "Luôn theo một hướng ngẫu nhiên",
+    "option_d": "Không phụ thuộc vào gradient",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Optimization",
+    "difficulty": "easy",
+    "tags": [
+      "gradient-descent",
+      "gradient",
+      "optimization",
+      "parameter-update"
+    ]
+  },
+  {
+    "id": "dee_0009",
+    "question": "Nếu learning rate quá lớn trong quá trình huấn luyện mạng nơ-ron, hiện tượng nào có khả năng xảy ra nhất?",
+    "option_a": "Loss có thể dao động mạnh và mô hình không hội tụ",
+    "option_b": "Loss luôn giảm đều về 0",
+    "option_c": "Mô hình tự động giảm số tham số",
+    "option_d": "Không có bất kỳ ảnh hưởng nào",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Optimization",
+    "difficulty": "easy",
+    "tags": [
+      "learning-rate",
+      "optimization",
+      "convergence",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0010",
+    "question": "Nếu batch size quá nhỏ, gradient trong quá trình huấn luyện thường có đặc điểm nào?",
+    "option_a": "Ít nhiễu hơn đáng kể",
+    "option_b": "Nhiễu hơn và có thể gây dao động trong quá trình tối ưu",
+    "option_c": "Luôn bằng 0",
+    "option_d": "Không còn phụ thuộc vào dữ liệu",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Optimization",
+    "difficulty": "easy",
+    "tags": [
+      "batch-size",
+      "gradient-noise",
+      "mini-batch",
+      "optimization"
+    ]
+  },
+  {
+    "id": "dee_0011",
+    "question": "Điểm nổi bật của bộ tối ưu Adam là gì?",
+    "option_a": "Sử dụng cùng một learning rate hiệu dụng cho mọi tham số trong mọi thời điểm",
+    "option_b": "Kết hợp thông tin momentum và thích nghi learning rate cho từng tham số",
+    "option_c": "Không cần tính gradient",
+    "option_d": "Chỉ sử dụng được cho mô hình tuyến tính",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Optimization",
+    "difficulty": "medium",
+    "tags": [
+      "adam",
+      "adaptive-learning-rate",
+      "momentum",
+      "optimizer"
+    ]
+  },
+  {
+    "id": "dee_0012",
+    "question": "Tại sao việc khởi tạo tất cả trọng số trong một lớp ẩn bằng cùng giá trị 0 thường không phù hợp?",
+    "option_a": "Các neuron có thể học các đặc trưng giống nhau do vấn đề đối xứng",
+    "option_b": "Loss không thể được tính",
+    "option_c": "GPU sẽ bị đầy bộ nhớ ngay lập tức",
+    "option_d": "Dữ liệu đầu vào sẽ bị xóa",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Weight Initialization",
+    "difficulty": "medium",
+    "tags": [
+      "weight-initialization",
+      "symmetry-breaking",
+      "zero-initialization"
+    ]
+  },
+  {
+    "id": "dee_0013",
+    "question": "Kaiming Initialization được thiết kế đặc biệt phù hợp với các mạng sử dụng loại hàm kích hoạt nào?",
+    "option_a": "ReLU và các biến thể của ReLU",
+    "option_b": "Softmax ở mọi lớp",
+    "option_c": "Argmax",
+    "option_d": "Không sử dụng hàm kích hoạt",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Weight Initialization",
+    "difficulty": "medium",
+    "tags": [
+      "kaiming-initialization",
+      "he-initialization",
+      "relu",
+      "weight-initialization"
+    ]
+  },
+  {
+    "id": "dee_0014",
+    "question": "Trong PyTorch, Batch Normalization hoạt động khác nhau giữa model.train() và model.eval() chủ yếu ở điểm nào?",
+    "option_a": "Ở chế độ train sử dụng thống kê của batch và cập nhật running statistics, còn eval sử dụng running statistics đã lưu",
+    "option_b": "Ở chế độ eval toàn bộ trọng số bị xóa",
+    "option_c": "Ở chế độ train không tính được gradient",
+    "option_d": "Hai chế độ hoàn toàn giống nhau",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Normalization",
+    "difficulty": "medium",
+    "tags": [
+      "batch-normalization",
+      "train-mode",
+      "eval-mode",
+      "pytorch"
+    ]
+  },
+  {
+    "id": "dee_0015",
+    "question": "Một ưu điểm của Layer Normalization so với Batch Normalization là gì?",
+    "option_a": "Không phụ thuộc trực tiếp vào thống kê của các mẫu khác trong cùng mini-batch",
+    "option_b": "Không có tham số nào có thể học",
+    "option_c": "Chỉ sử dụng được cho ảnh",
+    "option_d": "Luôn làm mô hình nhỏ hơn",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Normalization",
+    "difficulty": "medium",
+    "tags": [
+      "layer-normalization",
+      "batch-normalization",
+      "transformer",
+      "normalization"
+    ]
+  },
+  {
+    "id": "dee_0016",
+    "question": "Dropout hoạt động như thế nào trong quá trình huấn luyện?",
+    "option_a": "Ngẫu nhiên vô hiệu hóa một phần các activation với xác suất xác định",
+    "option_b": "Xóa vĩnh viễn một số lớp của mô hình",
+    "option_c": "Tăng learning rate sau mỗi batch",
+    "option_d": "Nhân đôi số neuron",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Regularization",
+    "difficulty": "easy",
+    "tags": [
+      "dropout",
+      "regularization",
+      "overfitting",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0017",
+    "question": "Weight Decay thường được sử dụng với mục tiêu chính nào?",
+    "option_a": "Hạn chế trọng số quá lớn và hỗ trợ giảm overfitting",
+    "option_b": "Tăng kích thước mô hình",
+    "option_c": "Loại bỏ hoàn toàn gradient",
+    "option_d": "Tăng số lượng lớp của dataset",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Regularization",
+    "difficulty": "easy",
+    "tags": [
+      "weight-decay",
+      "regularization",
+      "l2",
+      "overfitting"
+    ]
+  },
+  {
+    "id": "dee_0018",
+    "question": "Early Stopping thường quyết định dừng huấn luyện dựa trên thông tin nào?",
+    "option_a": "Validation loss hoặc một metric trên validation set không còn cải thiện",
+    "option_b": "Training loss phải bằng chính xác 0",
+    "option_c": "Số lượng tham số phải giảm",
+    "option_d": "GPU phải đầy bộ nhớ",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Regularization",
+    "difficulty": "easy",
+    "tags": [
+      "early-stopping",
+      "validation-loss",
+      "regularization",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0019",
+    "question": "Training loss tiếp tục giảm nhưng validation loss bắt đầu tăng qua nhiều epoch. Điều này thường cho thấy hiện tượng nào?",
+    "option_a": "Underfitting",
+    "option_b": "Overfitting",
+    "option_c": "Gradient luôn bằng 0",
+    "option_d": "Dataset không có nhãn",
+    "correct_answer": "B",
+    "category": "Deep Learning",
+    "subcategory": "Training Diagnostics",
+    "difficulty": "easy",
+    "tags": [
+      "overfitting",
+      "validation-loss",
+      "training-loss",
+      "diagnostics"
+    ]
+  },
+  {
+    "id": "dee_0020",
+    "question": "Nếu cả training accuracy và validation accuracy đều thấp và không tăng đáng kể, nguyên nhân nào có khả năng nhất?",
+    "option_a": "Mô hình đang underfit dữ liệu",
+    "option_b": "Mô hình chắc chắn đang overfit",
+    "option_c": "Validation set quá tốt",
+    "option_d": "Dropout không bao giờ được sử dụng",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Training Diagnostics",
+    "difficulty": "easy",
+    "tags": [
+      "underfitting",
+      "training",
+      "validation",
+      "diagnostics"
+    ]
+  },
+  {
+    "id": "dee_0021",
+    "question": "Trong bài toán phân loại nhiều lớp bị mất cân bằng mạnh, lớp hiếm gần như không được mô hình dự đoán. Giải pháp nào hợp lý?",
+    "option_a": "Sử dụng class weights trong hàm mất mát",
+    "option_b": "Xóa hoàn toàn lớp hiếm",
+    "option_c": "Giảm số lớp đầu ra",
+    "option_d": "Luôn tăng learning rate lên 1",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Loss Functions",
+    "difficulty": "medium",
+    "tags": [
+      "class-imbalance",
+      "weighted-loss",
+      "cross-entropy",
+      "classification"
+    ]
+  },
+  {
+    "id": "dee_0022",
+    "question": "Gradient Clipping thường được sử dụng để xử lý vấn đề nào?",
+    "option_a": "Exploding gradient",
+    "option_b": "Data leakage",
+    "option_c": "Class imbalance",
+    "option_d": "Missing values",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Gradient Optimization",
+    "difficulty": "easy",
+    "tags": [
+      "gradient-clipping",
+      "exploding-gradient",
+      "training-stability"
+    ]
+  },
+  {
+    "id": "dee_0023",
+    "question": "Vanishing Gradient gây khó khăn cho việc huấn luyện mạng sâu vì lý do nào?",
+    "option_a": "Gradient truyền về các lớp đầu trở nên rất nhỏ khiến trọng số cập nhật chậm",
+    "option_b": "Gradient luôn trở thành vô hạn",
+    "option_c": "Số lượng dữ liệu tăng quá nhanh",
+    "option_d": "Mô hình tự động xóa các lớp đầu",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Gradient Optimization",
+    "difficulty": "medium",
+    "tags": [
+      "vanishing-gradient",
+      "backpropagation",
+      "deep-network"
+    ]
+  },
+  {
+    "id": "dee_0024",
+    "question": "Residual Connection trong các mạng sâu giúp quá trình huấn luyện chủ yếu bằng cách nào?",
+    "option_a": "Tạo đường truyền trực tiếp cho thông tin và gradient qua một số lớp",
+    "option_b": "Thay thế hoàn toàn hàm mất mát",
+    "option_c": "Loại bỏ mọi nonlinear activation",
+    "option_d": "Giảm dataset xuống một mẫu",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Network Architectures",
+    "difficulty": "medium",
+    "tags": [
+      "residual-connection",
+      "skip-connection",
+      "gradient-flow",
+      "deep-network"
+    ]
+  },
+  {
+    "id": "dee_0025",
+    "question": "Trong một mạng MLP phân loại nhị phân bằng BCEWithLogitsLoss, lớp đầu ra thường cần bao nhiêu logit cho mỗi mẫu?",
+    "option_a": "1",
+    "option_b": "2 bắt buộc trong mọi trường hợp",
+    "option_c": "Bằng số lượng feature đầu vào",
+    "option_d": "Không cần đầu ra",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Neural Networks",
+    "difficulty": "medium",
+    "tags": [
+      "mlp",
+      "binary-classification",
+      "bce-with-logits",
+      "output-layer"
+    ]
+  },
+  {
+    "id": "dee_0026",
+    "question": "Backpropagation được sử dụng để làm gì trong mạng nơ-ron?",
+    "option_a": "Tính gradient của loss đối với các tham số bằng quy tắc dây chuyền",
+    "option_b": "Chỉ thực hiện inference",
+    "option_c": "Tự động thu thập thêm dữ liệu",
+    "option_d": "Chuyển dữ liệu thành one-hot encoding",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Backpropagation",
+    "difficulty": "easy",
+    "tags": [
+      "backpropagation",
+      "chain-rule",
+      "gradient",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0027",
+    "question": "Embedding layer thường được sử dụng để làm gì?",
+    "option_a": "Ánh xạ các chỉ số rời rạc sang các vector liên tục có thể học",
+    "option_b": "Luôn giảm mọi vector về một scalar",
+    "option_c": "Thay thế optimizer",
+    "option_d": "Chỉ dùng để tính loss",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Representation Learning",
+    "difficulty": "easy",
+    "tags": [
+      "embedding",
+      "representation-learning",
+      "discrete-tokens",
+      "learnable-vector"
+    ]
+  },
+  {
+    "id": "dee_0028",
+    "question": "Trong RNN cơ bản, hidden state có vai trò chính nào?",
+    "option_a": "Mang thông tin từ các bước thời gian trước sang bước hiện tại",
+    "option_b": "Chỉ lưu learning rate",
+    "option_c": "Thay thế toàn bộ dữ liệu đầu vào",
+    "option_d": "Chỉ được sử dụng khi inference",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Sequence Models",
+    "difficulty": "easy",
+    "tags": [
+      "rnn",
+      "hidden-state",
+      "sequence-modeling"
+    ]
+  },
+  {
+    "id": "dee_0029",
+    "question": "LSTM được phát triển chủ yếu để cải thiện hạn chế nào của RNN truyền thống?",
+    "option_a": "Khó học các phụ thuộc dài hạn do vanishing gradient",
+    "option_b": "Không thể nhận dữ liệu số",
+    "option_c": "Không thể sử dụng GPU",
+    "option_d": "Không thể tính loss",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Sequence Models",
+    "difficulty": "easy",
+    "tags": [
+      "lstm",
+      "rnn",
+      "long-term-dependency",
+      "vanishing-gradient"
+    ]
+  },
+  {
+    "id": "dee_0030",
+    "question": "Trong LSTM, Forget Gate có chức năng chính nào?",
+    "option_a": "Quyết định phần thông tin nào của cell state cũ nên được giữ lại hoặc loại bỏ",
+    "option_b": "Tính learning rate mới",
+    "option_c": "Chọn class cuối cùng",
+    "option_d": "Chuẩn hóa toàn bộ batch",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Sequence Models",
+    "difficulty": "medium",
+    "tags": [
+      "lstm",
+      "forget-gate",
+      "cell-state",
+      "sequence-modeling"
+    ]
+  },
+  {
+    "id": "dee_0031",
+    "question": "Cơ chế Attention cho phép mô hình thực hiện điều gì?",
+    "option_a": "Gán mức độ quan trọng khác nhau cho các phần của đầu vào khi tạo biểu diễn",
+    "option_b": "Loại bỏ hoàn toàn nhu cầu về dữ liệu",
+    "option_c": "Chỉ tăng kích thước batch",
+    "option_d": "Thay thế optimizer",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Attention",
+    "difficulty": "easy",
+    "tags": [
+      "attention",
+      "context",
+      "representation-learning"
+    ]
+  },
+  {
+    "id": "dee_0032",
+    "question": "Tại sao Transformer cần Positional Encoding hoặc một cơ chế biểu diễn vị trí tương đương?",
+    "option_a": "Self-attention cơ bản không tự chứa thông tin về thứ tự token",
+    "option_b": "Để giảm learning rate",
+    "option_c": "Để biến Transformer thành CNN",
+    "option_d": "Để xóa padding khỏi dataset",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Transformers",
+    "difficulty": "medium",
+    "tags": [
+      "transformer",
+      "positional-encoding",
+      "self-attention",
+      "sequence-order"
+    ]
+  },
+  {
+    "id": "dee_0033",
+    "question": "Multi-Head Attention có ưu điểm chính nào so với chỉ sử dụng một attention head?",
+    "option_a": "Cho phép mô hình học nhiều kiểu quan hệ hoặc không gian biểu diễn khác nhau song song",
+    "option_b": "Loại bỏ hoàn toàn phép nhân ma trận",
+    "option_c": "Không cần train",
+    "option_d": "Giảm sequence length về 1",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Transformers",
+    "difficulty": "medium",
+    "tags": [
+      "multi-head-attention",
+      "transformer",
+      "self-attention"
+    ]
+  },
+  {
+    "id": "dee_0034",
+    "question": "Causal Mask trong mô hình ngôn ngữ tự hồi quy được sử dụng để làm gì?",
+    "option_a": "Ngăn mỗi token chú ý tới các token nằm ở tương lai",
+    "option_b": "Ngăn token chú ý tới chính nó trong mọi trường hợp",
+    "option_c": "Xóa tất cả padding token khỏi vocabulary",
+    "option_d": "Tăng số attention head",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Transformers",
+    "difficulty": "medium",
+    "tags": [
+      "causal-mask",
+      "autoregressive",
+      "transformer",
+      "attention"
+    ]
+  },
+  {
+    "id": "dee_0035",
+    "question": "Trong học tự giám sát, mục tiêu chính của Contrastive Learning là gì?",
+    "option_a": "Đưa biểu diễn của các mẫu liên quan lại gần nhau và các mẫu không liên quan ra xa nhau",
+    "option_b": "Làm mọi embedding giống hệt nhau",
+    "option_c": "Chỉ huấn luyện classifier cuối cùng",
+    "option_d": "Luôn yêu cầu nhãn thủ công cho từng mẫu",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Self-Supervised Learning",
+    "difficulty": "medium",
+    "tags": [
+      "contrastive-learning",
+      "self-supervised-learning",
+      "embedding",
+      "representation-learning"
+    ]
+  },
+  {
+    "id": "dee_0036",
+    "question": "Trong một contrastive loss kiểu InfoNCE, temperature quá nhỏ thường có tác động nào?",
+    "option_a": "Làm phân phối similarity sau Softmax sắc nét hơn và nhấn mạnh mạnh hơn các khác biệt similarity",
+    "option_b": "Làm mọi similarity luôn bằng 0",
+    "option_c": "Loại bỏ hoàn toàn negative samples",
+    "option_d": "Biến loss thành MSE",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Self-Supervised Learning",
+    "difficulty": "hard",
+    "tags": [
+      "infonce",
+      "temperature",
+      "contrastive-learning",
+      "softmax"
+    ]
+  },
+  {
+    "id": "dee_0037",
+    "question": "Autoencoder cơ bản được huấn luyện với mục tiêu nào?",
+    "option_a": "Mã hóa đầu vào thành biểu diễn latent rồi tái tạo lại đầu vào",
+    "option_b": "Chỉ dự đoán class label",
+    "option_c": "Chỉ tính cosine similarity",
+    "option_d": "Tạo decision tree",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Autoencoders",
+    "difficulty": "easy",
+    "tags": [
+      "autoencoder",
+      "encoder",
+      "decoder",
+      "reconstruction"
+    ]
+  },
+  {
+    "id": "dee_0038",
+    "question": "Điểm khác biệt quan trọng của Variational Autoencoder so với Autoencoder cơ bản là gì?",
+    "option_a": "VAE học một phân phối latent và cho phép lấy mẫu để sinh dữ liệu mới",
+    "option_b": "VAE không có encoder",
+    "option_c": "VAE không sử dụng neural network",
+    "option_d": "VAE chỉ áp dụng cho regression",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Generative Models",
+    "difficulty": "medium",
+    "tags": [
+      "vae",
+      "latent-distribution",
+      "generative-model",
+      "reparameterization"
+    ]
+  },
+  {
+    "id": "dee_0039",
+    "question": "GAN gồm hai mạng chính nào?",
+    "option_a": "Generator và Discriminator",
+    "option_b": "Encoder và Tokenizer",
+    "option_c": "Classifier và Regressor",
+    "option_d": "Attention và Softmax",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Generative Models",
+    "difficulty": "easy",
+    "tags": [
+      "gan",
+      "generator",
+      "discriminator",
+      "generative-model"
+    ]
+  },
+  {
+    "id": "dee_0040",
+    "question": "Mode Collapse trong GAN mô tả hiện tượng nào?",
+    "option_a": "Generator chỉ sinh ra một số ít kiểu mẫu giống nhau và mất tính đa dạng",
+    "option_b": "Discriminator luôn có loss bằng 1",
+    "option_c": "Dataset bị mất tất cả nhãn",
+    "option_d": "Learning rate tự động giảm về 0",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Generative Models",
+    "difficulty": "medium",
+    "tags": [
+      "gan",
+      "mode-collapse",
+      "generator",
+      "training-instability"
+    ]
+  },
+  {
+    "id": "dee_0041",
+    "question": "Trong Diffusion Model, mô hình thường học nhiệm vụ nào trong quá trình huấn luyện?",
+    "option_a": "Dự đoán hoặc loại bỏ nhiễu khỏi dữ liệu đã được thêm nhiễu",
+    "option_b": "Chỉ dự đoán class label",
+    "option_c": "Sắp xếp dữ liệu theo thứ tự",
+    "option_d": "Xây dựng cây quyết định",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Generative Models",
+    "difficulty": "medium",
+    "tags": [
+      "diffusion",
+      "denoising",
+      "noise-prediction",
+      "generative-model"
+    ]
+  },
+  {
+    "id": "dee_0042",
+    "question": "Khi fine-tune một mô hình pretrained lớn trên dataset nhỏ, chiến lược nào thường hợp lý hơn ở giai đoạn đầu?",
+    "option_a": "Sử dụng learning rate tương đối nhỏ và có thể chỉ cập nhật một phần tham số",
+    "option_b": "Khởi tạo lại toàn bộ trọng số ngẫu nhiên",
+    "option_c": "Luôn sử dụng learning rate lớn hơn 1",
+    "option_d": "Xóa toàn bộ dữ liệu pretrained",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Transfer Learning",
+    "difficulty": "medium",
+    "tags": [
+      "fine-tuning",
+      "pretrained-model",
+      "learning-rate",
+      "transfer-learning"
+    ]
+  },
+  {
+    "id": "dee_0043",
+    "question": "Ý tưởng chính của LoRA khi fine-tune mô hình lớn là gì?",
+    "option_a": "Giữ phần lớn trọng số gốc cố định và học các ma trận cập nhật hạng thấp",
+    "option_b": "Xóa một nửa dataset",
+    "option_c": "Huấn luyện lại toàn bộ mô hình bằng CPU",
+    "option_d": "Thay toàn bộ linear layer bằng decision tree",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Parameter-Efficient Fine-Tuning",
+    "difficulty": "hard",
+    "tags": [
+      "lora",
+      "peft",
+      "low-rank-adaptation",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "dee_0044",
+    "question": "Mixed Precision Training với FP16 hoặc BF16 được sử dụng chủ yếu nhằm mục đích gì?",
+    "option_a": "Giảm mức sử dụng bộ nhớ và tăng tốc tính toán trên phần cứng hỗ trợ",
+    "option_b": "Tăng số lượng tham số mô hình",
+    "option_c": "Loại bỏ hoàn toàn sai số số học",
+    "option_d": "Thay optimizer bằng k-NN",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Efficient Training",
+    "difficulty": "medium",
+    "tags": [
+      "mixed-precision",
+      "fp16",
+      "bf16",
+      "memory-optimization"
+    ]
+  },
+  {
+    "id": "dee_0045",
+    "question": "Gradient Accumulation hữu ích nhất trong tình huống nào?",
+    "option_a": "Khi GPU không đủ bộ nhớ cho batch size mong muốn",
+    "option_b": "Khi muốn xóa gradient vĩnh viễn",
+    "option_c": "Khi không có training data",
+    "option_d": "Khi muốn thay đổi số class sau mỗi batch",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Efficient Training",
+    "difficulty": "medium",
+    "tags": [
+      "gradient-accumulation",
+      "batch-size",
+      "gpu-memory",
+      "training"
+    ]
+  },
+  {
+    "id": "dee_0046",
+    "question": "Gradient Checkpointing giúp giảm mức sử dụng bộ nhớ khi huấn luyện bằng cách nào?",
+    "option_a": "Không lưu tất cả activation trung gian và tính lại một số activation trong backward pass",
+    "option_b": "Xóa một nửa trọng số mô hình vĩnh viễn",
+    "option_c": "Không thực hiện backward pass",
+    "option_d": "Chuyển mọi tham số thành số nguyên 1 bit",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Efficient Training",
+    "difficulty": "hard",
+    "tags": [
+      "gradient-checkpointing",
+      "activation-memory",
+      "recomputation",
+      "memory-optimization"
+    ]
+  },
+  {
+    "id": "dee_0047",
+    "question": "Knowledge Distillation thường được sử dụng để làm gì?",
+    "option_a": "Truyền kiến thức từ một mô hình teacher lớn sang một mô hình student nhỏ hơn",
+    "option_b": "Ghép hai dataset thành một",
+    "option_c": "Tăng batch size vô hạn",
+    "option_d": "Loại bỏ toàn bộ nhãn khỏi bài toán supervised",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Model Compression",
+    "difficulty": "medium",
+    "tags": [
+      "knowledge-distillation",
+      "teacher-student",
+      "model-compression"
+    ]
+  },
+  {
+    "id": "dee_0048",
+    "question": "Trong kiến trúc Mixture of Experts, router thường có nhiệm vụ gì?",
+    "option_a": "Chọn một hoặc một số expert phù hợp để xử lý từng token hoặc mẫu đầu vào",
+    "option_b": "Thay thế tokenizer bằng ảnh",
+    "option_c": "Tính validation accuracy",
+    "option_d": "Loại bỏ toàn bộ feed-forward layer",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Mixture of Experts",
+    "difficulty": "hard",
+    "tags": [
+      "mixture-of-experts",
+      "moe",
+      "router",
+      "sparse-activation"
+    ]
+  },
+  {
+    "id": "dee_0049",
+    "question": "Quantization một mô hình từ FP32 xuống INT8 thường đem lại lợi ích nào?",
+    "option_a": "Giảm dung lượng mô hình và có thể tăng tốc inference trên phần cứng phù hợp",
+    "option_b": "Luôn làm accuracy tăng",
+    "option_c": "Tăng số lượng tham số gấp 4 lần",
+    "option_d": "Loại bỏ nhu cầu calibration trong mọi phương pháp",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Model Compression",
+    "difficulty": "medium",
+    "tags": [
+      "quantization",
+      "int8",
+      "model-compression",
+      "inference"
+    ]
+  },
+  {
+    "id": "dee_0050",
+    "question": "Ý tưởng chính của FlashAttention là gì?",
+    "option_a": "Tính exact attention theo cách tối ưu truy cập bộ nhớ để giảm lượng đọc ghi giữa bộ nhớ GPU và các đơn vị tính toán",
+    "option_b": "Xấp xỉ attention bằng cách bỏ ngẫu nhiên toàn bộ key",
+    "option_c": "Thay attention bằng convolution 1×1",
+    "option_d": "Chỉ giảm số lượng token bằng cách xóa một nửa sequence",
+    "correct_answer": "A",
+    "category": "Deep Learning",
+    "subcategory": "Efficient Transformers",
+    "difficulty": "hard",
+    "tags": [
+      "flash-attention",
+      "attention",
+      "transformer",
+      "memory-efficiency"
+    ]
+  }
+]

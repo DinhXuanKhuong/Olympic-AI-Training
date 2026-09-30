@@ -1,0 +1,887 @@
+[
+  {
+    "id": "nlp_0001",
+    "question": "Phương pháp GloVe tạo biểu diễn vector cho từ chủ yếu dựa trên thông tin nào?",
+    "option_a": "Ma trận đồng xuất hiện từ trên toàn bộ kho văn bản",
+    "option_b": "Cơ chế self-attention của Transformer",
+    "option_c": "Nhãn phân loại của từng câu",
+    "option_d": "Các ảnh tương ứng với từng từ",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Word Embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "glove",
+      "word-embedding",
+      "co-occurrence",
+      "nlp"
+    ]
+  },
+  {
+    "id": "nlp_0002",
+    "question": "Trong biểu diễn Bag-of-Words, thông tin nào thường bị bỏ qua?",
+    "option_a": "Tần suất xuất hiện của từ",
+    "option_b": "Thứ tự và cấu trúc của các từ trong câu",
+    "option_c": "Kích thước từ vựng",
+    "option_d": "Số lượng tài liệu",
+    "correct_answer": "B",
+    "category": "Natural Language Processing",
+    "subcategory": "Text Representation",
+    "difficulty": "easy",
+    "tags": [
+      "bag-of-words",
+      "text-representation",
+      "word-order"
+    ]
+  },
+  {
+    "id": "nlp_0003",
+    "question": "Trong TF-IDF, một từ xuất hiện rất nhiều trong một tài liệu nhưng cũng xuất hiện trong gần như mọi tài liệu của tập dữ liệu thường có trọng số như thế nào?",
+    "option_a": "Rất cao do TF luôn chi phối",
+    "option_b": "Tương đối thấp vì thành phần IDF giảm",
+    "option_c": "Luôn bằng 1",
+    "option_d": "Không thể tính được",
+    "correct_answer": "B",
+    "category": "Natural Language Processing",
+    "subcategory": "Text Representation",
+    "difficulty": "medium",
+    "tags": [
+      "tf-idf",
+      "term-frequency",
+      "inverse-document-frequency"
+    ]
+  },
+  {
+    "id": "nlp_0004",
+    "question": "Tokenization trong xử lý ngôn ngữ tự nhiên có mục đích chính nào?",
+    "option_a": "Chia văn bản thành các đơn vị nhỏ hơn như từ, subword hoặc token",
+    "option_b": "Dịch văn bản sang ngôn ngữ khác",
+    "option_c": "Loại bỏ toàn bộ dấu câu bắt buộc",
+    "option_d": "Tính accuracy của mô hình",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Text Preprocessing",
+    "difficulty": "easy",
+    "tags": [
+      "tokenization",
+      "token",
+      "text-preprocessing"
+    ]
+  },
+  {
+    "id": "nlp_0005",
+    "question": "Điểm khác biệt điển hình giữa stemming và lemmatization là gì?",
+    "option_a": "Stemming thường cắt từ theo quy tắc đơn giản, còn lemmatization cố gắng đưa từ về dạng từ điển hợp lệ",
+    "option_b": "Stemming luôn chính xác hơn lemmatization",
+    "option_c": "Lemmatization không liên quan đến ngôn ngữ",
+    "option_d": "Hai kỹ thuật hoàn toàn giống nhau",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Text Preprocessing",
+    "difficulty": "medium",
+    "tags": [
+      "stemming",
+      "lemmatization",
+      "normalization"
+    ]
+  },
+  {
+    "id": "nlp_0006",
+    "question": "Mục đích phổ biến của việc loại bỏ stopword trong một pipeline NLP cổ điển là gì?",
+    "option_a": "Giảm các từ ít mang nội dung và giảm độ phức tạp biểu diễn",
+    "option_b": "Tăng độ dài tất cả câu",
+    "option_c": "Tạo thêm nhãn cho dữ liệu",
+    "option_d": "Biến mọi từ thành embedding",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Text Preprocessing",
+    "difficulty": "easy",
+    "tags": [
+      "stopwords",
+      "text-cleaning",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "nlp_0007",
+    "question": "Mục tiêu huấn luyện của mô hình CBOW trong Word2Vec là gì?",
+    "option_a": "Dùng từ trung tâm để dự đoán các từ xung quanh",
+    "option_b": "Dùng các từ xung quanh để dự đoán từ trung tâm",
+    "option_c": "Dự đoán toàn bộ câu tiếp theo",
+    "option_d": "Sinh ảnh từ văn bản",
+    "correct_answer": "B",
+    "category": "Natural Language Processing",
+    "subcategory": "Word Embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "cbow",
+      "word2vec",
+      "word-embedding"
+    ]
+  },
+  {
+    "id": "nlp_0008",
+    "question": "Mục tiêu huấn luyện của Skip-gram trong Word2Vec là gì?",
+    "option_a": "Dùng các từ ngữ cảnh để dự đoán từ trung tâm",
+    "option_b": "Dùng từ trung tâm để dự đoán các từ ngữ cảnh",
+    "option_c": "Chỉ tính TF-IDF",
+    "option_d": "Phân cụm các câu",
+    "correct_answer": "B",
+    "category": "Natural Language Processing",
+    "subcategory": "Word Embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "skip-gram",
+      "word2vec",
+      "context-word"
+    ]
+  },
+  {
+    "id": "nlp_0009",
+    "question": "Negative Sampling trong Word2Vec được sử dụng chủ yếu nhằm mục đích gì?",
+    "option_a": "Giảm chi phí tính toán so với việc cập nhật trên toàn bộ từ vựng",
+    "option_b": "Tăng kích thước từ vựng",
+    "option_c": "Loại bỏ toàn bộ từ hiếm",
+    "option_d": "Sinh thêm câu huấn luyện bằng LLM",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Word Embeddings",
+    "difficulty": "medium",
+    "tags": [
+      "negative-sampling",
+      "word2vec",
+      "optimization"
+    ]
+  },
+  {
+    "id": "nlp_0010",
+    "question": "Nếu hai embedding đã được chuẩn hóa L2, cosine similarity giữa chúng bằng đại lượng nào?",
+    "option_a": "Tích vô hướng của hai vector",
+    "option_b": "Khoảng cách Manhattan",
+    "option_c": "Tổng norm của hai vector",
+    "option_d": "Định thức của hai vector",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Embedding Similarity",
+    "difficulty": "medium",
+    "tags": [
+      "cosine-similarity",
+      "embedding",
+      "l2-normalization",
+      "dot-product"
+    ]
+  },
+  {
+    "id": "nlp_0011",
+    "question": "Đầu vào tiêu chuẩn của BERT thường bao gồm các thành phần nào?",
+    "option_a": "input_ids, attention_mask và có thể có token_type_ids",
+    "option_b": "Chỉ raw text và nhãn",
+    "option_c": "Chỉ một vector one-hot duy nhất",
+    "option_d": "Ảnh RGB và bounding box",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "BERT",
+    "difficulty": "easy",
+    "tags": [
+      "bert",
+      "input-ids",
+      "attention-mask",
+      "token-type-ids"
+    ]
+  },
+  {
+    "id": "nlp_0012",
+    "question": "Masked Language Modeling trong BERT được thực hiện theo ý tưởng nào?",
+    "option_a": "Che một số token đầu vào và yêu cầu mô hình dự đoán các token bị che",
+    "option_b": "Chỉ dự đoán token tiếp theo từ trái sang phải",
+    "option_c": "Xóa toàn bộ câu cuối",
+    "option_d": "Dự đoán nhãn ảnh",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "BERT",
+    "difficulty": "easy",
+    "tags": [
+      "bert",
+      "masked-language-modeling",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "nlp_0013",
+    "question": "GPT kiểu autoregressive được huấn luyện cơ bản bằng nhiệm vụ nào?",
+    "option_a": "Dự đoán token tiếp theo dựa trên các token trước đó",
+    "option_b": "Che token ngẫu nhiên ở cả hai phía rồi dự đoán",
+    "option_c": "Chỉ phân loại câu",
+    "option_d": "Tính TF-IDF",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Large Language Models",
+    "difficulty": "easy",
+    "tags": [
+      "gpt",
+      "autoregressive",
+      "next-token-prediction",
+      "language-model"
+    ]
+  },
+  {
+    "id": "nlp_0014",
+    "question": "Cơ chế self-attention trong Transformer giúp mô hình làm gì?",
+    "option_a": "Mỗi token có thể tổng hợp thông tin từ các token khác dựa trên mức độ liên quan",
+    "option_b": "Loại bỏ hoàn toàn embedding",
+    "option_c": "Chỉ nhìn token ngay trước nó trong mọi Transformer",
+    "option_d": "Thay thế toàn bộ quá trình huấn luyện",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Transformers",
+    "difficulty": "easy",
+    "tags": [
+      "self-attention",
+      "transformer",
+      "attention"
+    ]
+  },
+  {
+    "id": "nlp_0015",
+    "question": "Tại sao Transformer cần positional encoding hoặc một cơ chế biểu diễn vị trí tương đương?",
+    "option_a": "Self-attention cơ bản không tự mã hóa thứ tự token",
+    "option_b": "Để giảm vocabulary về một từ",
+    "option_c": "Để tạo thêm dữ liệu huấn luyện",
+    "option_d": "Để thay Softmax bằng sigmoid",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Transformers",
+    "difficulty": "medium",
+    "tags": [
+      "positional-encoding",
+      "transformer",
+      "sequence-order"
+    ]
+  },
+  {
+    "id": "nlp_0016",
+    "question": "Causal Attention Mask trong mô hình ngôn ngữ decoder-only có chức năng gì?",
+    "option_a": "Ngăn token hiện tại nhìn thấy các token nằm ở tương lai",
+    "option_b": "Ngăn token nhìn thấy toàn bộ quá khứ",
+    "option_c": "Xóa padding khỏi vocabulary",
+    "option_d": "Đưa mọi attention weight về 0",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Transformers",
+    "difficulty": "medium",
+    "tags": [
+      "causal-mask",
+      "decoder-only",
+      "autoregressive",
+      "attention"
+    ]
+  },
+  {
+    "id": "nlp_0017",
+    "question": "Kiến trúc encoder-decoder Transformer đặc biệt phù hợp với nhóm bài toán nào?",
+    "option_a": "Ánh xạ một chuỗi đầu vào thành một chuỗi đầu ra như dịch máy hoặc tóm tắt",
+    "option_b": "Chỉ clustering không giám sát",
+    "option_c": "Chỉ hồi quy tuyến tính",
+    "option_d": "Chỉ xử lý bảng dữ liệu",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Transformers",
+    "difficulty": "easy",
+    "tags": [
+      "encoder-decoder",
+      "transformer",
+      "sequence-to-sequence",
+      "machine-translation"
+    ]
+  },
+  {
+    "id": "nlp_0018",
+    "question": "Khi fine-tune BERT cho bài toán phân loại văn bản, thao tác phổ biến là gì?",
+    "option_a": "Gắn một classification head lên biểu diễn đầu ra phù hợp rồi huấn luyện cho nhãn đích",
+    "option_b": "Xóa toàn bộ Transformer encoder",
+    "option_c": "Chuyển BERT thành k-NN",
+    "option_d": "Không sử dụng loss",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "BERT",
+    "difficulty": "easy",
+    "tags": [
+      "bert",
+      "fine-tuning",
+      "text-classification"
+    ]
+  },
+  {
+    "id": "nlp_0019",
+    "question": "Kỹ thuật Chain-of-Thought prompting hướng tới điều gì?",
+    "option_a": "Khuyến khích mô hình tạo các bước suy luận trung gian trước khi đưa ra kết quả",
+    "option_b": "Ép mô hình chỉ trả lời một từ",
+    "option_c": "Giảm vocabulary của mô hình",
+    "option_d": "Huấn luyện lại tokenizer",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Prompt Engineering",
+    "difficulty": "easy",
+    "tags": [
+      "chain-of-thought",
+      "prompting",
+      "reasoning"
+    ]
+  },
+  {
+    "id": "nlp_0020",
+    "question": "Few-shot prompting là gì?",
+    "option_a": "Đưa một số ví dụ đầu vào-đầu ra vào prompt trước yêu cầu mới",
+    "option_b": "Fine-tune toàn bộ mô hình với vài triệu mẫu",
+    "option_c": "Không cung cấp bất kỳ hướng dẫn nào",
+    "option_d": "Chỉ giảm temperature",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Prompt Engineering",
+    "difficulty": "easy",
+    "tags": [
+      "few-shot",
+      "prompting",
+      "in-context-learning"
+    ]
+  },
+  {
+    "id": "nlp_0021",
+    "question": "Instruction Tuning chủ yếu nhằm mục đích gì?",
+    "option_a": "Huấn luyện mô hình trên nhiều cặp chỉ dẫn và phản hồi để cải thiện khả năng làm theo yêu cầu",
+    "option_b": "Chỉ tăng context window",
+    "option_c": "Thay tokenizer bằng CNN",
+    "option_d": "Nén mọi embedding về một chiều",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "LLM Alignment",
+    "difficulty": "medium",
+    "tags": [
+      "instruction-tuning",
+      "llm",
+      "alignment",
+      "supervised-fine-tuning"
+    ]
+  },
+  {
+    "id": "nlp_0022",
+    "question": "Trong Retrieval-Augmented Generation, bước retrieval có vai trò chính nào?",
+    "option_a": "Tìm các tài liệu hoặc đoạn văn liên quan để cung cấp thêm ngữ cảnh cho mô hình sinh",
+    "option_b": "Thay thế toàn bộ language model",
+    "option_c": "Chỉ tính perplexity",
+    "option_d": "Tự động tăng số tham số của LLM",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Retrieval-Augmented Generation",
+    "difficulty": "easy",
+    "tags": [
+      "rag",
+      "retrieval",
+      "generation",
+      "grounding"
+    ]
+  },
+  {
+    "id": "nlp_0023",
+    "question": "Trong semantic retrieval, tại sao embedding thường được sử dụng thay vì chỉ so khớp từ khóa?",
+    "option_a": "Embedding có thể biểu diễn mức độ tương đồng ngữ nghĩa ngay cả khi hai đoạn không dùng đúng cùng từ",
+    "option_b": "Embedding đảm bảo retrieval chính xác 100%",
+    "option_c": "Embedding không cần tính toán",
+    "option_d": "Embedding chỉ chứa ID của tài liệu",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Information Retrieval",
+    "difficulty": "easy",
+    "tags": [
+      "semantic-search",
+      "embedding",
+      "retrieval",
+      "vector-search"
+    ]
+  },
+  {
+    "id": "nlp_0024",
+    "question": "Trong RAG, nếu chia tài liệu thành các chunk quá nhỏ, rủi ro nào dễ xảy ra?",
+    "option_a": "Mất ngữ cảnh cần thiết giữa các phần của tài liệu",
+    "option_b": "Context window của LLM tự động tăng",
+    "option_c": "Embedding luôn trở thành vector 0",
+    "option_d": "Không thể sử dụng tokenizer",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Retrieval-Augmented Generation",
+    "difficulty": "medium",
+    "tags": [
+      "rag",
+      "chunking",
+      "context",
+      "retrieval"
+    ]
+  },
+  {
+    "id": "nlp_0025",
+    "question": "Ý tưởng chính của LoRA khi fine-tune một LLM là gì?",
+    "option_a": "Giữ phần lớn trọng số gốc cố định và học các cập nhật hạng thấp",
+    "option_b": "Khởi tạo lại toàn bộ mô hình",
+    "option_c": "Chỉ thay đổi tokenizer",
+    "option_d": "Xóa các attention layer",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Parameter-Efficient Fine-Tuning",
+    "difficulty": "medium",
+    "tags": [
+      "lora",
+      "peft",
+      "low-rank-adaptation",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "nlp_0026",
+    "question": "Quantization một LLM từ FP16 xuống INT8 hoặc mức bit thấp hơn thường nhằm mục đích gì?",
+    "option_a": "Giảm bộ nhớ và chi phí inference, với khả năng đánh đổi một phần độ chính xác",
+    "option_b": "Tăng số tham số của mô hình",
+    "option_c": "Tăng độ dài dữ liệu huấn luyện",
+    "option_d": "Loại bỏ attention",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Efficient LLMs",
+    "difficulty": "medium",
+    "tags": [
+      "quantization",
+      "int8",
+      "llm",
+      "inference"
+    ]
+  },
+  {
+    "id": "nlp_0027",
+    "question": "Trong RLHF, reward model thường được sử dụng để làm gì?",
+    "option_a": "Ước lượng mức độ phù hợp hoặc được ưa thích của các phản hồi dựa trên dữ liệu preference",
+    "option_b": "Thay thế tokenizer",
+    "option_c": "Sinh embedding ảnh",
+    "option_d": "Chỉ tính độ dài câu",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "LLM Alignment",
+    "difficulty": "medium",
+    "tags": [
+      "rlhf",
+      "reward-model",
+      "human-preference",
+      "alignment"
+    ]
+  },
+  {
+    "id": "nlp_0028",
+    "question": "Điểm nổi bật của Direct Preference Optimization (DPO) là gì?",
+    "option_a": "Tối ưu trực tiếp từ các cặp phản hồi được ưa thích và không được ưa thích mà không cần huấn luyện một reward model riêng trong quy trình DPO chuẩn",
+    "option_b": "Không cần dữ liệu preference",
+    "option_c": "Chỉ dùng cho speech recognition",
+    "option_d": "Thay toàn bộ LLM bằng SVM",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "LLM Alignment",
+    "difficulty": "hard",
+    "tags": [
+      "dpo",
+      "preference-learning",
+      "alignment",
+      "llm"
+    ]
+  },
+  {
+    "id": "nlp_0029",
+    "question": "Trong một hệ thống hỏi đáp dựa trên tài liệu, biện pháp nào thường giúp giảm hallucination?",
+    "option_a": "Ground câu trả lời vào tài liệu được retrieval và yêu cầu mô hình chỉ trả lời từ bằng chứng liên quan",
+    "option_b": "Luôn tăng temperature",
+    "option_c": "Xóa toàn bộ context",
+    "option_d": "Tăng số token sinh ra vô hạn",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "LLM Reliability",
+    "difficulty": "medium",
+    "tags": [
+      "hallucination",
+      "grounding",
+      "rag",
+      "factuality"
+    ]
+  },
+  {
+    "id": "nlp_0030",
+    "question": "Trong một LLM agent, tool calling cho phép mô hình thực hiện điều gì?",
+    "option_a": "Yêu cầu thực thi các công cụ bên ngoài như tìm kiếm, calculator hoặc API khi cần",
+    "option_b": "Tự thay đổi trọng số của chính nó sau mỗi câu hỏi",
+    "option_c": "Tự động tăng GPU RAM",
+    "option_d": "Bỏ qua hoàn toàn prompt",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "LLM Agents",
+    "difficulty": "easy",
+    "tags": [
+      "tool-calling",
+      "agents",
+      "langchain",
+      "function-calling"
+    ]
+  },
+  {
+    "id": "nlp_0031",
+    "question": "KV Cache trong quá trình sinh văn bản autoregressive được sử dụng chủ yếu để làm gì?",
+    "option_a": "Lưu key và value của các token trước để tránh tính lại chúng ở mỗi bước sinh",
+    "option_b": "Lưu toàn bộ training dataset trên GPU",
+    "option_c": "Thay thế positional encoding",
+    "option_d": "Giảm vocabulary",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Efficient LLM Inference",
+    "difficulty": "hard",
+    "tags": [
+      "kv-cache",
+      "autoregressive-decoding",
+      "inference",
+      "transformer"
+    ]
+  },
+  {
+    "id": "nlp_0032",
+    "question": "Ý tưởng chính của Speculative Decoding là gì?",
+    "option_a": "Dùng một mô hình draft nhỏ đề xuất nhiều token và để mô hình lớn xác minh chúng",
+    "option_b": "Luôn bỏ qua một nửa token đầu vào",
+    "option_c": "Thay Transformer bằng RNN",
+    "option_d": "Chỉ sinh một token duy nhất",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Efficient LLM Inference",
+    "difficulty": "hard",
+    "tags": [
+      "speculative-decoding",
+      "draft-model",
+      "inference",
+      "latency"
+    ]
+  },
+  {
+    "id": "nlp_0033",
+    "question": "Trong kiến trúc Mixture of Experts, router thường thực hiện nhiệm vụ gì?",
+    "option_a": "Chọn một tập nhỏ expert để xử lý từng token",
+    "option_b": "Chuyển mọi token đến tất cả expert bắt buộc",
+    "option_c": "Tính Word Error Rate",
+    "option_d": "Loại bỏ embedding",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Large Language Models",
+    "difficulty": "hard",
+    "tags": [
+      "mixture-of-experts",
+      "moe",
+      "router",
+      "sparse-activation"
+    ]
+  },
+  {
+    "id": "nlp_0034",
+    "question": "RoPE trong Transformer được sử dụng chủ yếu để làm gì?",
+    "option_a": "Mã hóa thông tin vị trí bằng phép quay trên các thành phần của query và key",
+    "option_b": "Nén vocabulary bằng Huffman Coding",
+    "option_c": "Thay Softmax bằng k-NN",
+    "option_d": "Tạo nhãn cho dữ liệu",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Transformers",
+    "difficulty": "hard",
+    "tags": [
+      "rope",
+      "rotary-position-embedding",
+      "transformer",
+      "position-encoding"
+    ]
+  },
+  {
+    "id": "nlp_0035",
+    "question": "Perplexity thấp hơn trên cùng một tập đánh giá thường có ý nghĩa gì đối với một language model?",
+    "option_a": "Mô hình gán xác suất cao hơn cho chuỗi quan sát được",
+    "option_b": "Mô hình chắc chắn sinh văn bản tốt hơn ở mọi tiêu chí",
+    "option_c": "Vocabulary lớn hơn",
+    "option_d": "Context window ngắn hơn",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Language Model Evaluation",
+    "difficulty": "medium",
+    "tags": [
+      "perplexity",
+      "language-model",
+      "evaluation",
+      "cross-entropy"
+    ]
+  },
+  {
+    "id": "nlp_0036",
+    "question": "BLEU thường được sử dụng để đánh giá bài toán nào bằng cách so sánh mức độ trùng khớp n-gram giữa đầu ra và câu tham chiếu?",
+    "option_a": "Machine Translation",
+    "option_b": "Speaker Verification",
+    "option_c": "Image Segmentation",
+    "option_d": "K-means Clustering",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "NLP Evaluation",
+    "difficulty": "easy",
+    "tags": [
+      "bleu",
+      "machine-translation",
+      "n-gram",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "nlp_0037",
+    "question": "Trong xử lý tiếng nói, waveform số hóa thường biểu diễn điều gì?",
+    "option_a": "Biên độ tín hiệu âm thanh theo thời gian",
+    "option_b": "Danh sách token văn bản",
+    "option_c": "Một confusion matrix",
+    "option_d": "Chỉ tần số lớn nhất của âm thanh",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Processing",
+    "difficulty": "easy",
+    "tags": [
+      "waveform",
+      "audio",
+      "speech-processing",
+      "sampling"
+    ]
+  },
+  {
+    "id": "nlp_0038",
+    "question": "MFCC là đặc trưng cổ điển trong xử lý tiếng nói được thiết kế nhằm mô tả chủ yếu thông tin nào?",
+    "option_a": "Đặc trưng phổ ngắn hạn của tín hiệu theo thang Mel",
+    "option_b": "Vị trí người nói trong ảnh",
+    "option_c": "Token ID của transcript",
+    "option_d": "Bounding box của âm thanh",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Features",
+    "difficulty": "medium",
+    "tags": [
+      "mfcc",
+      "speech-features",
+      "mel-scale",
+      "spectral-features"
+    ]
+  },
+  {
+    "id": "nlp_0039",
+    "question": "Short-Time Fourier Transform (STFT) được sử dụng để làm gì trong xử lý âm thanh?",
+    "option_a": "Phân tích nội dung tần số của tín hiệu theo từng cửa sổ thời gian ngắn",
+    "option_b": "Dịch transcript sang ngôn ngữ khác",
+    "option_c": "Phân loại ảnh",
+    "option_d": "Chỉ tính biên độ trung bình toàn bộ file",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Features",
+    "difficulty": "medium",
+    "tags": [
+      "stft",
+      "spectrogram",
+      "frequency",
+      "speech-processing"
+    ]
+  },
+  {
+    "id": "nlp_0040",
+    "question": "Thang Mel trong xử lý tiếng nói được thiết kế với mục đích nào?",
+    "option_a": "Xấp xỉ cách con người cảm nhận khoảng cách giữa các tần số",
+    "option_b": "Biến mọi âm thanh thành cùng một tần số",
+    "option_c": "Tăng sampling rate",
+    "option_d": "Xóa toàn bộ nhiễu nền",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Features",
+    "difficulty": "medium",
+    "tags": [
+      "mel-scale",
+      "filterbank",
+      "speech-processing",
+      "psychoacoustics"
+    ]
+  },
+  {
+    "id": "nlp_0041",
+    "question": "CTC Loss đặc biệt hữu ích trong Automatic Speech Recognition vì lý do nào?",
+    "option_a": "Cho phép huấn luyện khi không có alignment chính xác giữa từng frame âm thanh và từng token văn bản",
+    "option_b": "Yêu cầu mỗi frame phải có nhãn chính xác",
+    "option_c": "Chỉ sử dụng cho classification ảnh",
+    "option_d": "Không cho phép output có độ dài khác input",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Automatic Speech Recognition",
+    "difficulty": "hard",
+    "tags": [
+      "ctc",
+      "asr",
+      "alignment",
+      "speech-recognition"
+    ]
+  },
+  {
+    "id": "nlp_0042",
+    "question": "wav2vec 2.0 là ví dụ nổi bật của phương pháp nào?",
+    "option_a": "Học biểu diễn tiếng nói tự giám sát từ audio chưa gán nhãn",
+    "option_b": "Chỉ dùng MFCC với SVM",
+    "option_c": "Text-to-image generation",
+    "option_d": "Decision Tree cho dữ liệu bảng",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Self-Supervised Speech Learning",
+    "difficulty": "medium",
+    "tags": [
+      "wav2vec2",
+      "self-supervised-learning",
+      "speech-representation",
+      "audio"
+    ]
+  },
+  {
+    "id": "nlp_0043",
+    "question": "Whisper được thiết kế chủ yếu cho nhóm nhiệm vụ nào?",
+    "option_a": "Nhận dạng tiếng nói và các nhiệm vụ speech-to-text đa ngôn ngữ liên quan",
+    "option_b": "Phân đoạn ảnh y tế",
+    "option_c": "Object Detection",
+    "option_d": "Clustering dữ liệu bảng",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Automatic Speech Recognition",
+    "difficulty": "easy",
+    "tags": [
+      "whisper",
+      "asr",
+      "speech-to-text",
+      "multilingual"
+    ]
+  },
+  {
+    "id": "nlp_0044",
+    "question": "Transcript tham chiếu là 'tôi thích học AI' gồm 4 từ. Mô hình dự đoán 'tôi học AI', tức bị thiếu một từ và không có lỗi khác. Word Error Rate bằng bao nhiêu?",
+    "option_a": "0%",
+    "option_b": "20%",
+    "option_c": "25%",
+    "option_d": "33.3%",
+    "correct_answer": "C",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Evaluation",
+    "difficulty": "medium",
+    "tags": [
+      "wer",
+      "word-error-rate",
+      "asr",
+      "deletion-error"
+    ]
+  },
+  {
+    "id": "nlp_0045",
+    "question": "Trong Speaker Verification, hệ thống thường trả lời câu hỏi nào?",
+    "option_a": "Hai đoạn tiếng nói có phải đến từ cùng một người nói hay không",
+    "option_b": "Đoạn audio có bao nhiêu từ",
+    "option_c": "Nội dung câu nói thuộc chủ đề nào",
+    "option_d": "Transcript có đúng ngữ pháp hay không",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speaker Recognition",
+    "difficulty": "easy",
+    "tags": [
+      "speaker-verification",
+      "speaker-embedding",
+      "voice-biometric"
+    ]
+  },
+  {
+    "id": "nlp_0046",
+    "question": "Speaker Diarization nhằm giải quyết bài toán nào?",
+    "option_a": "Xác định ai nói vào thời điểm nào trong một đoạn audio có nhiều người nói",
+    "option_b": "Chuyển toàn bộ audio thành cùng một giọng nói",
+    "option_c": "Dịch mọi câu sang tiếng Anh",
+    "option_d": "Loại bỏ dấu câu trong transcript",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speaker Diarization",
+    "difficulty": "easy",
+    "tags": [
+      "speaker-diarization",
+      "who-spoke-when",
+      "multi-speaker",
+      "speech-processing"
+    ]
+  },
+  {
+    "id": "nlp_0047",
+    "question": "Trong hệ thống Text-to-Speech hiện đại, vocoder có nhiệm vụ chính nào?",
+    "option_a": "Chuyển biểu diễn âm học hoặc latent âm thanh thành waveform",
+    "option_b": "Tokenize văn bản đầu vào",
+    "option_c": "Tính Word Error Rate",
+    "option_d": "Phân cụm người nói",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Text-to-Speech",
+    "difficulty": "medium",
+    "tags": [
+      "tts",
+      "vocoder",
+      "waveform-generation",
+      "speech-synthesis"
+    ]
+  },
+  {
+    "id": "nlp_0048",
+    "question": "Neural Audio Codec như EnCodec có mục tiêu chính nào?",
+    "option_a": "Nén waveform thành biểu diễn latent hoặc các token âm thanh rời rạc có thể tái tạo lại audio",
+    "option_b": "Chuyển audio trực tiếp thành bounding box",
+    "option_c": "Thay thế toàn bộ microphone",
+    "option_d": "Chỉ tính pitch trung bình",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Neural Audio Codecs",
+    "difficulty": "hard",
+    "tags": [
+      "neural-audio-codec",
+      "encodec",
+      "audio-tokens",
+      "compression"
+    ]
+  },
+  {
+    "id": "nlp_0049",
+    "question": "Một hướng tiếp cận của Speech Language Model hiện đại là gì?",
+    "option_a": "Biểu diễn tiếng nói thành các token hoặc representation rồi mô hình hóa chuỗi bằng kiến trúc tương tự language model",
+    "option_b": "Chỉ sử dụng histogram màu của ảnh",
+    "option_c": "Không sử dụng bất kỳ biểu diễn âm thanh nào",
+    "option_d": "Bắt buộc chuyển mọi audio sang MFCC rồi dùng k-NN",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Speech Language Models",
+    "difficulty": "hard",
+    "tags": [
+      "speech-language-model",
+      "audio-tokens",
+      "speechlm",
+      "generative-audio"
+    ]
+  },
+  {
+    "id": "nlp_0050",
+    "question": "Trong hệ thống nhận dạng tiếng nói streaming, Voice Activity Detection (VAD) hữu ích chủ yếu để làm gì?",
+    "option_a": "Xác định các vùng có tiếng nói và các vùng im lặng hoặc không có tiếng nói",
+    "option_b": "Tạo embedding văn bản",
+    "option_c": "Dịch transcript sang ngôn ngữ khác",
+    "option_d": "Tính attention giữa các token văn bản",
+    "correct_answer": "A",
+    "category": "Natural Language Processing",
+    "subcategory": "Streaming Speech Processing",
+    "difficulty": "medium",
+    "tags": [
+      "vad",
+      "voice-activity-detection",
+      "streaming-asr",
+      "speech-processing"
+    ]
+  }
+]

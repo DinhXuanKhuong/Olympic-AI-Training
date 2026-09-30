@@ -1,0 +1,871 @@
+[
+  {
+    "id": "math_0001",
+    "question": "Cho hàm f(x, y) = 2x² - 3y² + 4y - 10. Gradient của hàm tại điểm (0, 0) là gì?",
+    "option_a": "(0, 4)",
+    "option_b": "(2, -3)",
+    "option_c": "(4, 0)",
+    "option_d": "(0, -4)",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Calculus and Gradients",
+    "difficulty": "medium",
+    "tags": [
+      "gradient",
+      "partial-derivative",
+      "calculus",
+      "math"
+    ]
+  },
+  {
+    "id": "math_0002",
+    "question": "Cho hàm f(x) = 3x² + 2x - 1. Giá trị đạo hàm f'(2) bằng bao nhiêu?",
+    "option_a": "8",
+    "option_b": "12",
+    "option_c": "14",
+    "option_d": "16",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Calculus and Gradients",
+    "difficulty": "easy",
+    "tags": [
+      "derivative",
+      "calculus",
+      "polynomial"
+    ]
+  },
+  {
+    "id": "math_0003",
+    "question": "Cho f(x) = (2x + 1)². Giá trị f'(1) bằng bao nhiêu?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "12",
+    "option_d": "18",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Calculus and Gradients",
+    "difficulty": "medium",
+    "tags": [
+      "chain-rule",
+      "derivative",
+      "calculus"
+    ]
+  },
+  {
+    "id": "math_0004",
+    "question": "Cho f(x, y) = x²y + 3y. Giá trị đạo hàm riêng ∂f/∂x tại điểm (2, 3) bằng bao nhiêu?",
+    "option_a": "6",
+    "option_b": "9",
+    "option_c": "12",
+    "option_d": "15",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Calculus and Gradients",
+    "difficulty": "medium",
+    "tags": [
+      "partial-derivative",
+      "multivariable-calculus",
+      "gradient"
+    ]
+  },
+  {
+    "id": "math_0005",
+    "question": "Một tham số có giá trị hiện tại w = 2.0, gradient của loss theo w là 6 và learning rate là 0.1. Sau một bước Gradient Descent, giá trị mới của w là bao nhiêu?",
+    "option_a": "1.4",
+    "option_b": "1.6",
+    "option_c": "2.4",
+    "option_d": "2.6",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "easy",
+    "tags": [
+      "gradient-descent",
+      "learning-rate",
+      "optimization",
+      "parameter-update"
+    ]
+  },
+  {
+    "id": "math_0006",
+    "question": "Cho hai vector a = [1, 2, 3] và b = [4, 0, -1]. Tích vô hướng a·b bằng bao nhiêu?",
+    "option_a": "-1",
+    "option_b": "0",
+    "option_c": "1",
+    "option_d": "3",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "easy",
+    "tags": [
+      "dot-product",
+      "vector",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0007",
+    "question": "Độ dài L2 của vector v = [3, 4] bằng bao nhiêu?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "7",
+    "option_d": "25",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "easy",
+    "tags": [
+      "l2-norm",
+      "vector-norm",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0008",
+    "question": "Nếu hai vector khác vector 0 trực giao với nhau, cosine similarity giữa chúng bằng bao nhiêu?",
+    "option_a": "-1",
+    "option_b": "0",
+    "option_c": "0.5",
+    "option_d": "1",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Vector Similarity",
+    "difficulty": "easy",
+    "tags": [
+      "cosine-similarity",
+      "orthogonal-vectors",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0009",
+    "question": "Ma trận A có kích thước 2×3 và ma trận B có kích thước 3×4. Kích thước của tích AB là bao nhiêu?",
+    "option_a": "2×3",
+    "option_b": "3×4",
+    "option_c": "2×4",
+    "option_d": "4×2",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "easy",
+    "tags": [
+      "matrix-multiplication",
+      "matrix-shape",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0010",
+    "question": "Cho vector cột x có kích thước 5×1. Vector chuyển vị xᵀ có kích thước nào?",
+    "option_a": "1×5",
+    "option_b": "5×1",
+    "option_c": "5×5",
+    "option_d": "1×1",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "easy",
+    "tags": [
+      "transpose",
+      "vector",
+      "matrix-shape"
+    ]
+  },
+  {
+    "id": "math_0011",
+    "question": "Định thức của ma trận [[2,1],[1,2]] bằng bao nhiêu?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "medium",
+    "tags": [
+      "determinant",
+      "matrix",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0012",
+    "question": "Vector v được gọi là eigenvector của ma trận A nếu tồn tại một số vô hướng λ sao cho điều kiện nào đúng?",
+    "option_a": "Av = v + λ",
+    "option_b": "Av = λv",
+    "option_c": "A + v = λ",
+    "option_d": "Aλ = v",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "medium",
+    "tags": [
+      "eigenvector",
+      "eigenvalue",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0013",
+    "question": "Ma trận đơn vị I kích thước 3×3 có rank bằng bao nhiêu?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "9",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "medium",
+    "tags": [
+      "matrix-rank",
+      "identity-matrix",
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "math_0014",
+    "question": "Một lớp tuyến tính nhận vector 128 chiều và sinh vector 64 chiều. Nếu biểu diễn phép biến đổi dưới dạng y = Wx, kích thước phù hợp của W là gì?",
+    "option_a": "128×64",
+    "option_b": "64×128",
+    "option_c": "128×128",
+    "option_d": "64×64",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Linear Algebra",
+    "difficulty": "medium",
+    "tags": [
+      "linear-layer",
+      "matrix-shape",
+      "linear-transformation"
+    ]
+  },
+  {
+    "id": "math_0015",
+    "question": "Hai vector a và b đã được chuẩn hóa L2 sao cho ||a||₂ = ||b||₂ = 1. Khi đó cosine similarity giữa chúng bằng đại lượng nào?",
+    "option_a": "Khoảng cách Euclid",
+    "option_b": "Tích vô hướng a·b",
+    "option_c": "Tổng các phần tử của a và b",
+    "option_d": "Định thức của a và b",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Vector Similarity",
+    "difficulty": "medium",
+    "tags": [
+      "cosine-similarity",
+      "l2-normalization",
+      "dot-product",
+      "embedding"
+    ]
+  },
+  {
+    "id": "math_0016",
+    "question": "Biết P(A∩B) = 0.2 và P(B) = 0.5. Xác suất có điều kiện P(A|B) bằng bao nhiêu?",
+    "option_a": "0.1",
+    "option_b": "0.4",
+    "option_c": "0.5",
+    "option_d": "0.7",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Probability",
+    "difficulty": "easy",
+    "tags": [
+      "conditional-probability",
+      "probability",
+      "bayes"
+    ]
+  },
+  {
+    "id": "math_0017",
+    "question": "Một bệnh có tỷ lệ mắc 1%. Xét nghiệm có độ nhạy 90% và tỷ lệ dương tính giả 5%. Nếu một người có kết quả dương tính, xác suất người đó thực sự mắc bệnh xấp xỉ bao nhiêu?",
+    "option_a": "1.0%",
+    "option_b": "5.0%",
+    "option_c": "15.4%",
+    "option_d": "90.0%",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Probability",
+    "difficulty": "hard",
+    "tags": [
+      "bayes-theorem",
+      "conditional-probability",
+      "base-rate",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0018",
+    "question": "Giá trị kỳ vọng của một xúc xắc công bằng sáu mặt có các giá trị từ 1 đến 6 là bao nhiêu?",
+    "option_a": "3",
+    "option_b": "3.5",
+    "option_c": "4",
+    "option_d": "6",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Probability",
+    "difficulty": "easy",
+    "tags": [
+      "expectation",
+      "random-variable",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0019",
+    "question": "Một biến ngẫu nhiên Bernoulli có xác suất thành công p = 0.2. Phương sai của biến này bằng bao nhiêu?",
+    "option_a": "0.04",
+    "option_b": "0.16",
+    "option_c": "0.20",
+    "option_d": "0.80",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Probability",
+    "difficulty": "medium",
+    "tags": [
+      "bernoulli",
+      "variance",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0020",
+    "question": "Hai biến cố A và B độc lập với P(A)=0.3 và P(B)=0.4. P(A∩B) bằng bao nhiêu?",
+    "option_a": "0.12",
+    "option_b": "0.30",
+    "option_c": "0.40",
+    "option_d": "0.70",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Probability",
+    "difficulty": "easy",
+    "tags": [
+      "independence",
+      "joint-probability",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0021",
+    "question": "Trung bình cộng của dãy số [2, 4, 6, 8] bằng bao nhiêu?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "20",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Statistics",
+    "difficulty": "easy",
+    "tags": [
+      "mean",
+      "statistics",
+      "descriptive-statistics"
+    ]
+  },
+  {
+    "id": "math_0022",
+    "question": "Trung vị của tập dữ liệu [1, 2, 10, 20, 100] là bao nhiêu?",
+    "option_a": "2",
+    "option_b": "10",
+    "option_c": "20",
+    "option_d": "26.6",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Statistics",
+    "difficulty": "easy",
+    "tags": [
+      "median",
+      "statistics",
+      "robust-statistics"
+    ]
+  },
+  {
+    "id": "math_0023",
+    "question": "Xét hai giá trị [1, 3]. Nếu sử dụng phương sai tổng thể, phương sai của tập dữ liệu này bằng bao nhiêu?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "4",
+    "option_d": "8",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Statistics",
+    "difficulty": "medium",
+    "tags": [
+      "variance",
+      "statistics",
+      "calculation"
+    ]
+  },
+  {
+    "id": "math_0024",
+    "question": "Nếu covariance giữa hai biến X và Y là một số dương lớn, điều này thường cho thấy xu hướng nào?",
+    "option_a": "X tăng thì Y có xu hướng tăng",
+    "option_b": "X tăng thì Y luôn giảm",
+    "option_c": "X và Y chắc chắn độc lập",
+    "option_d": "X và Y luôn bằng nhau",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Statistics",
+    "difficulty": "easy",
+    "tags": [
+      "covariance",
+      "statistics",
+      "relationship"
+    ]
+  },
+  {
+    "id": "math_0025",
+    "question": "Hệ số tương quan Pearson gần -1 biểu thị điều gì?",
+    "option_a": "Quan hệ tuyến tính dương rất mạnh",
+    "option_b": "Quan hệ tuyến tính âm rất mạnh",
+    "option_c": "Không có bất kỳ quan hệ nào",
+    "option_d": "Hai biến chắc chắn bằng nhau",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Statistics",
+    "difficulty": "easy",
+    "tags": [
+      "pearson-correlation",
+      "correlation",
+      "statistics"
+    ]
+  },
+  {
+    "id": "math_0026",
+    "question": "Entropy Shannon của một biến Bernoulli công bằng với xác suất hai kết quả đều bằng 0.5 là bao nhiêu bit?",
+    "option_a": "0",
+    "option_b": "0.5",
+    "option_c": "1",
+    "option_d": "2",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Information Theory",
+    "difficulty": "medium",
+    "tags": [
+      "entropy",
+      "shannon-entropy",
+      "information-theory"
+    ]
+  },
+  {
+    "id": "math_0027",
+    "question": "Một mẫu có nhãn thật thuộc lớp thứ hai và mô hình dự đoán xác suất cho lớp này là 0.8. Cross-Entropy Loss của mẫu là -ln(0.8), xấp xỉ bằng bao nhiêu?",
+    "option_a": "0.105",
+    "option_b": "0.223",
+    "option_c": "0.500",
+    "option_d": "0.800",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Information Theory",
+    "difficulty": "medium",
+    "tags": [
+      "cross-entropy",
+      "log-loss",
+      "classification"
+    ]
+  },
+  {
+    "id": "math_0028",
+    "question": "Phát biểu nào đúng về KL Divergence D_KL(P||Q)?",
+    "option_a": "Luôn nhỏ hơn hoặc bằng 0",
+    "option_b": "Luôn không âm và bằng 0 khi hai phân phối giống nhau gần như mọi nơi",
+    "option_c": "Luôn đối xứng giữa P và Q",
+    "option_d": "Chỉ dùng được với phân phối Gaussian",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Information Theory",
+    "difficulty": "hard",
+    "tags": [
+      "kl-divergence",
+      "information-theory",
+      "probability-distribution"
+    ]
+  },
+  {
+    "id": "math_0029",
+    "question": "Một language model có cross-entropy trung bình theo natural log bằng ln(4). Perplexity của mô hình bằng bao nhiêu?",
+    "option_a": "2",
+    "option_b": "4",
+    "option_c": "8",
+    "option_d": "16",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Information Theory",
+    "difficulty": "medium",
+    "tags": [
+      "perplexity",
+      "cross-entropy",
+      "language-model",
+      "information-theory"
+    ]
+  },
+  {
+    "id": "math_0030",
+    "question": "Một node của cây quyết định có hai lớp với tỷ lệ 50% và 50%. Gini Impurity của node bằng bao nhiêu?",
+    "option_a": "0",
+    "option_b": "0.25",
+    "option_c": "0.5",
+    "option_d": "1",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Information Theory",
+    "difficulty": "medium",
+    "tags": [
+      "gini-impurity",
+      "decision-tree",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0031",
+    "question": "Đối với một hàm lồi, phát biểu nào sau đây đúng?",
+    "option_a": "Mọi cực tiểu cục bộ cũng là cực tiểu toàn cục",
+    "option_b": "Hàm luôn chỉ có một biến",
+    "option_c": "Gradient luôn bằng 0 ở mọi điểm",
+    "option_d": "Hàm không thể sử dụng Gradient Descent",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "convexity",
+      "optimization",
+      "global-minimum"
+    ]
+  },
+  {
+    "id": "math_0032",
+    "question": "Ý tưởng toán học chính của Momentum trong Gradient Descent là gì?",
+    "option_a": "Kết hợp gradient hiện tại với thông tin tích lũy từ các gradient trước",
+    "option_b": "Luôn đặt gradient bằng 0",
+    "option_c": "Đảo dấu loss sau mỗi bước",
+    "option_d": "Tăng batch size sau mỗi epoch",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "momentum",
+      "gradient-descent",
+      "optimization"
+    ]
+  },
+  {
+    "id": "math_0033",
+    "question": "Nếu learning rate quá lớn khi tối ưu một hàm loss, điều gì có thể xảy ra?",
+    "option_a": "Các bước cập nhật vượt qua vùng cực tiểu và quá trình có thể dao động hoặc phân kỳ",
+    "option_b": "Mô hình luôn hội tụ chính xác trong một bước",
+    "option_c": "Gradient luôn trở thành 0",
+    "option_d": "Hàm loss tự động trở thành hàm lồi",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "easy",
+    "tags": [
+      "learning-rate",
+      "convergence",
+      "gradient-descent"
+    ]
+  },
+  {
+    "id": "math_0034",
+    "question": "Ma trận Hessian của một hàm nhiều biến chứa thông tin nào?",
+    "option_a": "Các đạo hàm riêng bậc hai của hàm",
+    "option_b": "Chỉ giá trị hàm",
+    "option_c": "Chỉ gradient bậc nhất",
+    "option_d": "Các nhãn của dữ liệu",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "hard",
+    "tags": [
+      "hessian",
+      "second-derivative",
+      "curvature",
+      "optimization"
+    ]
+  },
+  {
+    "id": "math_0035",
+    "question": "So với L2 regularization, L1 regularization có đặc tính nổi bật nào?",
+    "option_a": "Có xu hướng tạo nghiệm thưa với một số trọng số bằng 0",
+    "option_b": "Luôn làm tất cả trọng số giống nhau",
+    "option_c": "Không ảnh hưởng đến hàm mục tiêu",
+    "option_d": "Chỉ áp dụng được cho mạng CNN",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Optimization Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "l1-regularization",
+      "l2-regularization",
+      "sparsity",
+      "optimization"
+    ]
+  },
+  {
+    "id": "math_0036",
+    "question": "Giá trị của hàm sigmoid σ(x) tại x=0 bằng bao nhiêu?",
+    "option_a": "0",
+    "option_b": "0.5",
+    "option_c": "1",
+    "option_d": "2",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Neural Network Mathematics",
+    "difficulty": "easy",
+    "tags": [
+      "sigmoid",
+      "activation-function",
+      "neural-network"
+    ]
+  },
+  {
+    "id": "math_0037",
+    "question": "Giá trị ReLU(-3) bằng bao nhiêu?",
+    "option_a": "-3",
+    "option_b": "0",
+    "option_c": "1",
+    "option_d": "3",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Neural Network Mathematics",
+    "difficulty": "easy",
+    "tags": [
+      "relu",
+      "activation-function",
+      "neural-network"
+    ]
+  },
+  {
+    "id": "math_0038",
+    "question": "Nếu cộng cùng một hằng số c vào tất cả logits trước khi áp dụng Softmax, xác suất đầu ra thay đổi như thế nào?",
+    "option_a": "Không thay đổi",
+    "option_b": "Mọi xác suất tăng thêm c",
+    "option_c": "Mọi xác suất giảm đi c",
+    "option_d": "Softmax không còn được định nghĩa",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Neural Network Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "softmax",
+      "logits",
+      "invariance",
+      "probability"
+    ]
+  },
+  {
+    "id": "math_0039",
+    "question": "Khi tính Softmax cho các logits rất lớn, kỹ thuật nào thường được dùng để tăng tính ổn định số học?",
+    "option_a": "Trừ giá trị logit lớn nhất khỏi tất cả logits trước khi tính exponential",
+    "option_b": "Nhân tất cả logits với vô hạn",
+    "option_c": "Đặt tất cả logits bằng 1",
+    "option_d": "Sắp xếp logits rồi bỏ một nửa",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Numerical Stability",
+    "difficulty": "medium",
+    "tags": [
+      "softmax",
+      "numerical-stability",
+      "log-sum-exp",
+      "overflow"
+    ]
+  },
+  {
+    "id": "math_0040",
+    "question": "Trong Scaled Dot-Product Attention, tại sao tích QKᵀ thường được chia cho √dₖ?",
+    "option_a": "Để hạn chế độ lớn của logits attention khi số chiều dₖ lớn, giúp Softmax ổn định hơn",
+    "option_b": "Để giảm sequence length",
+    "option_c": "Để làm tất cả attention weights bằng nhau",
+    "option_d": "Để biến attention thành convolution",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Attention Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "scaled-dot-product-attention",
+      "attention",
+      "transformer",
+      "softmax"
+    ]
+  },
+  {
+    "id": "math_0041",
+    "question": "Trong self-attention, Q và K đều có shape (n, dₖ), trong đó n là số token. Ma trận QKᵀ có shape nào?",
+    "option_a": "(dₖ, dₖ)",
+    "option_b": "(n, dₖ)",
+    "option_c": "(n, n)",
+    "option_d": "(dₖ, n)",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Attention Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "self-attention",
+      "matrix-shape",
+      "transformer",
+      "qk-product"
+    ]
+  },
+  {
+    "id": "math_0042",
+    "question": "Một lớp Linear có 128 đặc trưng đầu vào và 64 đặc trưng đầu ra, có sử dụng bias. Tổng số tham số có thể học của lớp là bao nhiêu?",
+    "option_a": "8,192",
+    "option_b": "8,256",
+    "option_c": "12,288",
+    "option_d": "16,384",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Parameter Counting",
+    "difficulty": "medium",
+    "tags": [
+      "linear-layer",
+      "parameter-count",
+      "bias",
+      "neural-network"
+    ]
+  },
+  {
+    "id": "math_0043",
+    "question": "Một lớp Conv2D có kernel 3×3, 32 kênh đầu vào và 64 kênh đầu ra. Bỏ qua bias. Tổng số tham số của lớp là bao nhiêu?",
+    "option_a": "6,144",
+    "option_b": "9,216",
+    "option_c": "18,432",
+    "option_d": "36,864",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Parameter Counting",
+    "difficulty": "medium",
+    "tags": [
+      "convolution",
+      "parameter-count",
+      "cnn",
+      "kernel"
+    ]
+  },
+  {
+    "id": "math_0044",
+    "question": "Một lớp Linear thực hiện phép biến đổi từ vector 100 chiều sang vector 50 chiều cho một mẫu. Bỏ qua bias, lớp này cần bao nhiêu phép nhân trong forward pass?",
+    "option_a": "150",
+    "option_b": "500",
+    "option_c": "5,000",
+    "option_d": "10,000",
+    "correct_answer": "C",
+    "category": "Mathematics for AI",
+    "subcategory": "Computational Complexity",
+    "difficulty": "medium",
+    "tags": [
+      "linear-layer",
+      "matrix-multiplication",
+      "complexity",
+      "operations"
+    ]
+  },
+  {
+    "id": "math_0045",
+    "question": "Khoảng cách Euclid giữa hai điểm A=(1,2) và B=(4,6) bằng bao nhiêu?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "7",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Distance Metrics",
+    "difficulty": "easy",
+    "tags": [
+      "euclidean-distance",
+      "distance-metric",
+      "geometry"
+    ]
+  },
+  {
+    "id": "math_0046",
+    "question": "Hai bounding box có diện tích phần giao bằng 20 và diện tích hợp bằng 80. Giá trị Intersection over Union (IoU) bằng bao nhiêu?",
+    "option_a": "0.20",
+    "option_b": "0.25",
+    "option_c": "0.40",
+    "option_d": "0.75",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Computer Vision Mathematics",
+    "difficulty": "easy",
+    "tags": [
+      "iou",
+      "intersection-over-union",
+      "object-detection",
+      "geometry"
+    ]
+  },
+  {
+    "id": "math_0047",
+    "question": "Một điểm có khoảng cách trung bình tới các điểm cùng cụm a(i)=0.3 và khoảng cách trung bình tới cụm lân cận gần nhất b(i)=0.5. Silhouette Coefficient của điểm này bằng bao nhiêu?",
+    "option_a": "0.2",
+    "option_b": "0.4",
+    "option_c": "0.5",
+    "option_d": "0.8",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Clustering Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "silhouette-score",
+      "clustering",
+      "distance",
+      "calculation"
+    ]
+  },
+  {
+    "id": "math_0048",
+    "question": "Tại sao việc L2-normalize các embedding trước khi tìm kiếm bằng dot product có thể hữu ích nếu mục tiêu thực sự là cosine similarity?",
+    "option_a": "Sau khi các vector có norm bằng 1, dot product bằng cosine similarity",
+    "option_b": "Dot product luôn bằng khoảng cách Euclid",
+    "option_c": "Mọi embedding trở thành giống nhau",
+    "option_d": "Số chiều embedding tự động giảm một nửa",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Embedding Mathematics",
+    "difficulty": "medium",
+    "tags": [
+      "embedding",
+      "cosine-similarity",
+      "l2-normalization",
+      "dot-product"
+    ]
+  },
+  {
+    "id": "math_0049",
+    "question": "Trong contrastive learning sử dụng InfoNCE, khi giảm temperature xuống một giá trị nhỏ hơn, tác động thường gặp lên phân phối Softmax của các similarity score là gì?",
+    "option_a": "Phân phối trở nên sắc nét hơn và nhấn mạnh mạnh hơn các khác biệt similarity",
+    "option_b": "Mọi xác suất trở thành bằng nhau",
+    "option_c": "Tất cả similarity tự động bằng 0",
+    "option_d": "Loss biến thành Mean Squared Error",
+    "correct_answer": "A",
+    "category": "Mathematics for AI",
+    "subcategory": "Contrastive Learning Mathematics",
+    "difficulty": "hard",
+    "tags": [
+      "infonce",
+      "temperature",
+      "contrastive-learning",
+      "softmax"
+    ]
+  },
+  {
+    "id": "math_0050",
+    "question": "Một lớp Linear có trọng số gốc kích thước 4096×4096. Khi áp dụng LoRA với rank r=8, bỏ qua bias và chỉ xét hai ma trận low-rank dùng để tạo cập nhật trọng số, số tham số LoRA cần học là bao nhiêu?",
+    "option_a": "32,768",
+    "option_b": "65,536",
+    "option_c": "131,072",
+    "option_d": "16,777,216",
+    "correct_answer": "B",
+    "category": "Mathematics for AI",
+    "subcategory": "Parameter-Efficient Fine-Tuning",
+    "difficulty": "hard",
+    "tags": [
+      "lora",
+      "low-rank-adaptation",
+      "parameter-count",
+      "peft"
+    ]
+  }
+]

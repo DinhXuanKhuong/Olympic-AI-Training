@@ -1,0 +1,905 @@
+
+
+[  
+  {
+    "id": "cv_0000",
+    "question": "Trong bài toán phát hiện vật thể, nhiều hộp bao có thể cùng dự đoán một vật thể và chồng lấn mạnh lên nhau. Kỹ thuật nào thường được sử dụng để loại bỏ các hộp bao dư thừa?",
+    "option_a": "Average Pooling",
+    "option_b": "Data Augmentation",
+    "option_c": "Non-Maximum Suppression",
+    "option_d": "Batch Normalization",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "easy",
+    "tags": [
+      "object-detection",
+      "nms",
+      "bounding-box",
+      "iou"
+    ]
+  },
+  {
+    "id": "cv_0001",
+    "question": "Trong xử lý ảnh cổ điển, bộ lọc Sobel thường được sử dụng chủ yếu để làm gì?",
+    "option_a": "Giảm kích thước ảnh",
+    "option_b": "Phát hiện các cạnh dựa trên gradient cường độ sáng",
+    "option_c": "Phân cụm các pixel",
+    "option_d": "Chuyển ảnh RGB sang ảnh xám",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Classical Image Processing",
+    "difficulty": "easy",
+    "tags": [
+      "sobel",
+      "edge-detection",
+      "gradient",
+      "classical-cv"
+    ]
+  },
+  {
+    "id": "cv_0002",
+    "question": "Khi ảnh chứa nhiều nhiễu Gaussian tần số cao, thao tác nào thường được sử dụng trước khi phát hiện cạnh?",
+    "option_a": "Gaussian Blur",
+    "option_b": "Histogram Equalization",
+    "option_c": "Dilation",
+    "option_d": "Thresholding",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Classical Image Processing",
+    "difficulty": "easy",
+    "tags": [
+      "gaussian-blur",
+      "noise-reduction",
+      "filtering"
+    ]
+  },
+  {
+    "id": "cv_0003",
+    "question": "Histogram Equalization thường được sử dụng với mục đích chính nào?",
+    "option_a": "Cải thiện độ tương phản của ảnh",
+    "option_b": "Giảm số lượng kênh màu",
+    "option_c": "Phát hiện vật thể",
+    "option_d": "Loại bỏ hoàn toàn nhiễu",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Classical Image Processing",
+    "difficulty": "easy",
+    "tags": [
+      "histogram-equalization",
+      "contrast-enhancement",
+      "histogram"
+    ]
+  },
+  {
+    "id": "cv_0004",
+    "question": "Trong ảnh nhị phân, phép Erosion thường có tác dụng nào đối với vùng tiền cảnh màu trắng?",
+    "option_a": "Làm vùng tiền cảnh lớn hơn",
+    "option_b": "Làm vùng tiền cảnh nhỏ lại",
+    "option_c": "Đảo màu tiền cảnh và hậu cảnh",
+    "option_d": "Không làm thay đổi biên của vật thể",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Mathematical Morphology",
+    "difficulty": "easy",
+    "tags": [
+      "erosion",
+      "morphology",
+      "binary-image"
+    ]
+  },
+  {
+    "id": "cv_0005",
+    "question": "Trong ảnh nhị phân, phép Dilation thường có tác dụng nào?",
+    "option_a": "Làm mỏng vùng tiền cảnh",
+    "option_b": "Giảm độ phân giải ảnh",
+    "option_c": "Mở rộng vùng tiền cảnh",
+    "option_d": "Chuyển ảnh thành ảnh xám",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Mathematical Morphology",
+    "difficulty": "easy",
+    "tags": [
+      "dilation",
+      "morphology",
+      "binary-image"
+    ]
+  },
+  {
+    "id": "cv_0006",
+    "question": "Trong không gian màu HSV, thành phần Hue biểu diễn thông tin nào?",
+    "option_a": "Loại màu cơ bản",
+    "option_b": "Độ sáng",
+    "option_c": "Độ phân giải",
+    "option_d": "Độ sắc nét của ảnh",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Color Processing",
+    "difficulty": "easy",
+    "tags": [
+      "hsv",
+      "color-space",
+      "hue"
+    ]
+  },
+  {
+    "id": "cv_0007",
+    "question": "Một ưu điểm nổi bật của đặc trưng SIFT là gì?",
+    "option_a": "Chỉ hoạt động với ảnh màu",
+    "option_b": "Không cần tính toán gradient",
+    "option_c": "Luôn nhanh hơn mọi đặc trưng khác",
+    "option_d": "Có khả năng tương đối bất biến với thay đổi tỉ lệ và phép xoay",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Feature Extraction",
+    "difficulty": "medium",
+    "tags": [
+      "sift",
+      "keypoints",
+      "feature-descriptor",
+      "scale-invariance"
+    ]
+  },
+  {
+    "id": "cv_0008",
+    "question": "Đặc trưng HOG chủ yếu mô tả thông tin nào của ảnh?",
+    "option_a": "Phân bố màu RGB toàn cục",
+    "option_b": "Phân bố hướng gradient cục bộ",
+    "option_c": "Tần số xuất hiện của từng pixel",
+    "option_d": "Thông tin chiều sâu của vật thể",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Feature Extraction",
+    "difficulty": "medium",
+    "tags": [
+      "hog",
+      "gradient",
+      "feature-descriptor"
+    ]
+  },
+  {
+    "id": "cv_0009",
+    "question": "Một hạn chế lớn của Template Matching cơ bản là gì?",
+    "option_a": "Không thể xử lý ảnh xám",
+    "option_b": "Không thể tính độ tương đồng",
+    "option_c": "Nhạy với thay đổi tỉ lệ và góc xoay của đối tượng",
+    "option_d": "Chỉ sử dụng được trên GPU",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Classical Image Processing",
+    "difficulty": "medium",
+    "tags": [
+      "template-matching",
+      "scale",
+      "rotation"
+    ]
+  },
+  {
+    "id": "cv_0010",
+    "question": "Optical Flow được sử dụng chủ yếu để ước lượng thông tin nào?",
+    "option_a": "Chuyển động biểu kiến của các điểm ảnh giữa các khung hình liên tiếp",
+    "option_b": "Loại vật thể xuất hiện trong ảnh",
+    "option_c": "Độ phân giải tối đa của camera",
+    "option_d": "Số lượng lớp trong một mô hình CNN",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Video Understanding",
+    "difficulty": "medium",
+    "tags": [
+      "optical-flow",
+      "video",
+      "motion-estimation"
+    ]
+  },
+  {
+    "id": "cv_0011",
+    "question": "Trong một lớp tích chập Conv2D, thành phần nào sau đây thường là tham số có thể học được?",
+    "option_a": "Stride",
+    "option_b": "Các trọng số của kernel",
+    "option_c": "Padding",
+    "option_d": "Kích thước ảnh đầu vào",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "CNN Fundamentals",
+    "difficulty": "easy",
+    "tags": [
+      "cnn",
+      "convolution",
+      "kernel",
+      "trainable-parameters"
+    ]
+  },
+  {
+    "id": "cv_0012",
+    "question": "Cho tensor đầu vào có kích thước (1, 32, 32, 3) theo định dạng NHWC. Một lớp Conv2D có 32 filters, kernel 5×5, stride 2 và padding='same'. Kích thước đầu ra là bao nhiêu?",
+    "option_a": "(1, 16, 16, 32)",
+    "option_b": "(1, 14, 14, 32)",
+    "option_c": "(1, 32, 32, 32)",
+    "option_d": "(1, 16, 16, 3)",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "CNN Fundamentals",
+    "difficulty": "medium",
+    "tags": [
+      "cnn",
+      "conv2d",
+      "output-shape",
+      "stride",
+      "padding"
+    ]
+  },
+  {
+    "id": "cv_0013",
+    "question": "Một lớp Conv2D có kernel 3×3, 32 kênh đầu vào và 64 kênh đầu ra. Bỏ qua bias. Lớp này có bao nhiêu tham số có thể học?",
+    "option_a": "6,144",
+    "option_b": "18,432",
+    "option_c": "36,864",
+    "option_d": "2,048",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "CNN Fundamentals",
+    "difficulty": "medium",
+    "tags": [
+      "cnn",
+      "parameter-count",
+      "convolution",
+      "kernel"
+    ]
+  },
+  {
+    "id": "cv_0014",
+    "question": "Cho cửa sổ Average Pooling 3×3 chứa các giá trị [[10,20,30],[40,50,60],[70,80,90]]. Giá trị đầu ra của cửa sổ này là bao nhiêu?",
+    "option_a": "40",
+    "option_b": "45",
+    "option_c": "50",
+    "option_d": "60",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "CNN Fundamentals",
+    "difficulty": "easy",
+    "tags": [
+      "average-pooling",
+      "pooling",
+      "cnn",
+      "calculation"
+    ]
+  },
+  {
+    "id": "cv_0015",
+    "question": "Trong kiến trúc CNN phổ biến, Batch Normalization thường được đặt ở vị trí nào?",
+    "option_a": "Sau lớp Conv2D và trước hàm kích hoạt ReLU",
+    "option_b": "Chỉ sau lớp Softmax",
+    "option_c": "Trước ảnh đầu vào",
+    "option_d": "Luôn sau lớp Dropout cuối cùng",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "CNN Fundamentals",
+    "difficulty": "easy",
+    "tags": [
+      "batch-normalization",
+      "cnn",
+      "relu",
+      "training"
+    ]
+  },
+  {
+    "id": "cv_0016",
+    "question": "Mục đích chính của các phép tăng cường dữ liệu như lật ảnh, crop ngẫu nhiên và thay đổi màu sắc khi huấn luyện mô hình thị giác là gì?",
+    "option_a": "Tăng số lượng tham số của mô hình",
+    "option_b": "Giảm kích thước mô hình",
+    "option_c": "Đảm bảo training loss luôn bằng 0",
+    "option_d": "Cải thiện khả năng tổng quát hóa của mô hình",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Data Augmentation",
+    "difficulty": "easy",
+    "tags": [
+      "data-augmentation",
+      "generalization",
+      "regularization"
+    ]
+  },
+  {
+    "id": "cv_0017",
+    "question": "Skip connection trong ResNet có vai trò quan trọng nhất nào?",
+    "option_a": "Thay thế hoàn toàn convolution",
+    "option_b": "Giảm ảnh về một kênh",
+    "option_c": "Giúp gradient truyền qua mạng sâu dễ dàng hơn",
+    "option_d": "Loại bỏ nhu cầu sử dụng hàm mất mát",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "CNN Architectures",
+    "difficulty": "easy",
+    "tags": [
+      "resnet",
+      "skip-connection",
+      "vanishing-gradient"
+    ]
+  },
+  {
+    "id": "cv_0018",
+    "question": "MobileNet sử dụng Depthwise Separable Convolution chủ yếu nhằm mục đích gì?",
+    "option_a": "Tăng số lượng tham số",
+    "option_b": "Giảm chi phí tính toán so với convolution tiêu chuẩn",
+    "option_c": "Loại bỏ hoàn toàn nonlinear activation",
+    "option_d": "Chỉ để tăng độ phân giải ảnh",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Efficient Architectures",
+    "difficulty": "medium",
+    "tags": [
+      "mobilenet",
+      "depthwise-convolution",
+      "efficient-models"
+    ]
+  },
+  {
+    "id": "cv_0019",
+    "question": "Ý tưởng chính của Compound Scaling trong EfficientNet là gì?",
+    "option_a": "Chỉ tăng số lớp của mạng",
+    "option_b": "Chỉ tăng số kênh",
+    "option_c": "Chỉ tăng độ phân giải ảnh",
+    "option_d": "Cân bằng việc tăng depth, width và resolution",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Efficient Architectures",
+    "difficulty": "medium",
+    "tags": [
+      "efficientnet",
+      "compound-scaling",
+      "model-scaling"
+    ]
+  },
+  {
+    "id": "cv_0020",
+    "question": "Một ảnh 224×224 được chia thành các patch 16×16 không chồng lấn để đưa vào Vision Transformer. Có bao nhiêu patch được tạo ra?",
+    "option_a": "49",
+    "option_b": "196",
+    "option_c": "256",
+    "option_d": "224",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Vision Transformer",
+    "difficulty": "medium",
+    "tags": [
+      "vit",
+      "patch-embedding",
+      "transformer",
+      "calculation"
+    ]
+  },
+  {
+    "id": "cv_0021",
+    "question": "Khi sử dụng ResNet đã được tiền huấn luyện trên ImageNet như một bộ trích xuất đặc trưng, đầu ra nào thường phù hợp để lấy feature vector?",
+    "option_a": "Ảnh đầu vào sau augmentation",
+    "option_b": "Đầu ra của lớp pooling gần cuối trước classifier",
+    "option_c": "Nhãn dự đoán cuối cùng",
+    "option_d": "Gradient của loss",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Transfer Learning",
+    "difficulty": "easy",
+    "tags": [
+      "resnet",
+      "feature-extraction",
+      "imagenet",
+      "transfer-learning"
+    ]
+  },
+  {
+    "id": "cv_0022",
+    "question": "Khi fine-tune một CNN đã pretrain trên tập dữ liệu mới rất nhỏ, chiến lược khởi đầu hợp lý thường là gì?",
+    "option_a": "Xóa toàn bộ trọng số pretrained",
+    "option_b": "Tăng learning rate lên rất lớn",
+    "option_c": "Đóng băng phần lớn backbone và huấn luyện classifier trước",
+    "option_d": "Thêm càng nhiều lớp ngẫu nhiên càng tốt",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Transfer Learning",
+    "difficulty": "easy",
+    "tags": [
+      "fine-tuning",
+      "freeze-backbone",
+      "transfer-learning"
+    ]
+  },
+  {
+    "id": "cv_0023",
+    "question": "Trong bài toán phát hiện vật thể, nhiều bounding box cùng dự đoán một vật thể và chồng lấn mạnh lên nhau. Kỹ thuật nào thường được dùng để loại bỏ các box dư thừa?",
+    "option_a": "Average Pooling",
+    "option_b": "Histogram Equalization",
+    "option_c": "Non-Maximum Suppression",
+    "option_d": "Batch Normalization",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "easy",
+    "tags": [
+      "object-detection",
+      "nms",
+      "bounding-box",
+      "iou"
+    ]
+  },
+  {
+    "id": "cv_0024",
+    "question": "Cho hai bounding box có cùng kích thước 4×4. Diện tích phần giao của chúng là 4. Giá trị IoU bằng bao nhiêu?",
+    "option_a": "0.250",
+    "option_b": "Khoảng 0.143",
+    "option_c": "0.500",
+    "option_d": "0.750",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "medium",
+    "tags": [
+      "iou",
+      "bounding-box",
+      "object-detection",
+      "calculation"
+    ]
+  },
+  {
+    "id": "cv_0025",
+    "question": "Trong SSD, anchor boxes có chức năng chính nào?",
+    "option_a": "Cung cấp các hộp tham chiếu với nhiều kích thước và tỉ lệ khác nhau",
+    "option_b": "Thay thế hoàn toàn feature map",
+    "option_c": "Giảm ảnh đầu vào về một pixel",
+    "option_d": "Tính Batch Normalization",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "easy",
+    "tags": [
+      "ssd",
+      "anchor-box",
+      "object-detection"
+    ]
+  },
+  {
+    "id": "cv_0026",
+    "question": "Faster R-CNN thường được xếp vào nhóm detector nào?",
+    "option_a": "Zero-stage detector",
+    "option_b": "One-stage detector",
+    "option_c": "Two-stage detector",
+    "option_d": "Image classifier",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "easy",
+    "tags": [
+      "faster-rcnn",
+      "two-stage",
+      "object-detection",
+      "region-proposal"
+    ]
+  },
+  {
+    "id": "cv_0027",
+    "question": "Điểm đặc trưng của các mô hình YOLO truyền thống so với Faster R-CNN là gì?",
+    "option_a": "YOLO thực hiện phát hiện vật thể theo kiến trúc one-stage",
+    "option_b": "YOLO không sử dụng mạng nơ-ron",
+    "option_c": "YOLO chỉ hoạt động trên ảnh xám",
+    "option_d": "YOLO không dự đoán bounding box",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Object Detection",
+    "difficulty": "easy",
+    "tags": [
+      "yolo",
+      "one-stage",
+      "object-detection"
+    ]
+  },
+  {
+    "id": "cv_0028",
+    "question": "Trong DETR, thuật toán Hungarian Matching được sử dụng chủ yếu để làm gì?",
+    "option_a": "Resize ảnh đầu vào",
+    "option_b": "Ghép các object queries dự đoán với các đối tượng ground truth",
+    "option_c": "Thực hiện Gaussian Blur",
+    "option_d": "Tính Batch Normalization",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Transformer Detection",
+    "difficulty": "hard",
+    "tags": [
+      "detr",
+      "hungarian-matching",
+      "object-queries",
+      "transformer"
+    ]
+  },
+  {
+    "id": "cv_0029",
+    "question": "Một điểm khác biệt quan trọng của DETR so với nhiều detector dựa trên anchor truyền thống là gì?",
+    "option_a": "DETR không sử dụng deep learning",
+    "option_b": "DETR chỉ nhận ảnh kích thước 32×32",
+    "option_c": "DETR không thể dự đoán nhiều vật thể",
+    "option_d": "DETR mô hình hóa detection như bài toán dự đoán một tập đối tượng và không cần NMS theo thiết kế gốc",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Transformer Detection",
+    "difficulty": "hard",
+    "tags": [
+      "detr",
+      "set-prediction",
+      "nms",
+      "transformer"
+    ]
+  },
+  {
+    "id": "cv_0030",
+    "question": "Chỉ số mAP trong object detection được sử dụng chủ yếu để đánh giá điều gì?",
+    "option_a": "Dung lượng bộ nhớ GPU",
+    "option_b": "Chất lượng phát hiện vật thể dựa trên precision-recall và các lớp",
+    "option_c": "Tốc độ đọc ảnh từ ổ cứng",
+    "option_d": "Số lượng tham số của backbone",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "medium",
+    "tags": [
+      "map",
+      "average-precision",
+      "precision-recall",
+      "object-detection"
+    ]
+  },
+  {
+    "id": "cv_0031",
+    "question": "Khác biệt chính giữa Semantic Segmentation và Instance Segmentation là gì?",
+    "option_a": "Semantic Segmentation luôn nhanh hơn",
+    "option_b": "Instance Segmentation chỉ hoạt động với hai lớp",
+    "option_c": "Instance Segmentation phân biệt các cá thể riêng biệt thuộc cùng một lớp",
+    "option_d": "Semantic Segmentation không dự đoán nhãn pixel",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Image Segmentation",
+    "difficulty": "easy",
+    "tags": [
+      "semantic-segmentation",
+      "instance-segmentation",
+      "pixel-classification"
+    ]
+  },
+  {
+    "id": "cv_0032",
+    "question": "Trong bài toán segmentation mà vùng foreground rất nhỏ so với background, loss nào thường phù hợp hơn Cross-Entropy tiêu chuẩn?",
+    "option_a": "MSE",
+    "option_b": "Hinge Loss",
+    "option_c": "L1 Loss",
+    "option_d": "Dice Loss hoặc Focal Loss",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Image Segmentation",
+    "difficulty": "medium",
+    "tags": [
+      "dice-loss",
+      "focal-loss",
+      "class-imbalance",
+      "segmentation"
+    ]
+  },
+  {
+    "id": "cv_0033",
+    "question": "Trong U-Net, skip connection giữa encoder và decoder thường được thực hiện bằng thao tác nào?",
+    "option_a": "Concatenate theo batch dimension",
+    "option_b": "Concatenate theo channel dimension",
+    "option_c": "Chỉ lấy trung bình hai tensor",
+    "option_d": "Xóa feature của encoder",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Image Segmentation",
+    "difficulty": "medium",
+    "tags": [
+      "unet",
+      "skip-connection",
+      "concatenation",
+      "segmentation"
+    ]
+  },
+  {
+    "id": "cv_0034",
+    "question": "Atrous Convolution hay Dilated Convolution trong DeepLab giúp ích chủ yếu như thế nào?",
+    "option_a": "Giảm số lượng class về 1",
+    "option_b": "Loại bỏ nhu cầu sử dụng convolution",
+    "option_c": "Mở rộng receptive field mà không cần giảm mạnh độ phân giải feature map",
+    "option_d": "Chuyển ảnh RGB thành ảnh xám",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Image Segmentation",
+    "difficulty": "medium",
+    "tags": [
+      "deeplab",
+      "dilated-convolution",
+      "atrous-convolution",
+      "receptive-field"
+    ]
+  },
+  {
+    "id": "cv_0035",
+    "question": "Mask R-CNN mở rộng Faster R-CNN bằng cách bổ sung thành phần nào?",
+    "option_a": "Một language model",
+    "option_b": "Một nhánh dự đoán mask cho từng instance",
+    "option_c": "Một bộ mã hóa âm thanh",
+    "option_d": "Một GAN discriminator",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Instance Segmentation",
+    "difficulty": "medium",
+    "tags": [
+      "mask-rcnn",
+      "instance-segmentation",
+      "faster-rcnn"
+    ]
+  },
+  {
+    "id": "cv_0036",
+    "question": "Trong bài toán semantic segmentation có nhiều lớp không cân bằng, chỉ số nào thường phản ánh chất lượng tốt hơn chỉ sử dụng pixel accuracy?",
+    "option_a": "Số epoch",
+    "option_b": "Learning rate",
+    "option_c": "Mean Intersection over Union",
+    "option_d": "Batch size",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "medium",
+    "tags": [
+      "miou",
+      "segmentation",
+      "evaluation",
+      "class-imbalance"
+    ]
+  },
+  {
+    "id": "cv_0037",
+    "question": "Khi resize một segmentation mask chứa các class ID nguyên, phương pháp interpolation nào thường phù hợp nhất để tránh tạo ra class ID không tồn tại?",
+    "option_a": "Nearest-neighbor interpolation",
+    "option_b": "Bicubic interpolation",
+    "option_c": "Lanczos interpolation",
+    "option_d": "Gaussian interpolation",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Image Preprocessing",
+    "difficulty": "medium",
+    "tags": [
+      "segmentation-mask",
+      "nearest-neighbor",
+      "resize",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "cv_0038",
+    "question": "Nếu training IoU của mô hình segmentation đạt 0.95 nhưng validation IoU chỉ đạt 0.55 và tiếp tục giảm, hiện tượng nào có khả năng cao nhất?",
+    "option_a": "Underfitting",
+    "option_b": "Overfitting",
+    "option_c": "Gradient luôn bằng 0",
+    "option_d": "Mô hình chưa từng được huấn luyện",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Training and Troubleshooting",
+    "difficulty": "easy",
+    "tags": [
+      "overfitting",
+      "segmentation",
+      "validation",
+      "training"
+    ]
+  },
+  {
+    "id": "cv_0039",
+    "question": "CLIP được huấn luyện chủ yếu dựa trên ý tưởng nào?",
+    "option_a": "Chỉ dự đoán class ID cố định của ImageNet",
+    "option_b": "Khôi phục pixel ảnh bằng MSE",
+    "option_c": "Đưa embedding của ảnh và văn bản tương ứng lại gần nhau bằng contrastive learning",
+    "option_d": "Chỉ sử dụng masked language modeling",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Vision-Language Models",
+    "difficulty": "medium",
+    "tags": [
+      "clip",
+      "contrastive-learning",
+      "image-text",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "cv_0040",
+    "question": "CLIP có thể thực hiện zero-shot image classification bằng cách nào?",
+    "option_a": "Huấn luyện lại toàn bộ model cho từng class mới",
+    "option_b": "So sánh embedding của ảnh với embedding của các mô tả văn bản đại diện cho từng lớp",
+    "option_c": "Sử dụng k-NN trực tiếp trên raw pixel",
+    "option_d": "Chỉ dùng OCR để đọc tên class trong ảnh",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Vision-Language Models",
+    "difficulty": "medium",
+    "tags": [
+      "clip",
+      "zero-shot",
+      "image-classification",
+      "text-prompt"
+    ]
+  },
+  {
+    "id": "cv_0041",
+    "question": "DINOv2 thuộc nhóm phương pháp nào?",
+    "option_a": "Học biểu diễn thị giác tự giám sát",
+    "option_b": "Hồi quy tuyến tính",
+    "option_c": "Object detection dựa hoàn toàn trên anchor",
+    "option_d": "Mô hình ngôn ngữ chỉ xử lý văn bản",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Self-Supervised Learning",
+    "difficulty": "medium",
+    "tags": [
+      "dinov2",
+      "self-supervised-learning",
+      "visual-representation",
+      "foundation-model"
+    ]
+  },
+  {
+    "id": "cv_0042",
+    "question": "Segment Anything Model (SAM) được thiết kế nổi bật với khả năng nào?",
+    "option_a": "Chỉ phân loại ảnh ImageNet",
+    "option_b": "Chỉ sinh caption cho ảnh",
+    "option_c": "Chỉ phát hiện khuôn mặt",
+    "option_d": "Sinh segmentation mask dựa trên các prompt như điểm hoặc bounding box",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Foundation Models",
+    "difficulty": "medium",
+    "tags": [
+      "sam",
+      "segment-anything",
+      "promptable-segmentation",
+      "foundation-model"
+    ]
+  },
+  {
+    "id": "cv_0043",
+    "question": "Trong Diffusion Model dùng để sinh ảnh, quá trình huấn luyện cơ bản thường yêu cầu mô hình học điều gì?",
+    "option_a": "Sắp xếp các ảnh theo alphabet",
+    "option_b": "Dự đoán hoặc loại bỏ nhiễu được thêm vào dữ liệu",
+    "option_c": "Chỉ phân loại ảnh thành hai lớp",
+    "option_d": "Tìm các keypoint SIFT",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Generative Models",
+    "difficulty": "medium",
+    "tags": [
+      "diffusion",
+      "denoising",
+      "generative-model",
+      "noise-prediction"
+    ]
+  },
+  {
+    "id": "cv_0044",
+    "question": "Điểm khác biệt quan trọng của Latent Diffusion so với diffusion trực tiếp trên pixel là gì?",
+    "option_a": "Latent Diffusion không sử dụng neural network",
+    "option_b": "Latent Diffusion chỉ hoạt động với ảnh đen trắng",
+    "option_c": "Quá trình diffusion được thực hiện trong không gian latent nén thay vì trực tiếp trên toàn bộ pixel",
+    "option_d": "Latent Diffusion không cần dữ liệu huấn luyện",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Generative Models",
+    "difficulty": "medium",
+    "tags": [
+      "latent-diffusion",
+      "stable-diffusion",
+      "vae",
+      "latent-space"
+    ]
+  },
+  {
+    "id": "cv_0045",
+    "question": "Trong các mô hình text-to-image diffusion, tăng classifier-free guidance scale thường có xu hướng nào?",
+    "option_a": "Tăng mức độ bám theo prompt nhưng có thể làm giảm tính đa dạng hoặc gây artifact nếu quá cao",
+    "option_b": "Luôn làm ảnh hoàn hảo hơn mà không có bất kỳ đánh đổi nào",
+    "option_c": "Biến mô hình diffusion thành CNN classifier",
+    "option_d": "Loại bỏ hoàn toàn text conditioning",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Generative Models",
+    "difficulty": "hard",
+    "tags": [
+      "classifier-free-guidance",
+      "diffusion",
+      "text-to-image",
+      "guidance-scale"
+    ]
+  },
+  {
+    "id": "cv_0046",
+    "question": "Trong một Vision-Language Model kết hợp vision encoder với Large Language Model, projector hoặc Q-Former thường có vai trò gì?",
+    "option_a": "Nén file ảnh trên ổ cứng",
+    "option_b": "Thay thế tokenizer văn bản",
+    "option_c": "Chỉ tính histogram màu",
+    "option_d": "Chuyển hoặc ánh xạ đặc trưng thị giác sang biểu diễn mà language model có thể sử dụng",
+    "correct_answer": "D",
+    "category": "Computer Vision",
+    "subcategory": "Vision-Language Models",
+    "difficulty": "hard",
+    "tags": [
+      "vlm",
+      "q-former",
+      "projector",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "cv_0047",
+    "question": "Điểm khác biệt chính giữa Image Captioning và Visual Question Answering là gì?",
+    "option_a": "Image Captioning không sử dụng ảnh",
+    "option_b": "Visual Question Answering luôn không cần văn bản đầu vào",
+    "option_c": "Image Captioning sinh mô tả tổng quát cho ảnh, còn Visual Question Answering trả lời câu hỏi cụ thể về ảnh",
+    "option_d": "Hai bài toán hoàn toàn giống nhau",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Vision-Language Models",
+    "difficulty": "easy",
+    "tags": [
+      "image-captioning",
+      "vqa",
+      "vlm",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "cv_0048",
+    "question": "Trong Open-Vocabulary Object Detection, ưu điểm quan trọng so với detector có tập class cố định là gì?",
+    "option_a": "Không cần ảnh đầu vào",
+    "option_b": "Có khả năng sử dụng mô tả hoặc tên lớp bằng văn bản để phát hiện các category ngoài tập nhãn cố định",
+    "option_c": "Không cần backbone",
+    "option_d": "Chỉ phát hiện được một vật thể trong mỗi ảnh",
+    "correct_answer": "B",
+    "category": "Computer Vision",
+    "subcategory": "Open-Vocabulary Detection",
+    "difficulty": "hard",
+    "tags": [
+      "open-vocabulary",
+      "object-detection",
+      "vision-language",
+      "text-prompt"
+    ]
+  },
+  {
+    "id": "cv_0049",
+    "question": "Một hệ thống OCR hoàn chỉnh thường gồm hai giai đoạn chính nào?",
+    "option_a": "Phát hiện vùng văn bản và nhận dạng nội dung văn bản",
+    "option_b": "Object tracking và optical flow",
+    "option_c": "Image captioning và text-to-image generation",
+    "option_d": "Clustering và PCA",
+    "correct_answer": "A",
+    "category": "Computer Vision",
+    "subcategory": "Optical Character Recognition",
+    "difficulty": "easy",
+    "tags": [
+      "ocr",
+      "text-detection",
+      "text-recognition"
+    ]
+  },
+  {
+    "id": "cv_0050",
+    "question": "Khi triển khai một mô hình thị giác lớn trên thiết bị có tài nguyên hạn chế, quantization từ FP32 xuống INT8 thường mang lại lợi ích nào?",
+    "option_a": "Luôn tăng độ chính xác của mô hình",
+    "option_b": "Tăng số lượng tham số",
+    "option_c": "Giảm dung lượng và chi phí tính toán, nhưng có thể gây giảm độ chính xác nếu lượng tử hóa không phù hợp",
+    "option_d": "Biến mô hình CNN thành Transformer",
+    "correct_answer": "C",
+    "category": "Computer Vision",
+    "subcategory": "Model Deployment",
+    "difficulty": "medium",
+    "tags": [
+      "quantization",
+      "int8",
+      "deployment",
+      "optimization"
+    ]
+  }
+]
