@@ -1,0 +1,212 @@
+[
+  {
+    "id": "tech_0001",
+    "changed": true,
+    "reason": "Replaced unrelated options with nearby interaction and workflow patterns.",
+    "old_difficulty": "easy",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0002",
+    "changed": true,
+    "reason": "Replaced implausible events with plausible but incorrect loop transitions.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0003",
+    "changed": true,
+    "reason": "Focused the stopping condition and replaced arbitrary thresholds.",
+    "old_difficulty": "medium",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0004",
+    "changed": true,
+    "reason": "Replaced unrelated architecture changes with tool execution misconceptions.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0005",
+    "changed": true,
+    "reason": "Replaced unrelated distractors with common schema capability confusions.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0006",
+    "changed": true,
+    "reason": "Contrasted handoff with neighboring delegation patterns.",
+    "old_difficulty": "easy",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0007",
+    "changed": true,
+    "reason": "Narrowed the manager-versus-handoff distinction to reply ownership.",
+    "old_difficulty": "hard",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0008",
+    "changed": true,
+    "reason": "Replaced absolute claims with plausible specialization design choices.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0009",
+    "changed": true,
+    "reason": "Replaced unrelated technologies with adjacent protocol and integration concepts.",
+    "old_difficulty": "easy",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0010",
+    "changed": true,
+    "reason": "Distinguished server capabilities from nearby host and A2A concepts.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0011",
+    "changed": true,
+    "reason": "Replaced obvious claims with integration boundary misconceptions.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0012",
+    "changed": true,
+    "reason": "Made the A2A question specific and contrasted adjacent discovery mechanisms.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0013",
+    "changed": true,
+    "reason": "Replaced trivial exclusions with protocol role confusions.",
+    "old_difficulty": "hard",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0014",
+    "changed": true,
+    "reason": "Replaced unrelated examples with decisions at different risk levels.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0015",
+    "changed": true,
+    "reason": "Contrasted guardrails with tracing, routing and compaction.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0016",
+    "changed": true,
+    "reason": "Replaced irrelevant options with realistic but inadequate safeguards.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0017",
+    "changed": true,
+    "reason": "Replaced out-of-domain options with observability misconceptions.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0018",
+    "changed": true,
+    "reason": "Contrasted final-answer scoring with process-quality misconceptions.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0019",
+    "changed": true,
+    "reason": "Replaced unrelated storage claims with memory and context misconceptions.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0020",
+    "changed": true,
+    "reason": "Replaced impossible claims with context-cost and relevance misconceptions.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0021",
+    "changed": true,
+    "reason": "Replaced unrelated operations with neighboring context-handling strategies.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0022",
+    "changed": true,
+    "reason": "Replaced unrelated objects with nearby agent extensibility concepts.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0023",
+    "changed": true,
+    "reason": "Replaced unrelated statements with interface-versus-API interaction modes.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0024",
+    "changed": true,
+    "reason": "Contrasted isolation with validation, repair and logging.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0025",
+    "changed": true,
+    "reason": "Distinguished code-orchestrated calls from ordinary sequential tool use.",
+    "old_difficulty": "hard",
+    "new_difficulty": "hard"
+  },
+  {
+    "id": "tech_0026",
+    "changed": true,
+    "reason": "Replaced unrelated claims with decisions at different RAG stages.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0027",
+    "changed": true,
+    "reason": "Replaced acronym decoys with nearby workflow patterns.",
+    "old_difficulty": "easy",
+    "new_difficulty": "easy"
+  },
+  {
+    "id": "tech_0028",
+    "changed": true,
+    "reason": "Replaced implausible options with persistence and recovery trade-offs.",
+    "old_difficulty": "hard",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0029",
+    "changed": true,
+    "reason": "Replaced unrelated claims with latency and turn-taking trade-offs.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  },
+  {
+    "id": "tech_0030",
+    "changed": true,
+    "reason": "Replaced irrelevant options with realistic but insufficient physical controls.",
+    "old_difficulty": "medium",
+    "new_difficulty": "medium"
+  }
+]

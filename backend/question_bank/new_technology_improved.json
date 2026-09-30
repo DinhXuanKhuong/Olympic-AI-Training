@@ -1,0 +1,542 @@
+[
+  {
+    "id": "tech_0001",
+    "question": "Trong một hệ thống dùng LLM, đặc điểm nào phân biệt agent với chatbot chỉ trả lời từng lượt?",
+    "option_a": "Luôn truy xuất tài liệu trước mỗi phản hồi theo một pipeline cố định",
+    "option_b": "Có thể chọn và thực hiện chuỗi hành động qua công cụ dựa trên kết quả trung gian",
+    "option_c": "Định tuyến mỗi yêu cầu tới đúng một công cụ theo quy tắc cố định",
+    "option_d": "Sinh phản hồi từng lượt từ ngữ cảnh mà không tự chọn bước hành động",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "AI Agents",
+    "difficulty": "medium",
+    "tags": [
+      "ai-agent",
+      "agentic-ai",
+      "llm",
+      "autonomy"
+    ]
+  },
+  {
+    "id": "tech_0002",
+    "question": "Trong agent loop, sau khi mô hình phát ra lời gọi công cụ hợp lệ, bước nào thường diễn ra tiếp theo?",
+    "option_a": "Hệ thống đưa tên công cụ vào ngữ cảnh rồi yêu cầu mô hình đoán kết quả",
+    "option_b": "Hệ thống gửi ngay lời gọi công cụ như câu trả lời cuối cùng cho người dùng",
+    "option_c": "Hệ thống chạy công cụ và đưa kết quả vào ngữ cảnh cho bước quyết định tiếp theo",
+    "option_d": "Hệ thống bỏ qua phản hồi công cụ và tiếp tục từ ngữ cảnh trước lời gọi",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Loop",
+    "difficulty": "easy",
+    "tags": [
+      "agent-loop",
+      "tool-calling",
+      "observation",
+      "iteration"
+    ]
+  },
+  {
+    "id": "tech_0003",
+    "question": "Khi nhiệm vụ đã hoàn tất, dấu hiệu nào cho phép agent loop kết thúc ở lượt hiện tại?",
+    "option_a": "Công cụ đầu tiên đã trả dữ liệu, dù mô hình còn yêu cầu bước khác",
+    "option_b": "Mô hình đã lập kế hoạch, dù chưa thực hiện các hành động cần thiết",
+    "option_c": "Agent đã chuyển cho agent khác, dù tác vụ được chuyển còn đang chạy",
+    "option_d": "Mô hình trả lời cuối cùng mà không yêu cầu thêm công cụ hoặc handoff",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Loop",
+    "difficulty": "easy",
+    "tags": [
+      "agent-loop",
+      "termination",
+      "final-answer",
+      "runtime"
+    ]
+  },
+  {
+    "id": "tech_0004",
+    "question": "Trong tool calling, vai trò của lời gọi hàm do LLM tạo ra là gì?",
+    "option_a": "Chỉ định công cụ và đối số để runtime thực thi rồi trả kết quả về mô hình",
+    "option_b": "Thực thi mã của công cụ ngay bên trong trọng số của mô hình",
+    "option_c": "Ghi kết quả công cụ do mô hình suy đoán mà không cần runtime chạy",
+    "option_d": "Đưa mô tả công cụ vào prompt nhưng không truyền đối số để gọi",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Tool Calling",
+    "difficulty": "easy",
+    "tags": [
+      "tool-calling",
+      "function-calling",
+      "agents",
+      "external-tools"
+    ]
+  },
+  {
+    "id": "tech_0005",
+    "question": "Vì sao khai báo schema tham số rõ ràng giúp giảm lỗi khi agent gọi tool?",
+    "option_a": "Schema tự kiểm chứng rằng dữ liệu trả về của tool luôn đúng về nội dung",
+    "option_b": "Schema chỉ ra tên, kiểu và ràng buộc đối số để lời gọi được kiểm tra",
+    "option_c": "Schema tự quyết định thứ tự gọi nhiều tool thay cho agent loop",
+    "option_d": "Schema cấp quyền thực thi tool cho mọi yêu cầu sau khi đối số hợp lệ",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Tool Calling",
+    "difficulty": "medium",
+    "tags": [
+      "tool-schema",
+      "structured-input",
+      "function-calling",
+      "reliability"
+    ]
+  },
+  {
+    "id": "tech_0006",
+    "question": "Trong điều phối nhiều agent, handoff thường thay đổi điều gì?",
+    "option_a": "Gọi agent chuyên môn như tool rồi giữ agent gốc làm chủ lượt trả lời",
+    "option_b": "Cho hai agent chạy song song nhưng giữ nguyên agent chủ trì phản hồi",
+    "option_c": "Chuyển quyền xử lý lượt hội thoại cho agent chuyên môn nhận bàn giao",
+    "option_d": "Sao chép instructions của agent khác mà không đổi agent chủ trì",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Multi-Agent Systems",
+    "difficulty": "medium",
+    "tags": [
+      "handoff",
+      "multi-agent",
+      "delegation",
+      "orchestration"
+    ]
+  },
+  {
+    "id": "tech_0007",
+    "question": "Trong mô hình manager gọi specialist như tool, ai thường sở hữu câu trả lời cuối cùng?",
+    "option_a": "Specialist nhận toàn bộ quyền xử lý sau lời gọi như một handoff",
+    "option_b": "Runtime chọn ngẫu nhiên một specialist để trả lời thay manager",
+    "option_c": "Tool của specialist trực tiếp kết thúc lượt mà manager không nhận kết quả",
+    "option_d": "Manager nhận kết quả từ specialist và tiếp tục điều phối câu trả lời",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Multi-Agent Systems",
+    "difficulty": "medium",
+    "tags": [
+      "manager-agent",
+      "agents-as-tools",
+      "handoff",
+      "orchestration"
+    ]
+  },
+  {
+    "id": "tech_0008",
+    "question": "Lợi ích thiết kế nào có thể có khi chia workflow thành các agent chuyên biệt?",
+    "option_a": "Gán instructions và tools phù hợp cho từng phần việc rồi điều phối kết quả",
+    "option_b": "Dùng cùng một tập instructions và tools cho mọi agent để tránh phân vai",
+    "option_c": "Chuyển mọi phần việc cho agent đầu tiên và chỉ dùng agent khác để ghi log",
+    "option_d": "Buộc mọi agent cùng quyết định một bước trước khi bất kỳ tool nào chạy",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Multi-Agent Systems",
+    "difficulty": "medium",
+    "tags": [
+      "multi-agent",
+      "specialization",
+      "orchestration",
+      "agent-design"
+    ]
+  },
+  {
+    "id": "tech_0009",
+    "question": "Model Context Protocol (MCP) chuẩn hóa chủ yếu lớp tương tác nào?",
+    "option_a": "Trao đổi nhiệm vụ giữa các agent độc lập thông qua agent card",
+    "option_b": "Kết nối ứng dụng AI với tools, resources và prompts do server cung cấp",
+    "option_c": "Chuẩn hóa một workflow agent từ lập kế hoạch tới phê duyệt",
+    "option_d": "Chuẩn hóa nội dung câu trả lời cuối của mọi agent cho người dùng",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Model Context Protocol",
+    "difficulty": "medium",
+    "tags": [
+      "mcp",
+      "model-context-protocol",
+      "tools",
+      "connectors"
+    ]
+  },
+  {
+    "id": "tech_0010",
+    "question": "Trong MCP, một MCP server thường phơi bày thành phần nào cho client?",
+    "option_a": "Lịch trình bắt buộc cho mọi lượt model và tool trong agent loop",
+    "option_b": "Các agent card để agent khác ủy quyền tác vụ theo giao thức A2A",
+    "option_c": "Các tools, resources hoặc prompts có thể khám phá và sử dụng qua giao thức",
+    "option_d": "Chính sách phê duyệt chung của mọi client kết nối với server",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Model Context Protocol",
+    "difficulty": "medium",
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "tools",
+      "external-data"
+    ]
+  },
+  {
+    "id": "tech_0011",
+    "question": "Vì sao chuẩn hóa giao diện MCP có thể giảm công sức tích hợp nhiều ứng dụng AI với nhiều dịch vụ?",
+    "option_a": "Mỗi client vẫn phải dùng một giao thức khác nhau cho cùng một server",
+    "option_b": "Một server chuẩn tự thay thế mọi bước cấp quyền của dịch vụ phía sau",
+    "option_c": "Mỗi client tự nhận biết mọi API mới mà không cần server khai báo khả năng",
+    "option_d": "Một MCP server có thể cung cấp cùng giao diện giao thức cho nhiều client tương thích",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Model Context Protocol",
+    "difficulty": "medium",
+    "tags": [
+      "mcp",
+      "interoperability",
+      "integration",
+      "standardization"
+    ]
+  },
+  {
+    "id": "tech_0012",
+    "question": "Trong A2A, Agent Card hỗ trợ chủ yếu việc gì giữa các agent độc lập?",
+    "option_a": "Công bố thông tin và khả năng để agent khác khám phá cách tương tác",
+    "option_b": "Khai báo schema đối số cho từng MCP tool mà agent có thể gọi",
+    "option_c": "Lưu trạng thái chi tiết của mọi task đang chạy thay cho task ID",
+    "option_d": "Định nghĩa prompt bắt buộc mà mọi agent đối tác phải thực thi",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Interoperability",
+    "difficulty": "medium",
+    "tags": [
+      "a2a",
+      "agent2agent",
+      "multi-agent",
+      "interoperability"
+    ]
+  },
+  {
+    "id": "tech_0013",
+    "question": "Phân biệt nào mô tả đúng trọng tâm của MCP và A2A?",
+    "option_a": "MCP dùng agent card để ủy quyền; A2A phơi bày tools và resources",
+    "option_b": "MCP kết nối ứng dụng AI với khả năng server; A2A hỗ trợ agent cộng tác qua tác vụ",
+    "option_c": "MCP điều phối agent loop; A2A chuẩn hóa schema đối số của tool",
+    "option_d": "MCP truyền nhiệm vụ có trạng thái; A2A chỉ bổ sung context cho LLM",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Interoperability",
+    "difficulty": "medium",
+    "tags": [
+      "mcp",
+      "a2a",
+      "interoperability",
+      "protocols"
+    ]
+  },
+  {
+    "id": "tech_0014",
+    "question": "Trong workflow agent, tình huống nào phù hợp nhất để chèn human approval trước khi tiếp tục?",
+    "option_a": "Trước khi lập kế hoạch nội bộ chưa gây thay đổi bên ngoài",
+    "option_b": "Trước khi đọc metadata công khai để tìm công cụ phù hợp",
+    "option_c": "Trước khi thực thi lệnh chuyển tiền có tác động thật và khó hoàn tác",
+    "option_d": "Trước khi tóm tắt dữ liệu đã được phép đọc mà không gửi đi",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Human-in-the-Loop",
+    "difficulty": "easy",
+    "tags": [
+      "human-in-the-loop",
+      "approval",
+      "safety",
+      "agent-control"
+    ]
+  },
+  {
+    "id": "tech_0015",
+    "question": "Trong agent, guardrail được dùng để làm gì?",
+    "option_a": "Ghi lại mọi tool call để truy vết nhưng không áp dụng quy tắc chặn",
+    "option_b": "Chọn agent chuyên môn dựa trên yêu cầu rồi bàn giao quyền xử lý",
+    "option_c": "Tóm tắt lịch sử hội thoại để giữ nội dung trong context window",
+    "option_d": "Kiểm tra hoặc chặn input, output hay hành động không đạt quy tắc đã định",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Safety",
+    "difficulty": "easy",
+    "tags": [
+      "guardrails",
+      "safety",
+      "validation",
+      "agents"
+    ]
+  },
+  {
+    "id": "tech_0016",
+    "question": "Một agent đề xuất gọi `delete_database()` trên dữ liệu production. Kiểm soát nào nên đặt trước bước thực thi?",
+    "option_a": "Chặn tại runtime để kiểm tra policy và yêu cầu phê duyệt phù hợp",
+    "option_b": "Chỉ ghi trace sau khi xóa để có thể giải thích quyết định về sau",
+    "option_c": "Chỉ kiểm tra cú pháp lời gọi vì đối số hợp lệ đồng nghĩa an toàn",
+    "option_d": "Cho chạy ngay rồi nhờ mô hình đánh giá rủi ro ở lượt tiếp theo",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Safety",
+    "difficulty": "medium",
+    "tags": [
+      "approval",
+      "high-risk-action",
+      "human-in-the-loop",
+      "tool-safety"
+    ]
+  },
+  {
+    "id": "tech_0017",
+    "question": "Tracing một lần chạy agent giúp quan sát thông tin nào để gỡ lỗi?",
+    "option_a": "Chỉ câu trả lời cuối cùng, không có các bước hoặc sự kiện trung gian",
+    "option_b": "Trình tự model calls, tool calls, handoffs và kết quả của từng bước",
+    "option_c": "Chỉ số accuracy trung bình trên tập kiểm thử, không có bản ghi từng lượt",
+    "option_d": "Các trọng số đã học của LLM trước và sau mỗi tool call",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Observability",
+    "difficulty": "easy",
+    "tags": [
+      "tracing",
+      "observability",
+      "tool-calls",
+      "debugging"
+    ]
+  },
+  {
+    "id": "tech_0018",
+    "question": "Vì sao đánh giá agent chỉ bằng câu trả lời cuối có thể bỏ sót lỗi?",
+    "option_a": "Kết quả cuối chỉ phản ánh tốc độ token và không chứa nội dung cần đánh giá",
+    "option_b": "Trace thay thế hoàn toàn việc kiểm tra chất lượng câu trả lời cuối",
+    "option_c": "Câu trả lời đúng vẫn có thể đi kèm tool call sai, tốn kém hoặc không an toàn",
+    "option_d": "Mọi tool call đều đúng nếu câu trả lời cuối tình cờ khớp đáp án mẫu",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Evaluation",
+    "difficulty": "medium",
+    "tags": [
+      "agent-evaluation",
+      "trajectory-evaluation",
+      "tool-use",
+      "evals"
+    ]
+  },
+  {
+    "id": "tech_0019",
+    "question": "Trong agent, memory thường giữ loại thông tin nào để hỗ trợ các bước hoặc phiên sau?",
+    "option_a": "Toàn bộ transcript nguyên vẹn, luôn đưa lại vào mỗi prompt sau",
+    "option_b": "Chỉ các kết quả tool của lượt hiện tại, bỏ qua thông tin từ phiên trước",
+    "option_c": "Chỉ trạng thái tính toán của model trong một lần sinh token hiện tại",
+    "option_d": "Các sự kiện, sở thích hoặc trạng thái hữu ích được truy xuất khi cần",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Memory",
+    "difficulty": "easy",
+    "tags": [
+      "agent-memory",
+      "long-term-memory",
+      "state",
+      "personalization"
+    ]
+  },
+  {
+    "id": "tech_0020",
+    "question": "Vì sao đưa toàn bộ lịch sử rất dài vào mỗi lượt agent thường là lựa chọn kém?",
+    "option_a": "Tăng token, độ trễ và thông tin nhiễu, trong khi chỉ một phần lịch sử còn cần thiết",
+    "option_b": "Lịch sử dài làm mọi tool ngừng hoạt động ngay cả khi context chưa đầy",
+    "option_c": "Chi phí token giảm khi prompt dài vì các lượt trước đã được xử lý",
+    "option_d": "Độ chính xác luôn tăng theo độ dài lịch sử bất kể thông tin có liên quan",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Context Engineering",
+    "difficulty": "medium",
+    "tags": [
+      "context-engineering",
+      "memory",
+      "context-window",
+      "token-efficiency"
+    ]
+  },
+  {
+    "id": "tech_0021",
+    "question": "Mục tiêu của context compaction khi agent làm nhiệm vụ dài là gì?",
+    "option_a": "Xóa toàn bộ kết quả tool để lượt sau bắt đầu không có trạng thái",
+    "option_b": "Rút gọn lịch sử nhưng giữ trạng thái và thông tin cần cho các bước tiếp theo",
+    "option_c": "Giữ nguyên mọi token lịch sử nhưng đổi sang định dạng JSON ngắn hơn",
+    "option_d": "Chỉ giảm số token của câu trả lời cuối, không thay đổi ngữ cảnh chạy",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Context Engineering",
+    "difficulty": "medium",
+    "tags": [
+      "context-compaction",
+      "context-engineering",
+      "long-running-agents",
+      "memory"
+    ]
+  },
+  {
+    "id": "tech_0022",
+    "question": "Trong coding agent, một skill dành cho workflow cụ thể thường là gì?",
+    "option_a": "Bản ghi trace của một lần chạy để xem lại các bước thực thi",
+    "option_b": "Một tool call đơn lẻ với đối số được tạo trong lượt hiện tại",
+    "option_c": "Gói hướng dẫn có thể kèm tài nguyên hoặc script để agent dùng khi phù hợp",
+    "option_d": "Một handoff chuyển quyền xử lý cho agent chuyên môn khác",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Skills",
+    "difficulty": "medium",
+    "tags": [
+      "skills",
+      "coding-agent",
+      "workflow",
+      "instructions"
+    ]
+  },
+  {
+    "id": "tech_0023",
+    "question": "Điểm đặc trưng của computer-use agent so với gọi API có cấu trúc là gì?",
+    "option_a": "Chỉ gửi tham số JSON tới endpoint mà không cần quan sát giao diện",
+    "option_b": "Chỉ đọc mã nguồn UI rồi suy ra kết quả, không tương tác với màn hình",
+    "option_c": "Chỉ gọi database query và nhận bản ghi dưới dạng dữ liệu có cấu trúc",
+    "option_d": "Quan sát giao diện và thao tác qua click, nhập liệu hoặc phím như người dùng",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Computer Use Agents",
+    "difficulty": "easy",
+    "tags": [
+      "computer-use",
+      "gui-agent",
+      "browser-agent",
+      "automation"
+    ]
+  },
+  {
+    "id": "tech_0024",
+    "question": "Sandbox giới hạn rủi ro của coding agent chạy lệnh chủ yếu bằng cách nào?",
+    "option_a": "Cô lập quyền truy cập và tài nguyên của tiến trình thực thi lệnh",
+    "option_b": "Tự xác nhận mã sinh ra đúng trước khi tiến trình thực thi lệnh",
+    "option_c": "Tự sửa mọi lỗi cú pháp nên lệnh không thể thất bại khi chạy",
+    "option_d": "Chỉ ghi log lệnh đã chạy nhưng để tiến trình toàn quyền hệ thống",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Sandbox Agents",
+    "difficulty": "medium",
+    "tags": [
+      "sandbox",
+      "coding-agent",
+      "security",
+      "code-execution"
+    ]
+  },
+  {
+    "id": "tech_0025",
+    "question": "Trong programmatic tool calling, điều gì cho phép điều phối nhiều lần gọi tool mà không cần mô hình xử lý từng kết quả riêng lẻ?",
+    "option_a": "Mô hình phát từng lời gọi riêng và đọc từng kết quả trước lời gọi kế tiếp",
+    "option_b": "Mã thực thi gọi tool trong vòng lặp hoặc nhánh rồi tổng hợp kết quả cần thiết",
+    "option_c": "Runtime tự chọn một tool duy nhất dựa trên tên hàm gần với prompt",
+    "option_d": "Mô hình lưu mọi kết quả trung gian vào prompt trước khi mã tiếp tục chạy",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Tool Orchestration",
+    "difficulty": "hard",
+    "tags": [
+      "programmatic-tool-calling",
+      "orchestration",
+      "parallel-tools",
+      "agent-loop"
+    ]
+  },
+  {
+    "id": "tech_0026",
+    "question": "So với RAG có bước retrieval cố định, agentic RAG khác ở quyền quyết định nào?",
+    "option_a": "Retriever luôn chạy đúng một lần trước khi model nhìn thấy câu hỏi",
+    "option_b": "Agent chỉ chọn prompt sinh đáp án sau một truy vấn cố định đã định sẵn",
+    "option_c": "Agent có thể chọn lúc truy xuất, sửa truy vấn và lặp lại retrieval theo kết quả",
+    "option_d": "Agent chỉ xếp hạng lại tài liệu, còn truy vấn và thời điểm truy xuất cố định",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agentic RAG",
+    "difficulty": "medium",
+    "tags": [
+      "agentic-rag",
+      "retrieval",
+      "agents",
+      "dynamic-workflow"
+    ]
+  },
+  {
+    "id": "tech_0027",
+    "question": "Trong pattern ReAct, cặp bước nào được xen kẽ để giải quyết nhiệm vụ?",
+    "option_a": "Lập toàn bộ kế hoạch một lần rồi thực thi mà không cập nhật từ quan sát",
+    "option_b": "Chỉ suy luận qua các bước trong prompt mà không hành động với môi trường",
+    "option_c": "Chỉ hành động theo công cụ cố định mà không điều chỉnh từ quan sát",
+    "option_d": "Lập luận về bước tiếp theo và thực hiện hành động để nhận quan sát mới",
+    "correct_answer": "D",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Agent Reasoning Patterns",
+    "difficulty": "easy",
+    "tags": [
+      "react",
+      "reasoning",
+      "acting",
+      "agent-pattern"
+    ]
+  },
+  {
+    "id": "tech_0028",
+    "question": "Agent phải chờ tác vụ bên ngoài vài giờ. Thiết kế nào hỗ trợ tiếp tục đúng tiến trình mà không giữ request mở liên tục?",
+    "option_a": "Lưu trạng thái chạy bền vững và resume khi có tín hiệu tác vụ hoàn thành",
+    "option_b": "Chỉ lưu prompt gốc rồi chạy lại mọi hành động trước đó khi nhận tín hiệu",
+    "option_c": "Giữ trạng thái duy nhất trong bộ nhớ tiến trình và ngắt kết nối chờ tín hiệu",
+    "option_d": "Coi tác vụ đã xong khi timeout và sinh câu trả lời từ kết quả cũ",
+    "correct_answer": "A",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Long-Running Agents",
+    "difficulty": "medium",
+    "tags": [
+      "long-running-agents",
+      "resumable-state",
+      "durable-execution",
+      "background-tasks"
+    ]
+  },
+  {
+    "id": "tech_0029",
+    "question": "Trong thiết kế voice agent thời gian thực, yêu cầu nào nổi bật hơn pipeline ASR → LLM → TTS chạy tuần tự theo lượt?",
+    "option_a": "Chờ người dùng kết thúc hẳn rồi mới bắt đầu mọi bước xử lý",
+    "option_b": "Giảm độ trễ và xử lý luồng nói liên tục, kể cả ngắt lời khi cần",
+    "option_c": "Chỉ tối ưu chất lượng bản chép lời, bỏ qua thời gian phản hồi bằng giọng nói",
+    "option_d": "Chỉ tối ưu tổng thời gian huấn luyện của ASR, LLM và TTS",
+    "correct_answer": "B",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Realtime Agents",
+    "difficulty": "medium",
+    "tags": [
+      "voice-agent",
+      "realtime-ai",
+      "speech-to-speech",
+      "low-latency"
+    ]
+  },
+  {
+    "id": "tech_0030",
+    "question": "Khi agent điều khiển robot hoặc thiết bị thí nghiệm, cơ chế bổ sung nào cần được ưu tiên trước lệnh tác động vật lý?",
+    "option_a": "Chỉ đánh giá câu trả lời văn bản sau khi thiết bị đã thực hiện lệnh",
+    "option_b": "Chỉ lưu trace của lệnh để có thể điều tra nếu thao tác vượt giới hạn",
+    "option_c": "Kiểm tra giới hạn an toàn và quyền điều khiển trước khi gửi lệnh tới thiết bị",
+    "option_d": "Chỉ yêu cầu model mô tả mức tự tin mà không kiểm tra lệnh ở runtime",
+    "correct_answer": "C",
+    "category": "Emerging AI Technologies",
+    "subcategory": "Physical AI Agents",
+    "difficulty": "medium",
+    "tags": [
+      "physical-agents",
+      "robotics",
+      "hardware-control",
+      "safety"
+    ]
+  }
+]

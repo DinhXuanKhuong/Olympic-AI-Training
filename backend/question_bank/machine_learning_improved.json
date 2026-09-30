@@ -1,0 +1,876 @@
+[
+  {
+    "id": "ml_0001",
+    "question": "Khi sử dụng thuật toán k-NN với khoảng cách Euclid, tại sao việc chuẩn hóa các đặc trưng đầu vào thường quan trọng?",
+    "option_a": "Để các đặc trưng trở nên độc lập thống kê trước khi tính khoảng cách",
+    "option_b": "Để các đặc trưng đóng góp tương xứng hơn vào khoảng cách Euclid",
+    "option_c": "Để khoảng cách Euclid tự chuyển thành khoảng cách cosine",
+    "option_d": "Để mỗi đặc trưng có cùng mức liên hệ với nhãn dự đoán",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "k-Nearest Neighbors",
+    "difficulty": "easy",
+    "tags": [
+      "knn",
+      "normalization",
+      "euclidean-distance",
+      "feature-scaling"
+    ]
+  },
+  {
+    "id": "ml_0002",
+    "question": "Thuật toán k-NN thường được gọi là phương pháp học lười (lazy learning) vì lý do nào?",
+    "option_a": "Vì phần lớn phép tìm láng giềng được thực hiện khi có điểm truy vấn",
+    "option_b": "Vì k-NN huấn luyện mô hình trước rồi mới lưu các láng giềng gần nhất",
+    "option_c": "Vì k-NN chỉ ước lượng tham số sau khi đã dự đoán tất cả mẫu kiểm thử",
+    "option_d": "Vì k-NN cập nhật trọng số của láng giềng sau mỗi lần dự đoán",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "k-Nearest Neighbors",
+    "difficulty": "easy",
+    "tags": [
+      "knn",
+      "lazy-learning",
+      "instance-based-learning"
+    ]
+  },
+  {
+    "id": "ml_0003",
+    "question": "Trong bài toán phân loại bằng k-NN, khi tăng k từ 1 lên một giá trị lớn hơn, điều gì thường xảy ra?",
+    "option_a": "Biên quyết định thường gấp khúc hơn vì dùng thêm láng giềng",
+    "option_b": "Ảnh hưởng của từng điểm nhiễu thường tăng khi k tăng",
+    "option_c": "Mỗi dự đoán chỉ phụ thuộc vào láng giềng gần nhất",
+    "option_d": "Biên quyết định thường mượt hơn nhưng có thể tăng bias",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "k-Nearest Neighbors",
+    "difficulty": "medium",
+    "tags": [
+      "knn",
+      "k-value",
+      "bias-variance",
+      "overfitting"
+    ]
+  },
+  {
+    "id": "ml_0004",
+    "question": "Cho điểm truy vấn Q=(3,4) và điểm huấn luyện P=(0,0). Khoảng cách Euclid giữa Q và P bằng bao nhiêu?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "7",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "k-Nearest Neighbors",
+    "difficulty": "easy",
+    "tags": [
+      "knn",
+      "euclidean-distance",
+      "calculation"
+    ]
+  },
+  {
+    "id": "ml_0005",
+    "question": "Trong weighted k-NN, tại sao các láng giềng gần thường được gán trọng số lớn hơn?",
+    "option_a": "Để điểm gần truy vấn đóng góp mạnh hơn vào kết quả dự đoán",
+    "option_b": "Để các điểm cùng lớp với truy vấn luôn nhận trọng số bằng nhau",
+    "option_c": "Để điểm xa truy vấn bù cho sai lệch của điểm gần truy vấn",
+    "option_d": "Để trọng số phụ thuộc vào mật độ toàn cục thay vì khoảng cách",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "k-Nearest Neighbors",
+    "difficulty": "medium",
+    "tags": [
+      "knn",
+      "distance-weighting",
+      "nearest-neighbors"
+    ]
+  },
+  {
+    "id": "ml_0006",
+    "question": "Mục tiêu chính của Support Vector Machine tuyến tính là gì?",
+    "option_a": "Tìm siêu phẳng đi qua trọng tâm của từng lớp dữ liệu",
+    "option_b": "Tìm siêu phẳng giảm tổng bình phương sai số xác suất lớp",
+    "option_c": "Tìm siêu phẳng đặt mọi mẫu huấn luyện cách biên bằng nhau",
+    "option_d": "Tìm siêu phẳng phân lớp có margin lớn theo ràng buộc tối ưu",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Support Vector Machine",
+    "difficulty": "easy",
+    "tags": [
+      "svm",
+      "margin",
+      "hyperplane",
+      "classification"
+    ]
+  },
+  {
+    "id": "ml_0007",
+    "question": "Trong SVM, support vectors là những điểm dữ liệu nào?",
+    "option_a": "Các mẫu có ràng buộc hoạt động và quyết định vị trí siêu phẳng",
+    "option_b": "Các mẫu có khoảng cách lớn nhất tới siêu phẳng phân lớp",
+    "option_c": "Các mẫu nằm gần trung tâm hình học của mỗi lớp dữ liệu",
+    "option_d": "Các mẫu bị phân loại sai trong mọi cấu hình của tham số C",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Support Vector Machine",
+    "difficulty": "medium",
+    "tags": [
+      "svm",
+      "support-vectors",
+      "margin"
+    ]
+  },
+  {
+    "id": "ml_0008",
+    "question": "Kernel Trick trong SVM được sử dụng chủ yếu để làm gì?",
+    "option_a": "Tính khoảng cách Euclid giữa các mẫu rồi dùng trực tiếp làm margin",
+    "option_b": "Tính tích vô hướng trong không gian đặc trưng ẩn mà không cần ánh xạ tường minh",
+    "option_c": "Ánh xạ tường minh mọi mẫu lên từng chiều của không gian đặc trưng",
+    "option_d": "Thay tối ưu margin bằng ước lượng xác suất lớp theo kernel",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Support Vector Machine",
+    "difficulty": "medium",
+    "tags": [
+      "svm",
+      "kernel-trick",
+      "nonlinear-classification",
+      "rbf"
+    ]
+  },
+  {
+    "id": "ml_0009",
+    "question": "Trong SVM với kernel RBF, tham số gamma quá lớn thường dẫn đến điều gì?",
+    "option_a": "Vùng ảnh hưởng của mỗi mẫu rộng, khiến biên gần như không đổi",
+    "option_b": "Vùng ảnh hưởng của mỗi mẫu hẹp, khiến biên dễ phức tạp và overfit",
+    "option_c": "Margin mềm bị thay bằng margin cứng bất kể giá trị của C",
+    "option_d": "Kernel RBF tiệm cận kernel tuyến tính với mọi cặp điểm khác nhau",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Support Vector Machine",
+    "difficulty": "hard",
+    "tags": [
+      "svm",
+      "rbf-kernel",
+      "gamma",
+      "overfitting"
+    ]
+  },
+  {
+    "id": "ml_0010",
+    "question": "Cho SVM tuyến tính có w=[2,-3], b=1 và mẫu x=[1,2]. Giá trị hàm quyết định w·x+b là bao nhiêu?",
+    "option_a": "-3",
+    "option_b": "-1",
+    "option_c": "1",
+    "option_d": "3",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Support Vector Machine",
+    "difficulty": "medium",
+    "tags": [
+      "svm",
+      "decision-function",
+      "linear-classifier",
+      "calculation"
+    ]
+  },
+  {
+    "id": "ml_0011",
+    "question": "Trong hồi quy tuyến tính đơn giản y = wx + b, tham số w biểu diễn điều gì?",
+    "option_a": "Giá trị dự đoán của y tại điểm x bằng không",
+    "option_b": "Mức sai số trung bình giữa dự đoán và quan sát",
+    "option_c": "Độ phân tán của x quanh giá trị trung bình",
+    "option_d": "Mức thay đổi dự đoán của y khi x tăng một đơn vị",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Linear Regression",
+    "difficulty": "easy",
+    "tags": [
+      "linear-regression",
+      "slope",
+      "regression"
+    ]
+  },
+  {
+    "id": "ml_0012",
+    "question": "Trong ordinary least squares (OLS), hàm mục tiêu nào được tối thiểu hóa khi khớp hồi quy tuyến tính?",
+    "option_a": "Tổng trị tuyệt đối residual giữa giá trị thật và giá trị dự đoán",
+    "option_b": "Tổng Huber loss của residual giữa giá trị thật và giá trị dự đoán",
+    "option_c": "Tổng bình phương residual giữa giá trị thật và giá trị dự đoán",
+    "option_d": "Tổng bình phương các hệ số của mô hình hồi quy tuyến tính",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Linear Regression",
+    "difficulty": "easy",
+    "tags": [
+      "linear-regression",
+      "mse",
+      "loss-function"
+    ]
+  },
+  {
+    "id": "ml_0013",
+    "question": "Ridge Regression bổ sung loại regularization nào vào hàm mục tiêu?",
+    "option_a": "L2: tổng bình phương của các hệ số hồi quy",
+    "option_b": "L1: tổng trị tuyệt đối của các hệ số hồi quy",
+    "option_c": "Elastic Net: tổng L1 và L2 với hai hệ số phạt",
+    "option_d": "L0: số lượng hệ số hồi quy khác không",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Linear Models",
+    "difficulty": "easy",
+    "tags": [
+      "ridge-regression",
+      "l2-regularization",
+      "linear-model"
+    ]
+  },
+  {
+    "id": "ml_0014",
+    "question": "Lasso Regression có đặc điểm nào nổi bật so với Ridge Regression?",
+    "option_a": "L1 luôn làm mọi hệ số nhỏ đi nhưng không thể về đúng 0",
+    "option_b": "L1 loại bỏ ảnh hưởng của hệ số phạt khi dữ liệu có tương quan",
+    "option_c": "L1 có thể đưa một số hệ số về đúng 0, tạo mô hình thưa",
+    "option_d": "L1 bảo đảm chọn cùng nhóm biến tương quan như Ridge",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Linear Models",
+    "difficulty": "medium",
+    "tags": [
+      "lasso",
+      "l1-regularization",
+      "feature-selection",
+      "sparsity"
+    ]
+  },
+  {
+    "id": "ml_0015",
+    "question": "Trong Logistic Regression nhị phân, hàm sigmoid thường được áp dụng cho biểu thức tuyến tính nhằm mục đích gì?",
+    "option_a": "Chuẩn hóa xác suất trên mọi mẫu của cùng một minibatch",
+    "option_b": "Biến logit thành nhãn nhị phân bằng ngưỡng cứng tại 0",
+    "option_c": "Ánh xạ logit thành tỉ số odds không bị chặn trên",
+    "option_d": "Ánh xạ logit tuyến tính thành xác suất lớp dương từ 0 đến 1",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Logistic Regression",
+    "difficulty": "easy",
+    "tags": [
+      "logistic-regression",
+      "sigmoid",
+      "binary-classification",
+      "probability"
+    ]
+  },
+  {
+    "id": "ml_0016",
+    "question": "Trong cây quyết định dùng cho classification, entropy bằng 0 tại một node có ý nghĩa gì?",
+    "option_a": "Các mẫu tại node đều thuộc cùng một lớp",
+    "option_b": "Mỗi lớp tại node có cùng tỉ lệ mẫu",
+    "option_c": "Node chứa đúng một mẫu từ mỗi lớp",
+    "option_d": "Không thể tính độ thuần vì node chưa được chia",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Decision Trees",
+    "difficulty": "easy",
+    "tags": [
+      "decision-tree",
+      "entropy",
+      "purity"
+    ]
+  },
+  {
+    "id": "ml_0017",
+    "question": "Một node của cây quyết định chứa 50% mẫu lớp A và 50% mẫu lớp B. Entropy của node này bằng bao nhiêu bit?",
+    "option_a": "0",
+    "option_b": "0.5",
+    "option_c": "1",
+    "option_d": "2",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Decision Trees",
+    "difficulty": "medium",
+    "tags": [
+      "decision-tree",
+      "entropy",
+      "calculation"
+    ]
+  },
+  {
+    "id": "ml_0018",
+    "question": "Trong cây quyết định dùng entropy, information gain của một phép chia được tính như thế nào?",
+    "option_a": "Entropy trung bình của các node con trừ entropy của node cha",
+    "option_b": "Entropy của node cha trừ entropy của node con có nhiều mẫu nhất",
+    "option_c": "Entropy của node cha chia cho tổng entropy của các node con",
+    "option_d": "Entropy của node cha trừ entropy trung bình có trọng số của các node con",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Decision Trees",
+    "difficulty": "medium",
+    "tags": [
+      "decision-tree",
+      "information-gain",
+      "entropy",
+      "split-criterion"
+    ]
+  },
+  {
+    "id": "ml_0019",
+    "question": "Phương pháp nào giúp giảm overfitting của một Decision Tree?",
+    "option_a": "Giới hạn độ sâu hoặc yêu cầu nhiều mẫu hơn ở mỗi lá",
+    "option_b": "Giảm min_samples_leaf để mỗi lá khớp sát dữ liệu hơn",
+    "option_c": "Tăng độ sâu tối đa để mô hình có thêm nhiều phép chia",
+    "option_d": "Chọn phép chia tối ưu trên toàn bộ dữ liệu kiểm thử",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Decision Trees",
+    "difficulty": "easy",
+    "tags": [
+      "decision-tree",
+      "overfitting",
+      "pruning",
+      "max-depth"
+    ]
+  },
+  {
+    "id": "ml_0020",
+    "question": "Random Forest giảm phương sai so với một cây quyết định đơn bằng cách nào?",
+    "option_a": "Dùng một cây sâu hơn để thay cho nhiều cây có dự đoán khác nhau",
+    "option_b": "Trung bình nhiều cây có lỗi bớt tương quan nhờ lấy mẫu và chọn feature ngẫu nhiên",
+    "option_c": "Buộc mọi cây dùng cùng tập mẫu và feature để đồng nhất dự đoán",
+    "option_d": "Cộng dự đoán tuần tự để mỗi cây sửa residual của cây trước",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Random Forest",
+    "difficulty": "medium",
+    "tags": [
+      "random-forest",
+      "bagging",
+      "ensemble",
+      "variance-reduction"
+    ]
+  },
+  {
+    "id": "ml_0021",
+    "question": "Trong Random Forest Regression gồm K cây, dự đoán cuối cùng thường được tính như thế nào?",
+    "option_a": "Lấy đa số phiếu sau khi làm tròn dự đoán mỗi cây",
+    "option_b": "Lấy trung bình số học dự đoán của các cây",
+    "option_c": "Lấy trung vị bắt buộc của dự đoán các cây",
+    "option_d": "Cộng dự đoán của các cây mà không chia cho số cây",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Random Forest",
+    "difficulty": "easy",
+    "tags": [
+      "random-forest",
+      "regression",
+      "ensemble",
+      "averaging"
+    ]
+  },
+  {
+    "id": "ml_0022",
+    "question": "Khác biệt chính giữa Bagging và Boosting là gì?",
+    "option_a": "Bagging thêm mô hình theo residual; boosting học các mô hình độc lập",
+    "option_b": "Bagging chỉ kết hợp cây nông; boosting chỉ kết hợp cây sâu",
+    "option_c": "Bagging học các mô hình tương đối độc lập; boosting thêm mô hình tuần tự",
+    "option_d": "Bagging dùng một tập mẫu cố định; boosting bắt buộc dùng bootstrap",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Ensemble Learning",
+    "difficulty": "medium",
+    "tags": [
+      "bagging",
+      "boosting",
+      "ensemble-learning"
+    ]
+  },
+  {
+    "id": "ml_0023",
+    "question": "Trong AdaBoost, các mẫu bị phân loại sai ở một vòng thường được xử lý như thế nào ở vòng tiếp theo?",
+    "option_a": "Giảm trọng số mẫu sai để ưu tiên mẫu đã phân loại đúng",
+    "option_b": "Giữ nguyên trọng số mẫu và chỉ điều chỉnh ngưỡng dự đoán",
+    "option_c": "Loại mẫu sai rồi huấn luyện weak learner trên mẫu còn lại",
+    "option_d": "Tăng trọng số mẫu sai để weak learner tiếp theo chú ý hơn",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Boosting",
+    "difficulty": "medium",
+    "tags": [
+      "adaboost",
+      "boosting",
+      "sample-weight"
+    ]
+  },
+  {
+    "id": "ml_0024",
+    "question": "Ý tưởng chính của Gradient Boosting là gì?",
+    "option_a": "Thêm learner để xấp xỉ hướng giảm loss qua pseudo-residual",
+    "option_b": "Huấn luyện learner độc lập rồi lấy trung bình dự đoán",
+    "option_c": "Tối ưu từng learner bằng cách tăng loss của learner trước",
+    "option_d": "Cập nhật đồng thời mọi learner theo cùng một gradient",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Gradient Boosting",
+    "difficulty": "medium",
+    "tags": [
+      "gradient-boosting",
+      "residual",
+      "weak-learner",
+      "ensemble"
+    ]
+  },
+  {
+    "id": "ml_0025",
+    "question": "So với gradient boosting cây cơ bản, XGBoost có đặc trưng nào trong hàm mục tiêu và việc xây cây?",
+    "option_a": "Bỏ hạng phạt độ phức tạp cây và chỉ dùng dấu của gradient",
+    "option_b": "Có hạng phạt độ phức tạp cây và dùng khai triển bậc hai của loss",
+    "option_c": "Tối ưu trực tiếp từng cây bằng loss huấn luyện không có regularization",
+    "option_d": "Thay các phép chia cây bằng cập nhật trọng số của một mô hình tuyến tính",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Gradient Boosting",
+    "difficulty": "medium",
+    "tags": [
+      "xgboost",
+      "gradient-boosting",
+      "regularization",
+      "tree-ensemble"
+    ]
+  },
+  {
+    "id": "ml_0026",
+    "question": "Cặp đặc điểm nào mô tả đúng cách LightGBM thường xây cây hiệu quả?",
+    "option_a": "Giữ mọi ngưỡng đặc trưng chính xác và mở rộng đồng đều theo tầng",
+    "option_b": "Gom giá trị thành histogram và buộc mọi lá cùng độ sâu",
+    "option_c": "Gom giá trị đặc trưng thành histogram và mở rộng theo lá có gain lớn",
+    "option_d": "Chọn ngưỡng chính xác trên từng mẫu và mở rộng lá có ít mẫu nhất",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Gradient Boosting",
+    "difficulty": "hard",
+    "tags": [
+      "lightgbm",
+      "histogram",
+      "leaf-wise",
+      "gradient-boosting"
+    ]
+  },
+  {
+    "id": "ml_0027",
+    "question": "CatBoost đặc biệt hữu ích khi dữ liệu có nhiều loại đặc trưng nào?",
+    "option_a": "Đặc trưng liên tục cần được giảm chiều bằng PCA trước khi học",
+    "option_b": "Đặc trưng thứ tự cần được biến thành ảnh để mô hình xử lý",
+    "option_c": "Đặc trưng nhị phân cần được chuẩn hóa về phân phối Gaussian",
+    "option_d": "Đặc trưng phân loại cần được mã hóa với kiểm soát rò rỉ nhãn",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Gradient Boosting",
+    "difficulty": "medium",
+    "tags": [
+      "catboost",
+      "categorical-features",
+      "gradient-boosting",
+      "tabular-data"
+    ]
+  },
+  {
+    "id": "ml_0028",
+    "question": "Trong K-means, tâm cụm được cập nhật như thế nào sau bước gán cụm?",
+    "option_a": "Lấy trung bình các điểm hiện được gán cho cụm",
+    "option_b": "Chọn medoid là điểm gần các điểm trong cụm nhất",
+    "option_c": "Lấy trung vị theo từng chiều của các điểm trong cụm",
+    "option_d": "Lấy trung bình của mọi điểm trong toàn bộ dữ liệu",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "easy",
+    "tags": [
+      "kmeans",
+      "centroid",
+      "clustering"
+    ]
+  },
+  {
+    "id": "ml_0029",
+    "question": "Một cụm K-means chứa ba điểm (1,1), (4,4), (7,7). Tâm mới của cụm là gì?",
+    "option_a": "(3,3)",
+    "option_b": "(4,4)",
+    "option_c": "(5,5)",
+    "option_d": "(12,12)",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "easy",
+    "tags": [
+      "kmeans",
+      "centroid",
+      "calculation"
+    ]
+  },
+  {
+    "id": "ml_0030",
+    "question": "K-means thường tối ưu đại lượng nào?",
+    "option_a": "Tổng khoảng cách mỗi điểm đến tâm cụm gần thứ hai",
+    "option_b": "Tổng khoảng cách giữa mọi cặp tâm cụm với nhau",
+    "option_c": "Tổng bình phương khoảng cách mỗi điểm đến tâm cụm được gán",
+    "option_d": "Tổng bình phương khoảng cách mỗi điểm đến trung bình toàn cục",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "medium",
+    "tags": [
+      "kmeans",
+      "within-cluster-sum-of-squares",
+      "inertia",
+      "objective"
+    ]
+  },
+  {
+    "id": "ml_0031",
+    "question": "K-means++ cải thiện K-means cơ bản chủ yếu ở bước nào?",
+    "option_a": "Cập nhật tâm bằng trung vị thay vì trung bình sau mỗi lần gán",
+    "option_b": "Thay bước gán cụm bằng phân loại theo nhãn có sẵn",
+    "option_c": "Tăng số cụm tự động khi tổng sai số trong cụm còn lớn",
+    "option_d": "Chọn các tâm ban đầu với xác suất ưu tiên điểm xa các tâm đã chọn",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "medium",
+    "tags": [
+      "kmeans-plus-plus",
+      "initialization",
+      "clustering"
+    ]
+  },
+  {
+    "id": "ml_0032",
+    "question": "Một lợi thế của DBSCAN so với K-means là gì?",
+    "option_a": "Phát hiện cụm hình dạng không lồi và gán nhãn nhiễu cho điểm thưa",
+    "option_b": "Tối ưu trực tiếp tổng bình phương khoảng cách đến tâm cụm",
+    "option_c": "Bảo đảm mọi điểm được gán vào một trong k cụm đã biết trước",
+    "option_d": "Tạo cụm dựa trên khoảng cách đến một tâm trung bình duy nhất",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "medium",
+    "tags": [
+      "dbscan",
+      "density-based-clustering",
+      "noise",
+      "clustering"
+    ]
+  },
+  {
+    "id": "ml_0033",
+    "question": "Silhouette Score của một điểm gần 1 thường biểu thị điều gì?",
+    "option_a": "Điểm gần cụm khác hơn so với các điểm thuộc cụm của mình",
+    "option_b": "Điểm gần các điểm cùng cụm hơn rõ rệt so với cụm gần nhất khác",
+    "option_c": "Khoảng cách trung bình trong cụm và tới cụm khác gần bằng nhau",
+    "option_d": "Điểm có xác suất hậu nghiệm gần 1 đối với cụm đang được gán",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Clustering",
+    "difficulty": "medium",
+    "tags": [
+      "silhouette-score",
+      "clustering",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "ml_0034",
+    "question": "Mục tiêu chính của PCA là gì?",
+    "option_a": "Chiếu lên các trục tối đa hóa khoảng cách giữa nhãn các lớp",
+    "option_b": "Chiếu lên các trục giảm tối đa phương sai của dữ liệu đầu vào",
+    "option_c": "Chiếu lên các trục trực giao giữ phương sai lớn nhất theo thứ tự",
+    "option_d": "Chiếu lên các trục phi tuyến bảo toàn láng giềng cục bộ",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Dimensionality Reduction",
+    "difficulty": "medium",
+    "tags": [
+      "pca",
+      "dimensionality-reduction",
+      "variance",
+      "principal-components"
+    ]
+  },
+  {
+    "id": "ml_0035",
+    "question": "Trước khi áp dụng PCA lên các feature có đơn vị và thang đo rất khác nhau, thường nên làm gì?",
+    "option_a": "Mã hóa mọi feature liên tục thành thứ hạng trước khi PCA",
+    "option_b": "Chuẩn hóa riêng từng mẫu để mọi mẫu có cùng tổng feature",
+    "option_c": "Lấy trị tuyệt đối của mọi feature để tránh phương sai âm",
+    "option_d": "Standardize để thang đo không chi phối hướng phương sai lớn nhất",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Dimensionality Reduction",
+    "difficulty": "medium",
+    "tags": [
+      "pca",
+      "standardization",
+      "feature-scaling"
+    ]
+  },
+  {
+    "id": "ml_0036",
+    "question": "Explained Variance Ratio trong PCA biểu diễn điều gì?",
+    "option_a": "Phần phương sai tổng được giải thích bởi một principal component",
+    "option_b": "Phần sai số tái tạo do một principal component tạo thêm",
+    "option_c": "Phần số mẫu được chiếu lên một principal component",
+    "option_d": "Phần tương quan giữa nhãn và một principal component",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Dimensionality Reduction",
+    "difficulty": "medium",
+    "tags": [
+      "pca",
+      "explained-variance",
+      "principal-components"
+    ]
+  },
+  {
+    "id": "ml_0037",
+    "question": "Ứng dụng phù hợp nhất của t-SNE trong phân tích dữ liệu nhiều chiều là gì?",
+    "option_a": "Giữ chính xác tỷ lệ khoảng cách toàn cục giữa mọi cặp điểm",
+    "option_b": "Trực quan hóa quan hệ láng giềng cục bộ trên bản đồ 2D hoặc 3D",
+    "option_c": "Chiếu tuyến tính dữ liệu lên các trục có phương sai lớn nhất",
+    "option_d": "Tạo phép biến đổi tham số mặc định để suy diễn nhanh trên mẫu mới",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Dimensionality Reduction",
+    "difficulty": "medium",
+    "tags": [
+      "tsne",
+      "visualization",
+      "dimensionality-reduction",
+      "embedding"
+    ]
+  },
+  {
+    "id": "ml_0038",
+    "question": "Giả định cơ bản của Gaussian Naive Bayes là gì?",
+    "option_a": "Các feature độc lập vô điều kiện và cùng một Gaussian ở mọi lớp",
+    "option_b": "Vector feature có mọi hiệp phương sai chéo được mô hình hóa đầy đủ",
+    "option_c": "Các feature độc lập có điều kiện theo lớp và có phân phối Gaussian theo lớp",
+    "option_d": "Mỗi lớp có xác suất tiên nghiệm bằng nhau và feature độc lập vô điều kiện",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Probabilistic Models",
+    "difficulty": "medium",
+    "tags": [
+      "naive-bayes",
+      "gaussian-naive-bayes",
+      "conditional-independence"
+    ]
+  },
+  {
+    "id": "ml_0039",
+    "question": "Multinomial Naive Bayes thường phù hợp với loại dữ liệu nào?",
+    "option_a": "Vector đặc trưng liên tục được giả định Gaussian theo lớp",
+    "option_b": "Vector nhị phân chỉ ghi có hay không có từng từ",
+    "option_c": "Vector chứa duy nhất một hạng mục rời rạc cho mỗi mẫu",
+    "option_d": "Vector số đếm không âm, chẳng hạn số lần xuất hiện của từ",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Probabilistic Models",
+    "difficulty": "easy",
+    "tags": [
+      "multinomial-naive-bayes",
+      "text-classification",
+      "word-counts"
+    ]
+  },
+  {
+    "id": "ml_0040",
+    "question": "Trong Bayes' theorem, posterior probability P(C|X) tỷ lệ thuận với đại lượng nào?",
+    "option_a": "Likelihood P(X|C) nhân với prior P(C)",
+    "option_b": "Likelihood P(X|C) nhân với evidence P(X)",
+    "option_c": "Prior P(C) chia cho likelihood P(X|C)",
+    "option_d": "Evidence P(X) nhân với prior P(C)",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Probabilistic Models",
+    "difficulty": "medium",
+    "tags": [
+      "bayes-theorem",
+      "posterior",
+      "prior",
+      "likelihood"
+    ]
+  },
+  {
+    "id": "ml_0041",
+    "question": "Trong bài toán phát hiện bệnh nghiêm trọng, nếu yêu cầu quan trọng nhất là hạn chế bỏ sót bệnh nhân dương tính, metric nào nên được ưu tiên?",
+    "option_a": "Precision của lớp bệnh, vì đo độ tin cậy của dự đoán dương",
+    "option_b": "Recall của lớp bệnh, vì đo phần bệnh nhân được phát hiện",
+    "option_c": "Specificity của lớp bệnh, vì đo phần người khỏe được nhận diện",
+    "option_d": "Accuracy toàn bộ, vì cộng đúng cả hai lớp theo tần suất mẫu",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "easy",
+    "tags": [
+      "recall",
+      "false-negative",
+      "classification-metrics"
+    ]
+  },
+  {
+    "id": "ml_0042",
+    "question": "Trong hệ thống lọc spam, nếu muốn hạn chế email bình thường bị đánh nhầm thành spam, metric nào của lớp spam cần đặc biệt quan tâm?",
+    "option_a": "Recall của lớp spam, vì false negative làm chỉ số này giảm",
+    "option_b": "Specificity của lớp spam, vì nó chỉ xét email spam bị bỏ sót",
+    "option_c": "Precision của lớp spam, vì false positive làm chỉ số này giảm",
+    "option_d": "F1 của lớp spam, vì nó loại bỏ mọi ảnh hưởng của false negative",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "medium",
+    "tags": [
+      "precision",
+      "false-positive",
+      "classification-metrics"
+    ]
+  },
+  {
+    "id": "ml_0043",
+    "question": "F1-score là trung bình điều hòa của hai metric nào?",
+    "option_a": "Precision và specificity của cùng lớp được đánh giá",
+    "option_b": "Recall và accuracy của cùng tập dữ liệu đánh giá",
+    "option_c": "Accuracy và specificity của cùng tập dữ liệu đánh giá",
+    "option_d": "Precision và recall của cùng lớp được đánh giá",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "easy",
+    "tags": [
+      "f1-score",
+      "precision",
+      "recall"
+    ]
+  },
+  {
+    "id": "ml_0044",
+    "question": "Trong tập dữ liệu phân loại nhiều lớp mất cân bằng mạnh, Macro F1 khác Micro F1 ở điểm nào?",
+    "option_a": "Macro lấy trung bình F1 từng lớp; micro gộp TP, FP, FN rồi tính F1",
+    "option_b": "Macro gộp TP, FP, FN; micro lấy trung bình F1 từng lớp",
+    "option_c": "Macro cân theo số mẫu từng lớp; micro cho mọi lớp trọng số bằng nhau",
+    "option_d": "Macro và micro đều lấy trung bình F1 từng lớp với cùng trọng số",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Evaluation Metrics",
+    "difficulty": "medium",
+    "tags": [
+      "macro-f1",
+      "micro-f1",
+      "class-imbalance",
+      "multiclass"
+    ]
+  },
+  {
+    "id": "ml_0045",
+    "question": "Mục đích chính của k-fold Cross-Validation là gì?",
+    "option_a": "Ước lượng hiệu suất bằng cách chọn fold có accuracy cao nhất",
+    "option_b": "Ước lượng hiệu suất qua nhiều lần đổi tập validation giữa các fold",
+    "option_c": "Ước lượng hiệu suất trên cùng một validation set ở mọi lượt",
+    "option_d": "Ước lượng hiệu suất bằng cách huấn luyện trên toàn bộ k fold mỗi lượt",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Model Selection",
+    "difficulty": "easy",
+    "tags": [
+      "cross-validation",
+      "k-fold",
+      "model-selection"
+    ]
+  },
+  {
+    "id": "ml_0046",
+    "question": "Khi thực hiện Grid Search với 4 giá trị cho max_depth và 5 giá trị cho learning_rate, có bao nhiêu tổ hợp hyperparameter cần đánh giá?",
+    "option_a": "9",
+    "option_b": "20",
+    "option_c": "25",
+    "option_d": "45",
+    "correct_answer": "B",
+    "category": "Classical Machine Learning",
+    "subcategory": "Hyperparameter Optimization",
+    "difficulty": "easy",
+    "tags": [
+      "grid-search",
+      "hyperparameter-tuning",
+      "calculation"
+    ]
+  },
+  {
+    "id": "ml_0047",
+    "question": "Bayesian Optimization có lợi thế nào so với Grid Search khi việc đánh giá mỗi bộ hyperparameter rất tốn kém?",
+    "option_a": "Chia đều mỗi chiều tham số thành lưới rồi thử toàn bộ tổ hợp",
+    "option_b": "Lấy mẫu cấu hình độc lập mà không sử dụng kết quả thử trước",
+    "option_c": "Chỉ tối ưu tham số có đạo hàm loss tính được chính xác",
+    "option_d": "Dùng kết quả thử trước để chọn cấu hình tiếp theo qua mô hình surrogate",
+    "correct_answer": "D",
+    "category": "Classical Machine Learning",
+    "subcategory": "Hyperparameter Optimization",
+    "difficulty": "medium",
+    "tags": [
+      "bayesian-optimization",
+      "hyperparameter-tuning",
+      "sample-efficiency"
+    ]
+  },
+  {
+    "id": "ml_0048",
+    "question": "Isolation Forest phát hiện anomaly chủ yếu dựa trên ý tưởng nào?",
+    "option_a": "Điểm bất thường thường có đường đi ngắn trong cây chia ngẫu nhiên",
+    "option_b": "Điểm bất thường thường có đường đi dài trong cây chia ngẫu nhiên",
+    "option_c": "Điểm bất thường thường ở lá có số mẫu lớn nhất trong rừng",
+    "option_d": "Điểm bất thường thường có xác suất lớp thấp từ cây giám sát",
+    "correct_answer": "A",
+    "category": "Classical Machine Learning",
+    "subcategory": "Anomaly Detection",
+    "difficulty": "medium",
+    "tags": [
+      "isolation-forest",
+      "anomaly-detection",
+      "outlier-detection"
+    ]
+  },
+  {
+    "id": "ml_0049",
+    "question": "Với một dự đoán cụ thể, SHAP gán giá trị cho feature nhằm mô tả điều gì?",
+    "option_a": "Mức thay đổi loss nếu xóa vĩnh viễn feature khỏi tập huấn luyện",
+    "option_b": "Đạo hàm cục bộ của output theo feature tại mọi điểm dữ liệu",
+    "option_c": "Đóng góp của feature so với giá trị nền theo cách phân bổ Shapley",
+    "option_d": "Tương quan toàn cục giữa feature và nhãn trong tập huấn luyện",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Explainable Machine Learning",
+    "difficulty": "hard",
+    "tags": [
+      "shap",
+      "explainable-ai",
+      "feature-attribution",
+      "shapley-values"
+    ]
+  },
+  {
+    "id": "ml_0050",
+    "question": "Một classifier dự đoán xác suất 0.9 cho khoảng 100 mẫu, nhưng thực tế chỉ khoảng 60% số mẫu đó thuộc lớp dương. Vấn đề chính của mô hình là gì?",
+    "option_a": "Mô hình dự đoán thiếu tự tin vì tần suất thực tế cao hơn 0.9",
+    "option_b": "Mô hình có precision bằng 0.6 trên toàn bộ tập kiểm thử",
+    "option_c": "Mô hình dự đoán quá tự tin và xác suất chưa được hiệu chỉnh tốt",
+    "option_d": "Mô hình có recall bằng 0.9 trên nhóm 100 mẫu được chọn",
+    "correct_answer": "C",
+    "category": "Classical Machine Learning",
+    "subcategory": "Probability Calibration",
+    "difficulty": "medium",
+    "tags": [
+      "probability-calibration",
+      "calibration",
+      "classification",
+      "predicted-probability"
+    ]
+  }
+]

@@ -1,0 +1,891 @@
+[
+  {
+    "id": "data_0001",
+    "question": "Trong Pandas, lệnh nào trả về đúng 5 dòng đầu tiên của DataFrame df theo thứ tự hiện có?",
+    "option_a": "df.tail()",
+    "option_b": "df.head()",
+    "option_c": "df.sample(n=5)",
+    "option_d": "df.nlargest(5, 'score')",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "dataframe",
+      "head",
+      "python"
+    ]
+  },
+  {
+    "id": "data_0002",
+    "question": "Với DataFrame df, biểu thức nào trả về tuple (số dòng, số cột)?",
+    "option_a": "df.size",
+    "option_b": "df.shape",
+    "option_c": "df.ndim",
+    "option_d": "df.count()",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "dataframe",
+      "shape"
+    ]
+  },
+  {
+    "id": "data_0003",
+    "question": "Phương thức nào của Pandas hiển thị kiểu dữ liệu, số giá trị non-null và mức dùng bộ nhớ theo cột?",
+    "option_a": "df.describe()",
+    "option_b": "df.dtypes",
+    "option_c": "df.info()",
+    "option_d": "df.count()",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "info",
+      "dtype",
+      "missing-values"
+    ]
+  },
+  {
+    "id": "data_0004",
+    "question": "Với DataFrame có nhãn chỉ mục là số nguyên, điểm khác nhau cốt lõi giữa df.loc và df.iloc là gì?",
+    "option_a": "loc chọn theo nhãn; iloc chọn theo vị trí nguyên",
+    "option_b": "loc chọn theo vị trí; iloc chọn theo nhãn",
+    "option_c": "loc dùng nhãn dòng; iloc dùng nhãn cột",
+    "option_d": "loc và iloc đều chọn theo vị trí nguyên",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "loc",
+      "iloc",
+      "indexing"
+    ]
+  },
+  {
+    "id": "data_0005",
+    "question": "Trong Pandas, thao tác nào loại các dòng có ít nhất một giá trị thiếu?",
+    "option_a": "df.dropna(how='any')",
+    "option_b": "df.dropna(how='all')",
+    "option_c": "df.dropna(axis=1, how='any')",
+    "option_d": "df.fillna(0)",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Missing Data",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "dropna",
+      "missing-values",
+      "data-cleaning"
+    ]
+  },
+  {
+    "id": "data_0006",
+    "question": "Một cột số có giá trị thiếu và vài ngoại lệ rất lớn. Thống kê nào phù hợp nhất để điền khuyết nếu cần bền vững với ngoại lệ?",
+    "option_a": "Trung vị của các giá trị quan sát",
+    "option_b": "Trung bình của các giá trị quan sát",
+    "option_c": "Giá trị lớn nhất trong các giá trị quan sát",
+    "option_d": "Trung bình có trọng số theo tần suất",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Missing Data",
+    "difficulty": "easy",
+    "tags": [
+      "imputation",
+      "median",
+      "missing-values",
+      "outliers"
+    ]
+  },
+  {
+    "id": "data_0007",
+    "question": "Trong Pandas, lệnh nào trả về DataFrame sau khi bỏ các dòng trùng nhau theo mọi cột?",
+    "option_a": "df.duplicated(keep='first')",
+    "option_b": "df.drop_duplicates(subset=['id'])",
+    "option_c": "df.dropna(how='any')",
+    "option_d": "df.drop_duplicates(subset=None)",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Data Cleaning",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "duplicates",
+      "drop-duplicates",
+      "data-cleaning"
+    ]
+  },
+  {
+    "id": "data_0008",
+    "question": "Với DataFrame df có department và salary, biểu thức nào tính lương trung bình riêng cho từng department?",
+    "option_a": "df.groupby('department')['salary'].sum()",
+    "option_b": "df.groupby('department')['salary'].mean()",
+    "option_c": "df['salary'].mean()",
+    "option_d": "df.groupby('salary')['department'].count()",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "groupby",
+      "aggregation",
+      "mean"
+    ]
+  },
+  {
+    "id": "data_0009",
+    "question": "Khi ghép customers và orders theo customer_id, kiểu join nào chỉ giữ những khóa có ở cả hai bảng?",
+    "option_a": "Left join",
+    "option_b": "Right join",
+    "option_c": "Full outer join",
+    "option_d": "Inner join",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Data Integration",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "merge",
+      "inner-join",
+      "data-integration"
+    ]
+  },
+  {
+    "id": "data_0010",
+    "question": "Hai DataFrame có cùng các cột cần được ghép bằng cách nối thêm dòng. Biểu thức nào thực hiện việc đó?",
+    "option_a": "pd.concat([df1, df2], axis=1)",
+    "option_b": "df1.join(df2)",
+    "option_c": "df1.merge(df2)",
+    "option_d": "pd.concat([df1, df2], axis=0)",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Data Integration",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "concat",
+      "rows",
+      "data-integration"
+    ]
+  },
+  {
+    "id": "data_0011",
+    "question": "Trong Pandas, lệnh nào sắp xếp các dòng của df theo giá trị cột score tăng dần?",
+    "option_a": "df.sort_index()",
+    "option_b": "df.sort_values('score')",
+    "option_c": "df['score'].rank()",
+    "option_d": "df.nlargest(5, 'score')",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "sort-values",
+      "sorting"
+    ]
+  },
+  {
+    "id": "data_0012",
+    "question": "Muốn đếm số lần xuất hiện của từng giá trị trong Series df['category'], lệnh nào phù hợp?",
+    "option_a": "df['category'].count()",
+    "option_b": "df['category'].nunique()",
+    "option_c": "df['category'].value_counts()",
+    "option_d": "df.groupby('category').ngroups",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Pandas",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "value-counts",
+      "categorical-data"
+    ]
+  },
+  {
+    "id": "data_0013",
+    "question": "Cột age chứa các chuỗi số nguyên hợp lệ và không có giá trị thiếu. Lệnh nào chuyển Series đó sang kiểu int?",
+    "option_a": "df['age'].astype(str)",
+    "option_b": "df['age'].astype(int)",
+    "option_c": "df['age'].astype(float)",
+    "option_d": "df['age'].convert_dtypes()",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Data Types",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "astype",
+      "dtype",
+      "type-conversion"
+    ]
+  },
+  {
+    "id": "data_0014",
+    "question": "Cột timestamp chứa chuỗi ngày giờ như '2026-09-30 08:30:00'. Lệnh nào phân tích chuỗi thành giá trị datetime?",
+    "option_a": "df['timestamp'].astype(str)",
+    "option_b": "pd.to_datetime(df['timestamp'])",
+    "option_c": "df['timestamp'].str[:10]",
+    "option_d": "pd.to_numeric(df['timestamp'])",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Datetime Processing",
+    "difficulty": "easy",
+    "tags": [
+      "pandas",
+      "datetime",
+      "timestamp",
+      "to-datetime"
+    ]
+  },
+  {
+    "id": "data_0015",
+    "question": "Với phép toán số học trên mảng NumPy lớn, vì sao vectorization thường nhanh hơn vòng lặp Python trên từng phần tử?",
+    "option_a": "Các phần tử vẫn được lặp qua interpreter Python riêng lẻ sau khi vector hóa",
+    "option_b": "NumPy tự chuyển mọi phép toán mảng sang thực thi trên GPU",
+    "option_c": "Vectorization luôn làm giảm bậc độ phức tạp của phép toán",
+    "option_d": "Phần việc được thực thi trong mã tối ưu ở mức thấp, giảm overhead vòng lặp Python",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Performance Optimization",
+    "difficulty": "medium",
+    "tags": [
+      "vectorization",
+      "numpy",
+      "pandas",
+      "performance"
+    ]
+  },
+  {
+    "id": "data_0016",
+    "question": "Cho a có shape (100, 1) và b có shape (1, 20). Với phép cộng NumPy a + b, shape kết quả là gì?",
+    "option_a": "(100, 20), nhờ mở rộng tương thích theo từng chiều",
+    "option_b": "(100, 1), vì shape của toán hạng bên trái được giữ",
+    "option_c": "(1, 20), vì shape của toán hạng bên phải được giữ",
+    "option_d": "Không hợp lệ vì hai mảng không có cùng shape",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "NumPy",
+    "difficulty": "medium",
+    "tags": [
+      "numpy",
+      "broadcasting",
+      "array",
+      "vectorization"
+    ]
+  },
+  {
+    "id": "data_0017",
+    "question": "Với đặc trưng số x có độ lệch chuẩn khác 0, standardization kiểu z-score thường tính giá trị mới như thế nào?",
+    "option_a": "(x - mean) / standard deviation",
+    "option_b": "(x - min) / (max - min)",
+    "option_c": "x / max(abs(x))",
+    "option_d": "(x - median) / IQR",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Feature Scaling",
+    "difficulty": "medium",
+    "tags": [
+      "standardization",
+      "standard-scaler",
+      "feature-scaling",
+      "normalization"
+    ]
+  },
+  {
+    "id": "data_0018",
+    "question": "Với Min-Max Scaling về [0,1] trên tập huấn luyện, giá trị x được biến đổi theo công thức nào?",
+    "option_a": "(x - min) / (max - min)",
+    "option_b": "(x - mean) / standard deviation",
+    "option_c": "(x - median) / IQR",
+    "option_d": "x / max(abs(x))",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Feature Scaling",
+    "difficulty": "medium",
+    "tags": [
+      "min-max-scaling",
+      "normalization",
+      "feature-scaling"
+    ]
+  },
+  {
+    "id": "data_0019",
+    "question": "Với đặc trưng số có nhiều ngoại lệ lớn, scaler nào chuẩn hóa dựa trên trung vị và IQR thay vì mean và độ lệch chuẩn?",
+    "option_a": "StandardScaler",
+    "option_b": "MinMaxScaler",
+    "option_c": "RobustScaler",
+    "option_d": "MaxAbsScaler",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Feature Scaling",
+    "difficulty": "medium",
+    "tags": [
+      "robust-scaler",
+      "outliers",
+      "feature-scaling",
+      "median"
+    ]
+  },
+  {
+    "id": "data_0020",
+    "question": "Với biến màu sắc nominal không có thứ tự, cách mã hóa nào tạo cột chỉ báo riêng cho từng giá trị mà không áp đặt thứ bậc?",
+    "option_a": "Ordinal Encoding",
+    "option_b": "One-Hot Encoding",
+    "option_c": "Frequency Encoding",
+    "option_d": "Target Encoding",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Categorical Encoding",
+    "difficulty": "easy",
+    "tags": [
+      "one-hot-encoding",
+      "categorical-data",
+      "nominal-features"
+    ]
+  },
+  {
+    "id": "data_0021",
+    "question": "Biến education có thứ tự THPT < Đại học < Thạc sĩ < Tiến sĩ. Cách mã hóa nào biểu diễn trực tiếp thứ tự này bằng mã số tăng dần?",
+    "option_a": "One-Hot Encoding với mỗi mức một cột",
+    "option_b": "Ordinal Encoding với thứ tự mức được khai báo",
+    "option_c": "Frequency Encoding theo số lần xuất hiện",
+    "option_d": "Hashing Encoding vào chỉ số bucket",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Categorical Encoding",
+    "difficulty": "medium",
+    "tags": [
+      "ordinal-encoding",
+      "categorical-data",
+      "ordinal-features"
+    ]
+  },
+  {
+    "id": "data_0022",
+    "question": "Vì sao cần dành riêng test set trước khi huấn luyện và chọn mô hình?",
+    "option_a": "Ước lượng khả năng tổng quát hóa trên dữ liệu chưa tham gia huấn luyện hay chọn mô hình",
+    "option_b": "Điều chỉnh hyperparameter trực tiếp trên test set để chọn cấu hình tốt nhất",
+    "option_c": "Dùng test set để tính tham số chuẩn hóa trước khi fit mô hình",
+    "option_d": "Bảo đảm phân phối test luôn giống hệt phân phối train trong tương lai",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Dataset Splitting",
+    "difficulty": "medium",
+    "tags": [
+      "train-test-split",
+      "generalization",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "data_0023",
+    "question": "Khi chia tập phân loại có tỷ lệ lớp 95:5, phương pháp nào chủ đích giữ tỷ lệ lớp gần tương đương ở train và test?",
+    "option_a": "Random split không xét nhãn lớp",
+    "option_b": "Stratified split theo nhãn lớp",
+    "option_c": "Group split theo mã người dùng",
+    "option_d": "Time-based split theo thời điểm ghi nhận",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Dataset Splitting",
+    "difficulty": "medium",
+    "tags": [
+      "stratified-split",
+      "class-imbalance",
+      "train-test-split"
+    ]
+  },
+  {
+    "id": "data_0024",
+    "question": "Mean và độ lệch chuẩn được tính trên cả train lẫn test trước khi chuẩn hóa. Đánh giá test bị ảnh hưởng chủ yếu vì điều gì?",
+    "option_a": "Thống kê của test đã tác động đến bước tiền xử lý dùng khi huấn luyện",
+    "option_b": "Các nhãn test đã được dùng trực tiếp để cập nhật trọng số mô hình",
+    "option_c": "Mô hình không còn nhận được bất kỳ dữ liệu nào từ train",
+    "option_d": "Tỷ lệ lớp trong test được giữ cố định sau phép chuẩn hóa",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Data Leakage",
+    "difficulty": "medium",
+    "tags": [
+      "data-leakage",
+      "standardization",
+      "train-test-split"
+    ]
+  },
+  {
+    "id": "data_0025",
+    "question": "Trong đánh giá bằng train, validation và test, quy trình fit StandardScaler nào tránh rò rỉ thông tin?",
+    "option_a": "Fit riêng trên từng tập; dùng mỗi scaler cho tập tương ứng",
+    "option_b": "Fit trên train và validation; transform test bằng scaler đó",
+    "option_c": "Fit trên train; dùng scaler đó transform validation và test",
+    "option_d": "Fit trên toàn bộ ba tập; sau đó transform từng tập",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Data Leakage",
+    "difficulty": "medium",
+    "tags": [
+      "standard-scaler",
+      "data-leakage",
+      "fit-transform",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "data_0026",
+    "question": "Khi điền giá trị thiếu bằng median trước đánh giá test, median dùng cho cả train và test phải được ước lượng từ đâu?",
+    "option_a": "Các giá trị quan sát trong train",
+    "option_b": "Các giá trị quan sát trong test",
+    "option_c": "Các giá trị quan sát trong train và test gộp lại",
+    "option_d": "Median tính riêng trên từng tập sau khi chia",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Missing Data",
+    "difficulty": "medium",
+    "tags": [
+      "imputation",
+      "median",
+      "data-leakage",
+      "train-set"
+    ]
+  },
+  {
+    "id": "data_0027",
+    "question": "Trong scikit-learn, cần chuẩn hóa cột số và one-hot encode cột phân loại trong cùng một bước tiền xử lý. Thành phần nào ghép hai phép biến đổi theo nhóm cột?",
+    "option_a": "Pipeline",
+    "option_b": "FeatureUnion",
+    "option_c": "ColumnTransformer",
+    "option_d": "SimpleImputer",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Scikit-learn Preprocessing",
+    "difficulty": "medium",
+    "tags": [
+      "column-transformer",
+      "scikit-learn",
+      "preprocessing",
+      "categorical-data"
+    ]
+  },
+  {
+    "id": "data_0028",
+    "question": "Khi dùng cross-validation trong scikit-learn, đặt imputer và estimator trong Pipeline giúp điều gì?",
+    "option_a": "Imputer được fit một lần trên toàn bộ dữ liệu trước mọi fold",
+    "option_b": "Estimator được fit trên cả train và validation của mỗi fold",
+    "option_c": "Pipeline tự chọn hyperparameter tốt nhất mà không cần cơ chế tìm kiếm",
+    "option_d": "Imputer được fit riêng trên phần train của mỗi fold trước khi đánh giá fold đó",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Scikit-learn Preprocessing",
+    "difficulty": "medium",
+    "tags": [
+      "pipeline",
+      "scikit-learn",
+      "data-leakage",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "data_0029",
+    "question": "Theo quy tắc Tukey 1.5×IQR với IQR = Q3 - Q1, khoảng hàng rào để gắn cờ ngoại lệ là gì?",
+    "option_a": "[Q1 - 1.5×IQR, Q3 + 1.5×IQR]",
+    "option_b": "[Q1 - 1.5×IQR, Q3 - 1.5×IQR]",
+    "option_c": "[Q1 + 1.5×IQR, Q3 + 1.5×IQR]",
+    "option_d": "[Q1 - 0.5×IQR, Q3 + 0.5×IQR]",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Outlier Handling",
+    "difficulty": "medium",
+    "tags": [
+      "iqr",
+      "outlier",
+      "quartile",
+      "data-cleaning"
+    ]
+  },
+  {
+    "id": "data_0030",
+    "question": "Winsorization thường làm gì với giá trị nằm ngoài các percentile ngưỡng đã chọn?",
+    "option_a": "Xóa hẳn các dòng có giá trị vượt ngưỡng",
+    "option_b": "Thay mọi giá trị vượt ngưỡng bằng median toàn cột",
+    "option_c": "Chuẩn hóa toàn cột bằng mean và độ lệch chuẩn",
+    "option_d": "Thay giá trị vượt ngưỡng bằng giá trị tại ngưỡng tương ứng",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Outlier Handling",
+    "difficulty": "medium",
+    "tags": [
+      "winsorization",
+      "outliers",
+      "percentile",
+      "data-cleaning"
+    ]
+  },
+  {
+    "id": "data_0031",
+    "question": "Với đặc trưng x > 0 lệch phải mạnh, phép biến đổi nào biến tỷ số giữa hai giá trị thành chênh lệch cộng và thường nén đuôi phải?",
+    "option_a": "Z-score standardization",
+    "option_b": "Min-Max Scaling",
+    "option_c": "Log transformation",
+    "option_d": "Linear rescaling bằng một hằng số",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Feature Transformation",
+    "difficulty": "medium",
+    "tags": [
+      "log-transform",
+      "skewness",
+      "feature-transformation"
+    ]
+  },
+  {
+    "id": "data_0032",
+    "question": "Khi nhân bản ngẫu nhiên mẫu lớp hiếm để cân bằng train set, rủi ro nào tăng vì mô hình gặp lặp lại cùng quan sát?",
+    "option_a": "Giảm phương sai như khi có thêm nhiều mẫu lớp hiếm độc lập",
+    "option_b": "Loại bỏ tự động nhiễu nhãn trong các mẫu lớp hiếm",
+    "option_c": "Học quá sát các mẫu lớp hiếm được lặp",
+    "option_d": "Giảm mức tương quan giữa các bản sao của cùng một mẫu",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Imbalanced Data",
+    "difficulty": "medium",
+    "tags": [
+      "oversampling",
+      "class-imbalance",
+      "overfitting"
+    ]
+  },
+  {
+    "id": "data_0033",
+    "question": "Với đánh giá bằng một holdout test set, nên áp dụng SMOTE theo thứ tự nào để tránh leakage?",
+    "option_a": "Chia train/test, rồi chỉ fit và resample trên train",
+    "option_b": "SMOTE toàn bộ dữ liệu, rồi mới chia train/test",
+    "option_c": "Chia train/test, rồi SMOTE riêng từng tập",
+    "option_d": "Chia train/test, rồi fit SMOTE trên test và áp dụng cho train",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Imbalanced Data",
+    "difficulty": "medium",
+    "tags": [
+      "smote",
+      "class-imbalance",
+      "data-leakage",
+      "oversampling"
+    ]
+  },
+  {
+    "id": "data_0034",
+    "question": "Các chuỗi '  Alice ', 'alice', 'ALICE' cần được quy về cùng dạng để so khớp tên. Tổ hợp thao tác nào trực tiếp xử lý cả hai khác biệt?",
+    "option_a": "strip khoảng trắng ngoài rồi giữ nguyên kiểu chữ",
+    "option_b": "casefold chữ rồi giữ nguyên khoảng trắng ngoài",
+    "option_c": "chuẩn hóa Unicode NFC rồi giữ nguyên khoảng trắng và kiểu chữ",
+    "option_d": "strip khoảng trắng ngoài và casefold chữ",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Data Cleaning",
+    "difficulty": "easy",
+    "tags": [
+      "string-cleaning",
+      "normalization",
+      "whitespace",
+      "case-folding"
+    ]
+  },
+  {
+    "id": "data_0035",
+    "question": "Với categorical feature có rất nhiều giá trị mới liên tục, feature hashing có lợi thế nào so với lập vocabulary tường minh?",
+    "option_a": "Tạo một chiều riêng bảo đảm không collision cho mỗi giá trị mới",
+    "option_b": "Học embedding dày đặc bằng gradient cho từng giá trị",
+    "option_c": "Ánh xạ vào số chiều cố định mà không phải lưu toàn bộ vocabulary",
+    "option_d": "Gán mã theo tần suất quan sát mà vẫn giữ số chiều cố định",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Feature Engineering",
+    "difficulty": "medium",
+    "tags": [
+      "feature-hashing",
+      "high-cardinality",
+      "categorical-data",
+      "sparse-features"
+    ]
+  },
+  {
+    "id": "data_0036",
+    "question": "One-hot encode một cột có hàng chục nghìn category tạo ma trận đặc trưng ra sao và nên lưu thế nào để tiết kiệm bộ nhớ?",
+    "option_a": "Chủ yếu là số 0; dùng dense representation",
+    "option_b": "Chủ yếu là số 1; dùng sparse representation",
+    "option_c": "Chủ yếu là số 1; dùng dense representation",
+    "option_d": "Chủ yếu là số 0; dùng sparse representation",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Sparse Data",
+    "difficulty": "medium",
+    "tags": [
+      "sparse-matrix",
+      "one-hot-encoding",
+      "high-cardinality",
+      "memory"
+    ]
+  },
+  {
+    "id": "data_0037",
+    "question": "So với CSV, đặc điểm nào của Parquet thường giúp truy vấn phân tích chỉ đọc vài cột hiệu quả hơn?",
+    "option_a": "Lưu theo hàng nên mỗi bản ghi được đọc nguyên khối",
+    "option_b": "Lưu theo cột nên có thể tránh đọc các cột không cần",
+    "option_c": "Lưu dưới dạng văn bản phân tách nên parse nhanh hơn",
+    "option_d": "Lưu mỗi dòng thành một tài liệu độc lập có chỉ mục",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Data Formats",
+    "difficulty": "medium",
+    "tags": [
+      "parquet",
+      "csv",
+      "columnar-storage",
+      "compression"
+    ]
+  },
+  {
+    "id": "data_0038",
+    "question": "Truy vấn chỉ chọn 3 trong 100 cột của bảng Parquet. Tối ưu nào trực tiếp giảm lượng dữ liệu cột phải đọc?",
+    "option_a": "Predicate pushdown bỏ qua các hàng không thỏa điều kiện lọc",
+    "option_b": "Row-group pruning bỏ qua nhóm hàng theo thống kê min/max",
+    "option_c": "Projection pushdown bỏ qua 97 cột không được chọn",
+    "option_d": "Dictionary encoding thay chuỗi lặp bằng mã ngắn",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Data Formats",
+    "difficulty": "medium",
+    "tags": [
+      "parquet",
+      "column-pruning",
+      "columnar-storage",
+      "analytics"
+    ]
+  },
+  {
+    "id": "data_0039",
+    "question": "Apache Arrow nổi bật nhờ định dạng nào phục vụ trao đổi dữ liệu hiệu quả giữa các hệ thống phân tích?",
+    "option_a": "Định dạng cột trong bộ nhớ với layout chung",
+    "option_b": "Định dạng cột trên đĩa tối ưu cho lưu trữ lâu dài",
+    "option_c": "Định dạng văn bản phân tách cho trao đổi bảng",
+    "option_d": "Định dạng hàng trong bộ nhớ tối ưu cho cập nhật bản ghi",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Modern Data Systems",
+    "difficulty": "medium",
+    "tags": [
+      "apache-arrow",
+      "columnar-memory",
+      "interoperability",
+      "zero-copy"
+    ]
+  },
+  {
+    "id": "data_0040",
+    "question": "Trong Polars Lazy API, vì sao chuỗi thao tác thường được tối ưu trước khi chạy collect()?",
+    "option_a": "Các bước tạo logical plan để optimizer đẩy lọc và chọn cột xuống sớm",
+    "option_b": "Mỗi bước được thực thi ngay rồi optimizer viết lại kết quả đã có",
+    "option_c": "Chỉ phép toán cuối được giữ lại còn các bước trước bị bỏ",
+    "option_d": "Dữ liệu được tự động sao chép thành nhiều bản để tránh lập plan",
+    "correct_answer": "A",
+    "category": "Data Processing",
+    "subcategory": "Modern DataFrames",
+    "difficulty": "medium",
+    "tags": [
+      "polars",
+      "lazy-execution",
+      "query-optimization",
+      "dataframe"
+    ]
+  },
+  {
+    "id": "data_0041",
+    "question": "Trong phân tích cục bộ, ưu điểm nào của DuckDB phù hợp khi cần SQL trên nhiều file Parquet?",
+    "option_a": "Bắt buộc import toàn bộ file vào bảng thường trú trước khi truy vấn",
+    "option_b": "Chỉ hỗ trợ SQL sau khi chuyển Parquet thành DataFrame Pandas",
+    "option_c": "Truy vấn trực tiếp file và chỉ đọc các phần cần thiết cho truy vấn",
+    "option_d": "Luôn đọc đủ mọi cột vào RAM trước khi thực hiện phép lọc",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Analytical Databases",
+    "difficulty": "medium",
+    "tags": [
+      "duckdb",
+      "sql",
+      "parquet",
+      "analytics"
+    ]
+  },
+  {
+    "id": "data_0042",
+    "question": "CSV 80 GB lớn hơn RAM 16 GB. Với Pandas, cách nào cho phép tính tổng một cột mà không giữ toàn bộ bảng trong RAM?",
+    "option_a": "Dùng read_csv mặc định rồi mới gọi sum trên DataFrame",
+    "option_b": "Dùng memory_map=True và giữ toàn bộ DataFrame sau parse",
+    "option_c": "Đọc theo chunksize và cộng tổng từng chunk",
+    "option_d": "Đọc head(1000), lấy tổng rồi nhân theo tỷ lệ số dòng",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Large-scale Processing",
+    "difficulty": "medium",
+    "tags": [
+      "chunking",
+      "pandas",
+      "large-dataset",
+      "memory"
+    ]
+  },
+  {
+    "id": "data_0043",
+    "question": "Cột country có 10 triệu dòng nhưng chỉ 20 giá trị khác nhau. Vì sao đổi từ object sang category thường tiết kiệm bộ nhớ?",
+    "option_a": "Nén từng chuỗi riêng trong mỗi ô mà không dùng bảng mã",
+    "option_b": "Chỉ lưu 20 chuỗi duy nhất mà không cần mã cho từng dòng",
+    "option_c": "Tăng độ dài mã hóa của từng chuỗi để tránh trùng lặp",
+    "option_d": "Lưu mã số cho từng dòng và bảng giá trị category dùng chung",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Memory Optimization",
+    "difficulty": "medium",
+    "tags": [
+      "pandas",
+      "categorical-dtype",
+      "memory-optimization",
+      "high-volume-data"
+    ]
+  },
+  {
+    "id": "data_0044",
+    "question": "Trong data pipeline, schema validation chủ yếu kiểm tra loại điều kiện nào trước khi dữ liệu đi tiếp?",
+    "option_a": "Độ chính xác dự đoán của mô hình trên mọi batch dữ liệu",
+    "option_b": "Kiểu cột, cột bắt buộc và các ràng buộc giá trị đã khai báo",
+    "option_c": "Mức thay đổi phân phối feature so với tập huấn luyện",
+    "option_d": "Quan hệ nhân quả giữa mọi cột đầu vào và nhãn",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Data Quality",
+    "difficulty": "medium",
+    "tags": [
+      "schema-validation",
+      "data-quality",
+      "validation",
+      "pipeline"
+    ]
+  },
+  {
+    "id": "data_0045",
+    "question": "Data lineage trong hệ thống dữ liệu trả lời câu hỏi nào tốt nhất?",
+    "option_a": "Một trường dữ liệu có bao nhiêu giá trị null ở batch hiện tại",
+    "option_b": "Một trường dữ liệu có cùng phân phối với batch trước hay không",
+    "option_c": "Một trường dữ liệu có khớp kiểu khai báo trong schema hay không",
+    "option_d": "Một trường dữ liệu đến từ nguồn nào và qua các biến đổi nào",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Data Governance",
+    "difficulty": "medium",
+    "tags": [
+      "data-lineage",
+      "data-governance",
+      "provenance",
+      "pipeline"
+    ]
+  },
+  {
+    "id": "data_0046",
+    "question": "Sau triển khai, phân phối feature age thay đổi so với lúc train; quan hệ giữa feature và nhãn chưa được xác định là đổi. Tên hiện tượng quan sát được là gì?",
+    "option_a": "Concept drift của quan hệ age với nhãn",
+    "option_b": "Covariate drift của age",
+    "option_c": "Label shift của tỷ lệ các lớp mục tiêu",
+    "option_d": "Data leakage từ test sang quá trình train",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Data Monitoring",
+    "difficulty": "medium",
+    "tags": [
+      "data-drift",
+      "distribution-shift",
+      "monitoring",
+      "production"
+    ]
+  },
+  {
+    "id": "data_0047",
+    "question": "Trong stream processing, event time và processing time khác nhau ở điểm nào?",
+    "option_a": "Event time ghi lúc hệ thống xử lý; processing time ghi lúc sự kiện xảy ra",
+    "option_b": "Cả hai đều là lúc sự kiện được ghi vào kho lưu trữ cuối",
+    "option_c": "Cả hai đều được tính bằng thời gian chạy của toán tử xử lý",
+    "option_d": "Event time ghi lúc sự kiện xảy ra; processing time ghi lúc hệ thống xử lý",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Stream Processing",
+    "difficulty": "medium",
+    "tags": [
+      "streaming",
+      "event-time",
+      "processing-time",
+      "real-time-data"
+    ]
+  },
+  {
+    "id": "data_0048",
+    "question": "Feature Store giúp giảm training-serving skew chủ yếu bằng cách nào?",
+    "option_a": "Lưu version của model để train và inference dùng cùng trọng số",
+    "option_b": "Tính feature độc lập ở train và serving rồi lưu vào hai bảng riêng",
+    "option_c": "Giữ cùng tên cột ở train và serving dù logic tính feature khác nhau",
+    "option_d": "Quản lý định nghĩa và phục vụ feature nhất quán cho train và inference",
+    "correct_answer": "D",
+    "category": "Data Processing",
+    "subcategory": "Machine Learning Data Systems",
+    "difficulty": "medium",
+    "tags": [
+      "feature-store",
+      "mlops",
+      "training-serving-skew",
+      "features"
+    ]
+  },
+  {
+    "id": "data_0049",
+    "question": "Với hai embedding khác vector 0, tiền xử lý nào khiến dot product của chúng bằng cosine similarity ban đầu?",
+    "option_a": "Trừ mean từng chiều rồi giữ nguyên độ dài vector",
+    "option_b": "Chuẩn hóa từng vector theo chuẩn L2 về độ dài 1",
+    "option_c": "Chia mỗi chiều cho độ lệch chuẩn của chiều đó",
+    "option_d": "Chuẩn hóa từng vector theo chuẩn L1 về tổng trị tuyệt đối 1",
+    "correct_answer": "B",
+    "category": "Data Processing",
+    "subcategory": "Vector Data Processing",
+    "difficulty": "medium",
+    "tags": [
+      "embedding",
+      "l2-normalization",
+      "cosine-similarity",
+      "vector-search"
+    ]
+  },
+  {
+    "id": "data_0050",
+    "question": "Muốn tái tạo chính xác train/validation split trong lần chạy sau kể cả khi thứ tự file nguồn đổi, cách nào đáng tin cậy nhất?",
+    "option_a": "Chỉ lưu random seed nhưng không cố định thứ tự dữ liệu đầu vào",
+    "option_b": "Chỉ lưu tỷ lệ train/validation và chia ngẫu nhiên lần nữa",
+    "option_c": "Lưu danh sách ID của các mẫu thuộc từng split",
+    "option_d": "Chỉ lưu số mẫu của từng split nhưng không lưu ID mẫu",
+    "correct_answer": "C",
+    "category": "Data Processing",
+    "subcategory": "Reproducibility",
+    "difficulty": "medium",
+    "tags": [
+      "reproducibility",
+      "random-seed",
+      "dataset-split",
+      "experiment"
+    ]
+  }
+]
