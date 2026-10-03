@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { api } from "../api/client";
 import { useCategories } from "../hooks/useCategories";
 import type { Exam, Mode } from "../types";
-import { allocation, equalDistribution } from "../utils/allocation";
+import { allocation, defaultDistribution } from "../utils/allocation";
 
 export function ExamSetup({
   mode,
@@ -21,7 +21,7 @@ export function ExamSetup({
   const minutes = mode === "60_min" ? 60 : 180;
   useEffect(() => {
     if (categories.length)
-      setDistribution(equalDistribution(categories.map((item) => item.name)));
+      setDistribution(defaultDistribution(categories.map((item) => item.name)));
   }, [categories]);
   const assigned = allocation(count, distribution);
   const sum = Object.values(distribution).reduce(

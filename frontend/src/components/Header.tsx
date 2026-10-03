@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export function Header() {
+  const { pathname } = useLocation();
   return (
     <header className="site-header">
       <div className="header-inner">
@@ -13,7 +14,12 @@ export function Header() {
             Dashboard
           </NavLink>
           <NavLink to="/flashcards/setup">Practice</NavLink>
-          <NavLink to="/exam/60/setup">Mock Exams</NavLink>
+          <NavLink
+            to="/mock-exams"
+            className={pathname.startsWith("/exam/") ? "active" : undefined}
+          >
+            Mock Exams
+          </NavLink>
         </nav>
         <span className="header-caption">Academic preparation</span>
       </div>

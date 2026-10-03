@@ -12,6 +12,8 @@
   --line: #eae5e7;
   --soft: #f5f2f8;
   --pink: #d99aaf;
+  --button-pink: #a35c76;
+  --button-pink-hover: #8f4b65;
   --deep: #834f62;
   --correct: #4a8565;
   --incorrect: #b85864;
@@ -168,11 +170,11 @@ h2 {
   white-space: nowrap;
 }
 .button.primary {
-  background: var(--pink);
+  background: var(--button-pink);
   color: #fff;
 }
 .button.primary:hover {
-  background: #c9829a;
+  background: var(--button-pink-hover);
 }
 .button.dark {
   background: var(--deep);
@@ -269,6 +271,9 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+}
+.mock-mode-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .mode-card {
   padding: 30px;

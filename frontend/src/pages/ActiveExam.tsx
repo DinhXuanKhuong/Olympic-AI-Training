@@ -67,7 +67,7 @@ export function ActiveExam({
         <section className="panel empty-panel">
           <h1>No active exam</h1>
           <p>Start a new timed exam from the setup screen.</p>
-          <Link className="button primary" to="/exam/60/setup">
+          <Link className="button primary" to="/mock-exams">
             Choose an exam
           </Link>
         </section>

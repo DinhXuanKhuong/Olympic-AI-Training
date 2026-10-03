@@ -6,6 +6,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { ExamSetup } from "./pages/ExamSetup";
 import { FlashcardPractice } from "./pages/FlashcardPractice";
 import { FlashcardSetup } from "./pages/FlashcardSetup";
+import { MockExams } from "./pages/MockExams";
 import { Results } from "./pages/Results";
 import type { Exam, ExamResult, Mode } from "./types";
 
@@ -30,6 +31,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/mock-exams" element={<MockExams />} />
         <Route
           path="/flashcards/setup"
           element={<FlashcardSetup onStart={setPracticeCategories} />}
