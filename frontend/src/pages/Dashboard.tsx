@@ -84,7 +84,7 @@ export function Dashboard() {
             </ul>
             <Link
               to={mode.path}
-              className={`button ${index === 2 ? "primary" : "soft"}`}
+              className="button dashboard-mode-action"
             >
               {mode.button}
             </Link>
